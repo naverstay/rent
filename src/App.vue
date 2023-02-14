@@ -3,9 +3,10 @@
 </template>
 
 <script>
-import { defineComponent } from 'vue'
+import { defineComponent } from "vue";
+import "src/css/style.css";
 
 export default defineComponent({
-  name: 'App'
-})
+  name: "App",
+});
 </script>
