@@ -1,6 +1,6 @@
 <template>
   <q-layout view="lHh Lpr lFf">
-    <r-header />
+    <!-- <r-header /> -->
     <q-page-container class="relative position">
       <router-view> </router-view>
     </q-page-container>

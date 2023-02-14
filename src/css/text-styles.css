@@ -4,7 +4,7 @@ h1,
 .text-h1 {
   font-weight: bolder;
   line-height: 110%;
-  font-family: 'Manrope';
+  font-family: "Manrope";
 }
 h2,
 h3,
@@ -16,13 +16,17 @@ h5,
 .text-h5 {
   font-weight: bold;
   line-height: 100%;
-  font-family: 'Manrope';
+  font-family: "Manrope";
+}
+
+p {
+  font-family: "Manrope";
 }
 
 .text-t1 {
   font-weight: normal;
   line-height: 120%;
-  font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue";
 }
 .text-t1 .bold {
   font-weight: bold;
@@ -31,7 +35,7 @@ h5,
 .text-t2 {
   font-weight: normal;
   line-height: 140%;
-  font-family: 'Manrope';
+  font-family: "Manrope";
 }
 .text-t2 .medium {
   font-weight: 600;
@@ -40,23 +44,23 @@ h5,
 .text-t3 {
   font-weight: 600;
   line-height: 150%;
-  font-family: 'Manrope';
+  font-family: "Manrope";
 }
 .text-t3 .bold {
   font-weight: bold;
   line-height: 100%;
-  font-family: 'Manrope';
+  font-family: "Manrope";
 }
 
 .text-t4 {
   font-weight: normal;
   line-height: 140%;
-  font-family: 'Manrope';
+  font-family: "Manrope";
 }
 .btn-text {
   font-weight: 600;
   line-height: 100%;
-  font-family: 'Helvetica Neue';
+  font-family: "Helvetica Neue";
 }
 
 @media (max-width: 375px) {
