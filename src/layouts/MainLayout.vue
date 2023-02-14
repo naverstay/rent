@@ -9,12 +9,8 @@
 </template>
 
 <script>
-import RHeader from "src/components/lib/RHeader.vue";
-
 export default {
   name: "MainLayout",
-  components: {
-    RHeader,
-  },
+  components: {},
 };
 </script>

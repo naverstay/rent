@@ -1,6 +1,6 @@
 <template>
   <div class="relative-position ml-1">
-    <q-icon :name="icon_src" size="sm" class="p-1" />
+    <q-icon :name="icon_src" size="sm" class="p-0" />
     <div class="text-gray-400 absolute -bottom-1 right-0 ml-1">
       {{ counter_value }}
     </div>

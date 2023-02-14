@@ -6,19 +6,12 @@
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
       >
-        <r-logo />
-        <q-btn no-caps class="bg-gray-100" text-color="grey" rounded unelevated>
-          <p class="font-normal tracking-wider text-sm">Сдать жильё</p>
-        </q-btn>
-        <r-menu :items="menuItems">
+        <r-logo>
           <template v-slot:append>
-            <div class="row items-center justify-center q-px-sm mr-2 ml-1">
-              <like-counter />
-              <notifications-bell />
-            </div>
-            <r-complex-btn />
+            <slot name="logo-append"> </slot>
           </template>
-        </r-menu>
+        </r-logo>
+        <slot name="content"> </slot>
       </div>
     </nav>
   </header>
@@ -40,51 +33,11 @@
 
 <script>
 import RLogo from "src/components/lib/RLogo.vue";
-import RMenu from "src/components/lib/RMenu.vue";
-import RComplexBtn from "src/components/lib/RComplexBtn.vue";
-import LikeCounter from "src/components/Widgets/LikeCounter.vue";
-import NotificationsBell from "src/components/Widgets/NotificationsBell.vue";
-import SearchInput from "src/components/Search/SimpleSearchInput.vue";
 
 export default {
   name: "RHeader",
   components: {
     RLogo,
-    SearchInput,
-    RMenu,
-    RComplexBtn,
-    LikeCounter,
-    NotificationsBell,
-  },
-  data() {
-    return {
-      menuItems: [
-        {
-          label: "Промокод",
-          link: "/",
-        },
-        {
-          label: "Чат-бот",
-          link: "/",
-        },
-        {
-          label: "F.A.Q.",
-          link: "/",
-        },
-        {
-          label: "Роли доступа",
-          link: "/",
-        },
-        {
-          label: "Арендодателям",
-          link: "/",
-        },
-        {
-          label: "Контакты",
-          link: "/",
-        },
-      ],
-    };
   },
 };
 </script>

@@ -1,12 +1,13 @@
 <template>
   <div>
-    <section class="banner-section h-screen w-screen bg-no-repeat bg-cover">
-      <r-header class="pt-3" />
+    <section
+      class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center"
+    >
+      <main-header class="pt-3" />
     </section>
     <div class="container m-auto">
       <section class="text-gray-600 body-font bg-gray-100">
         <div class="container px-48 py-24 mx-auto">
-          <HelloWorld />
           <SearchComponent />
         </div>
       </section>
@@ -21,13 +22,13 @@
 </style>
 <script>
 import SearchComponent from "src/components/Search/SearchComponent";
-import RHeader from "src/components/lib/RHeader.vue";
+import MainHeader from "src/components/layouts/MainHeader.vue";
 
 export default {
   name: "App",
   components: {
     SearchComponent,
-    RHeader,
+    MainHeader,
   },
 };
 </script>

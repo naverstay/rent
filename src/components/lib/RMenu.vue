@@ -4,10 +4,15 @@
       v-for="(item, index) in items"
       :key="index"
       :to="item.link"
-      class="text-black hover:bg-gray-5 dark:hover:bg-gray-100 font-medium rounded-lg text-sm px-2 lg:px-2 py-2 lg:py-2.5 mr-2 text-t3"
+      class="r-hidden lg:block text-black hover:bg-gray-5 dark:hover:bg-gray-100 font-medium rounded-lg text-sm px-2 lg:px-2 py-2 lg:py-2.5 mr-2 text-t3"
       >{{ item.label }}</router-link
     >
+
     <slot name="append"> </slot>
+    <div class="space-y-1 lg:hidden">
+      <div class="w-8 h-0.5 bg-gray-600"></div>
+      <div class="w-8 h-0.5 bg-gray-600"></div>
+    </div>
   </div>
 </template>
 
