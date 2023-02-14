@@ -110,7 +110,7 @@
 </template>
 
 <script>
-import CardMain from "src/components/CardMain";
+import CardMain from "src/components/Search/CardMain";
 
 export default {
   name: "SearchComponent",

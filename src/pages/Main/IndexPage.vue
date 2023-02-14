@@ -8,13 +8,11 @@
 </template>
 
 <script>
-import HelloWorld from "src/components/HelloWorld.vue";
-import SearchComponent from "src/components/SearchComponent";
+import SearchComponent from "src/components/Search/SearchComponent";
 
 export default {
   name: "App",
   components: {
-    HelloWorld,
     SearchComponent,
   },
 };
