@@ -1,7 +1,7 @@
 <template>
-  <header class="container m-auto py-4">
+  <header class="m-auto py-0 md:py-4 md:container">
     <nav
-      class="bg-white mt-3 border-gray-200 px-4 lg:px-6 py-2.5 dark:bg-gray-800 rounded-xl py-4"
+      class="bg-white mt-3 border-gray-200 py-4 px-4 lg:px-6 py-2.5 dark:bg-gray-800 rounded-xl py-4"
     >
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"

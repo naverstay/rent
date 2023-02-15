@@ -9,9 +9,35 @@
     >
 
     <slot name="append"> </slot>
-    <div class="space-y-1 lg:hidden">
+    <div class="space-y-1 lg:hidden cursor-pointer">
       <div class="w-8 h-0.5 bg-gray-600"></div>
       <div class="w-8 h-0.5 bg-gray-600"></div>
+      <q-menu>
+        <q-list style="min-width: 100px">
+          <q-item
+            v-for="(item, index) in items"
+            :key="index"
+            :to="item.link"
+            clickable
+            v-close-popup
+            class="row no-wrap items-center"
+          >
+            <q-item-section
+              class="text-black font-medium rounded-lg px-2 lg:px-2 py-2 lg:py-2.5 mr-2 text-t2"
+              >{{ item.label }}</q-item-section
+            >
+            <!-- <q-icon name="logout" size="sm" color="black" /> -->
+          </q-item>
+          <q-separator v-if="isLoggedIn" />
+          <q-item v-if="isLoggedIn" clickable v-close-popup>
+            <q-item-section
+              class="text-red font-medium rounded-lg px-2 lg:px-2 py-2 lg:py-2.5 mr-2 text-t3"
+              >Выйти</q-item-section
+            >
+          </q-item>
+          <q-separator />
+        </q-list>
+      </q-menu>
     </div>
   </div>
 </template>
@@ -21,6 +47,11 @@ export default {
   name: "RMenu",
   props: {
     items: { required: true, type: Array },
+  },
+  data() {
+    return {
+      isLoggedIn: true,
+    };
   },
 };
 </script>

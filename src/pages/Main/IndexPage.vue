@@ -1,11 +1,8 @@
 <template>
   <div>
-    <!-- <main-header class="pt-3" />
-     -->
     <section
-      class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-40"
+      class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-40 rounded-2xl"
     >
-      <!-- <main-header class="pt-3" /> -->
       <div
         class="container m-auto py-4 mt-4 text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start"
       >
@@ -62,13 +59,11 @@
 <script>
 import RLogo from "src/components/lib/RLogo.vue";
 import SearchComponent from "src/components/Search/SearchComponent";
-import MainHeader from "src/components/layouts/MainHeader.vue";
 
 export default {
   name: "App",
   components: {
     SearchComponent,
-    MainHeader,
     RLogo,
   },
 };
