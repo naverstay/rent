@@ -4,6 +4,17 @@
       class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center"
     >
       <main-header class="pt-3" />
+      <div class="">
+        <h1>Жильё и маршруты для ваших поездок</h1>
+        <h4>
+          Отдых и деловые путешествия по России. Только проверенные объекты. Без
+          рисков
+        </h4>
+        <q-btn>Отправиться в путешествие</q-btn>
+        <h4>
+          Rent-a-Part- это гарантированный комфорт и сервис в путешествиях!
+        </h4>
+      </div>
     </section>
     <div class="container m-auto">
       <section class="text-gray-600 body-font bg-gray-100">
