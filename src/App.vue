@@ -6,6 +6,7 @@
 import { defineComponent } from "vue";
 import "src/css/style.css";
 import "src/css/colors.css";
+import "src/css/quasar-ovveride.css";
 import "src/css/text/text-styles.css";
 import "src/css/text/text-styles-1280.css";
 import "src/css/text/text-styles-768.css";

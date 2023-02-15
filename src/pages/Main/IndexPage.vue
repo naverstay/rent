@@ -20,7 +20,7 @@
             Жильё и маршруты <br />
             для ваших поездок
           </h1>
-          <h5 class="mb-8 leading-7 font-extralight leading-4 xl:leading-7">
+          <h5 class="mb-8 font-extralight leading-5 md:leading-7">
             Отдых и деловые путешествия по России. <br />
             Только проверенные объекты. Без рисков
           </h5>
@@ -29,10 +29,11 @@
             no-caps
             rounded
             icon-right="arrow_right_alt"
-            class="font-extralight"
-            size="xl"
+            class="font-extralight py-1 md:py-2 xl:py-4"
           >
-            <div class="font-extralight">Отправиться в путешествие</div>
+            <p class="tracking-wider text-t1 font-extralight">
+              Отправиться в путешествие
+            </p>
           </q-btn>
         </div>
         <h5>
