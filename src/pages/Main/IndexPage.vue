@@ -20,10 +20,10 @@
             Жильё и маршруты <br />
             для ваших поездок
           </h1>
-          <h4 class="mb-8 leading-7 font-extralight">
+          <h5 class="mb-8 leading-7 font-extralight">
             Отдых и деловые путешествия по России. <br />
             Только проверенные объекты. Без рисков
-          </h4>
+          </h5>
           <q-btn
             color="yellow"
             no-caps
@@ -35,10 +35,10 @@
             <div class="font-extralight">Отправиться в путешествие</div>
           </q-btn>
         </div>
-        <h4>
+        <h5>
           Rent-a-Part- это гарантированный <br />
           комфорт и сервис в путешествиях!
-        </h4>
+        </h5>
       </div>
     </section>
     <div class="container m-auto">
