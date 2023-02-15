@@ -1,6 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <!-- <r-header /> -->
+    <main-header class="absolute z-10 inset-x-0" />
     <q-page-container class="relative position">
       <router-view> </router-view>
     </q-page-container>
@@ -9,8 +10,10 @@
 </template>
 
 <script>
+import MainHeader from "src/components/layouts/MainHeader.vue";
+
 export default {
   name: "MainLayout",
-  components: {},
+  components: { MainHeader },
 };
 </script>

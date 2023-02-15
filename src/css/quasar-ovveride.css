@@ -1,3 +1,7 @@
+#q-app {
+  margin-top: -16px !important;
+}
+
 .q-icon {
   height: 1em !important;
 }

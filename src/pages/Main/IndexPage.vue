@@ -1,9 +1,11 @@
 <template>
   <div>
+    <!-- <main-header class="pt-3" />
+     -->
     <section
-      class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center"
+      class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-40"
     >
-      <main-header class="pt-3" />
+      <!-- <main-header class="pt-3" /> -->
       <div
         class="container m-auto py-4 mt-4 text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start"
       >
