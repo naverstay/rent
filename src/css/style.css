@@ -26,3 +26,11 @@
 .r-hidden {
   display: none;
 }
+
+.text-manrope {
+  font-family: "Manrope" !important;
+}
+
+.text-helvetica-neue {
+  font-family: "Helvetica Neue" !important;
+}

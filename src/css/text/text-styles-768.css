@@ -15,4 +15,37 @@
   .text-h4 {
     font-size: 24px;
   }
+
+  .text-t1 {
+    font-size: 20px;
+  }
+  .text-t1 .bold {
+    font-size: 16px;
+  }
+
+  .text-t2 {
+    font-size: 20px;
+  }
+  .text-t2 .medium {
+    font-size: 20px;
+  }
+
+  .text-t3 {
+    font-size: 16px;
+  }
+  .text-t3 .bold {
+    font-size: 16px;
+  }
+
+  .text-t4 {
+    font-size: 14px;
+  }
+
+  .text-t5 {
+    font-size: 12px;
+  }
+
+  .btn-text {
+    font-size: 20px;
+  }
 }
