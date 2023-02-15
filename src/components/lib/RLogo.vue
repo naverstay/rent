@@ -1,6 +1,6 @@
 <template>
   <div class="flex items-center">
-    <q-icon name="img:/logo.png" class="mr-3 h-6 sm:h-9" size="lg" />
+    <q-icon name="img:/logo.svg" class="mr-3 h-6 sm:h-9" size="lg" />
     <span
       class="self-center font-semibold whitespace-nowrap uppercase"
       :class="[
