@@ -47,10 +47,10 @@ export default {
     },
     getFontSize() {
       if (this.counter_value >= 100) {
-        return "font-size: 7px; bottom: 3px; left: 9px";
+        return "font-size: 7px; bottom: 2.5px; left: 9px";
       }
       if (this.counter_value >= 10) {
-        return "font-size: 7px; bottom: 3px; left: 10px";
+        return "font-size: 7px; bottom: 2.5px; left: 10px";
       }
       return "font-size: 9px";
     },

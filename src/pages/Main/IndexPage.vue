@@ -4,15 +4,40 @@
       class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center"
     >
       <main-header class="pt-3" />
-      <div class="">
-        <h1>Жильё и маршруты для ваших поездок</h1>
+      <div
+        class="container m-auto py-4 mt-4 text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start"
+      >
+        <div
+          class="flex flex-col items-center text-center xl:text-left xl:items-start px-4 md:px-0"
+        >
+          <r-logo
+            class="xl:hidden mb-5"
+            text_size_class="text-h5"
+            text_color_class="text-white"
+            :always_text="true"
+          />
+          <h1 class="mb-6">
+            Жильё и маршруты <br />
+            для ваших поездок
+          </h1>
+          <h4 class="mb-8 leading-7 font-extralight">
+            Отдых и деловые путешествия по России. <br />
+            Только проверенные объекты. Без рисков
+          </h4>
+          <q-btn
+            color="yellow"
+            no-caps
+            rounded
+            icon-right="arrow_right_alt"
+            class="font-extralight"
+            size="xl"
+          >
+            <div class="font-extralight">Отправиться в путешествие</div>
+          </q-btn>
+        </div>
         <h4>
-          Отдых и деловые путешествия по России. Только проверенные объекты. Без
-          рисков
-        </h4>
-        <q-btn>Отправиться в путешествие</q-btn>
-        <h4>
-          Rent-a-Part- это гарантированный комфорт и сервис в путешествиях!
+          Rent-a-Part- это гарантированный <br />
+          комфорт и сервис в путешествиях!
         </h4>
       </div>
     </section>
@@ -32,6 +57,7 @@
 }
 </style>
 <script>
+import RLogo from "src/components/lib/RLogo.vue";
 import SearchComponent from "src/components/Search/SearchComponent";
 import MainHeader from "src/components/layouts/MainHeader.vue";
 
@@ -40,6 +66,7 @@ export default {
   components: {
     SearchComponent,
     MainHeader,
+    RLogo,
   },
 };
 </script>
