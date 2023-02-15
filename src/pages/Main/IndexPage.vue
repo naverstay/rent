@@ -20,7 +20,7 @@
             Жильё и маршруты <br />
             для ваших поездок
           </h1>
-          <h5 class="mb-8 leading-7 font-extralight">
+          <h5 class="mb-8 leading-7 font-extralight leading-4 xl:leading-7">
             Отдых и деловые путешествия по России. <br />
             Только проверенные объекты. Без рисков
           </h5>
