@@ -1,5 +1,9 @@
 <template>
-  <r-counter :counter_value="0" icon_src="img:images/icons/heart-grey.png" />
+  <r-counter
+    :counter_value="0"
+    icon="img:images/icons/heart-red.svg"
+    disable_icon="img:images/icons/heart-grey.svg"
+  />
 </template>
 
 <script>

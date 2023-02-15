@@ -1,5 +1,9 @@
 <template>
-  <r-counter :counter_value="0" icon_src="img:images/icons/bell-grey.png" />
+  <r-counter
+    :counter_value="0"
+    disable_icon="img:images/icons/bell-grey.svg"
+    icon="img:images/icons/bell-red.svg"
+  />
 </template>
 
 <script>
