@@ -1,7 +1,6 @@
 <template>
-  <hr class="my-12" />
 
-  <div class="text-left">
+  <div class="text-left mt-12">
     <h2
       class="text-2xl text-left font-semibold leading-normal text-gray-800"
       id="basic"

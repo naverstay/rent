@@ -1,5 +1,4 @@
 <template>
-
       <div class="flex flex-wrap md:-m-2 -m-1 justify-center">
         <div class="flex flex-wrap w-1/2">
 
