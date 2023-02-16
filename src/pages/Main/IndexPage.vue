@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="bg-gray-100">
     <section
       class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-40 rounded-2xl"
     >
@@ -43,8 +43,10 @@
     </section>
     <div class="container m-auto">
       <section class="text-gray-600 body-font bg-gray-100">
-        <div class="container px-48 py-24 mx-auto">
+        <div class="container py-24 mx-auto">
+          <HelloWorld />
           <SearchComponent />
+<!--          <PopularComponent />-->
         </div>
       </section>
     </div>
@@ -59,12 +61,18 @@
 <script>
 import RLogo from "src/components/lib/RLogo.vue";
 import SearchComponent from "src/components/Search/SearchComponent";
+import HelloWorld from "components/HelloWorld";
+import MainHeader from "src/components/layouts/MainHeader.vue";
+import PopularComponent from "components/Search/PopularComponent";
 
 export default {
   name: "App",
   components: {
     SearchComponent,
+    MainHeader,
+    HelloWorld,
     RLogo,
+    PopularComponent
   },
 };
 </script>
