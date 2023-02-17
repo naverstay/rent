@@ -41,15 +41,27 @@
         </h5>
       </div>
     </section>
+    <div class="container m-auto mt-10 mb-5 pl-2">
+      <h2 class="mb-3">Популярные направления</h2>
+      <div class="flex flex-row flex-nowrap overflow-x-auto gap-x-2 w-screen">
+        <direction-card
+          v-for="(item, index) in directions"
+          :key="index"
+          :image="item.image"
+          :title="item.title"
+        />
+      </div>
+    </div>
     <div class="container m-auto">
       <section class="text-gray-600 body-font bg-gray-100">
         <div class="container py-24 mx-auto">
           <HelloWorld />
           <SearchComponent />
-<!--          <PopularComponent />-->
+          <!--          <PopularComponent />-->
         </div>
       </section>
     </div>
+
     <div class="container m-auto my-10 q-px-sm">
       <q-card
         class="w-full h-48 md:h-80 lg:h-96 help-section bg-no-repeat bg-contain bg-right-bottom rounded-2xl"
@@ -94,6 +106,7 @@ import SearchComponent from "src/components/Search/SearchComponent";
 import HelloWorld from "components/HelloWorld";
 import MainHeader from "src/components/layouts/MainHeader.vue";
 import PopularComponent from "components/Search/PopularComponent";
+import DirectionCard from "src/components/Search/DirectionCard.vue";
 
 export default {
   name: "App",
@@ -102,7 +115,30 @@ export default {
     MainHeader,
     HelloWorld,
     RLogo,
-    PopularComponent
+    PopularComponent,
+    DirectionCard,
+  },
+  data() {
+    return {
+      directions: [
+        {
+          title: "Горные лыжи",
+          image: "mountains-card",
+        },
+        {
+          title: "Городской туризм",
+          image: "city-card",
+        },
+        {
+          title: "Пляжный отдых",
+          image: "beach-card",
+        },
+        {
+          title: "Для здоровья",
+          image: "forhealth-card",
+        },
+      ],
+    };
   },
 };
 </script>
