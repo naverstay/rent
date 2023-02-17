@@ -41,17 +41,7 @@
         </h5>
       </div>
     </section>
-    <div class="container m-auto mt-10 mb-5 pl-2">
-      <h2 class="mb-3">Популярные направления</h2>
-      <div class="flex flex-row flex-nowrap overflow-x-auto gap-x-2 w-screen">
-        <direction-card
-          v-for="(item, index) in directions"
-          :key="index"
-          :image="item.image"
-          :title="item.title"
-        />
-      </div>
-    </div>
+
     <div class="container m-auto">
       <section class="text-gray-600 body-font bg-gray-100">
         <div class="container py-24 mx-auto">
@@ -61,7 +51,19 @@
         </div>
       </section>
     </div>
-
+    <div class="container m-auto mt-10 mb-5 pl-2">
+      <h2 class="mb-3">Популярные направления</h2>
+      <div
+        class="flex flex-row flex-nowrap overflow-x-auto gap-x-2 w-screen pr-3 py-5"
+      >
+        <direction-card
+          v-for="(item, index) in directions"
+          :key="index"
+          :image="item.image"
+          :title="item.title"
+        />
+      </div>
+    </div>
     <div class="container m-auto my-10 q-px-sm">
       <q-card
         class="w-full h-48 md:h-80 lg:h-96 help-section bg-no-repeat bg-contain bg-right-bottom rounded-2xl"
@@ -81,7 +83,7 @@
             class="w-1/3 py-1 md:py-2 xl:py-4"
           >
             <p
-              class="tracking-wider text-t5 md:text-t3 lg:text-t4 q-pa-none whitespace-nowrap"
+              class="tracking-wider text-t4 md:text-h5 lg:text-h4 q-pa-none whitespace-nowrap"
             >
               Оставить заявку
             </p>
