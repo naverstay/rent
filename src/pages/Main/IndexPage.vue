@@ -159,6 +159,10 @@
         </q-btn>
       </div>
     </section>
+
+    <section class="mt-12">
+      <r-contact-form />
+    </section>
   </div>
 </template>
 
@@ -197,6 +201,7 @@
 </style>
 <script>
 import RLogo from "src/components/lib/RLogo.vue";
+import RContactForm from "src/components/lib/RContactForm.vue";
 import SearchComponent from "src/components/Search/SearchComponent";
 import HelloWorld from "components/HelloWorld";
 import MainHeader from "src/components/layouts/MainHeader.vue";
@@ -212,6 +217,7 @@ export default {
     RLogo,
     PopularComponent,
     DirectionCard,
+    RContactForm,
   },
   data() {
     return {
