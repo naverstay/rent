@@ -4,7 +4,7 @@
       class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-40 rounded-2xl"
     >
       <div
-        class="container m-auto py-4 mt-4 text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start"
+        class="container m-auto py-4 mt-4 text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5"
       >
         <div
           class="flex flex-col items-center text-center xl:text-left xl:items-start px-4 md:px-0"
@@ -19,7 +19,9 @@
             Жильё и маршруты <br />
             для ваших поездок
           </h1>
-          <h5 class="mb-8 font-extralight leading-5 md:leading-7">
+          <h5
+            class="mb-8 font-extralight leading-5 md:leading-7 whitespace-nowrap"
+          >
             Отдых и деловые путешествия по России. <br />
             Только проверенные объекты. Без рисков
           </h5>
@@ -35,7 +37,7 @@
             </p>
           </q-btn>
         </div>
-        <h5>
+        <h5 class="mt-8">
           Rent-a-Part- это гарантированный <br />
           комфорт и сервис в путешествиях!
         </h5>
