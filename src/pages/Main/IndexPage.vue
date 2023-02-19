@@ -163,6 +163,119 @@
     <section class="mt-12">
       <r-contact-form />
     </section>
+    <q-card class="rounded-2xl rounded-b-none">
+      <div class="container m-auto px-5">
+        <div
+          class="flex flex-row items-center justify-between full-width py-10"
+        >
+          <div class="flex flex-col justify-start">
+            <r-logo
+              class="mb-1"
+              text_size_class="text-h5"
+              text_color_class="text-black"
+              :always_text="true"
+            />
+            <p class="text-t5 opacity-30 p-0">
+              @Rent-a-part. Все права защищены
+            </p>
+          </div>
+          <img src="/images/designed-by.png" alt="" />
+        </div>
+        <q-separator />
+        <div
+          class="flex flex-row justify-between full-width flex-col md:flex-row md:no-wrap pb-8"
+        >
+          <div class="flex flex-col justify-between full-width md:w-2/5">
+            <div class="flex flex-row justify-between mb-4">
+              <r-links-list :links="travels" title="Путешествия" />
+              <div class="flex flex-col justify-between gap-5">
+                <r-links-list :links="excursions" title="Экскурсии" />
+                <r-links-list :links="docs" title="Документы" />
+              </div>
+            </div>
+            <q-separator />
+            <div class="flex flex-row justify-between mb-4">
+              <r-links-list
+                :links="[
+                  { label: '+8 (945) 105-43-21', link: 'tel:+79451054321' },
+                ]"
+                title="Телефон"
+              />
+              <r-links-list
+                :links="[
+                  {
+                    label: 'info@rent-a-part.ru',
+                    link: 'mailto:info@rent-a-part.ru',
+                  },
+                ]"
+                title="Email"
+              />
+            </div>
+            <q-separator />
+            <div class="flex flex-row justify-between full-width mb-4">
+              <r-links-list
+                :links="[
+                  {
+                    label:
+                      '119333 Москва г, Москва г,  Ленинский пр-кт, д. 57, А/Я 346',
+                    link: '',
+                  },
+                ]"
+                title="Адрес"
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col justify-between full-width md:w-2/4 full-height mt-4"
+          >
+            <r-subscribe-form />
+            <div class="my-12 md:ml-4">
+              <div class="text-t4 mb-2">Загружайте наше приложение:</div>
+              <div class="flex flex-row justify-between no-wrap gap-1">
+                <img
+                  class="object-contain w-1/3 md:w-48"
+                  src="/images/app-store-btn.png"
+                  alt="App store"
+                />
+                <img
+                  class="object-contain w-1/3 md:w-48"
+                  src="/images/google-play-btn.png"
+                  alt="Google play"
+                />
+                <img
+                  class="object-contain w-1/3 md:w-48"
+                  src="/images/nash-store-btn.png"
+                  alt="Nash store"
+                />
+              </div>
+            </div>
+            <div class="flex flex-row no-wrap justify-start gap-5 md:ml-4">
+              <img
+                class="object-contain"
+                src="/images/icons/vk-icon.png"
+                alt="VK"
+              />
+              <img
+                class="object-contain"
+                src="/images/icons/telegram-icon.png"
+                alt="Telegram"
+              />
+              <div
+                class="flex flex-row items-center justify-start cursor-pointer"
+              >
+                <img
+                  class="object-contain"
+                  src="/images/icons/travel-bot-icon.png"
+                  alt="Travel bot"
+                />
+                <p class="text-t3 p-0 m-0 ml-3">Трэвел-бот</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </q-card>
   </div>
 </template>
 
@@ -202,7 +315,9 @@
 <script>
 import RLogo from "src/components/lib/RLogo.vue";
 import RContactForm from "src/components/lib/RContactForm.vue";
+import RSubscribeForm from "src/components/lib/RSubscribeForm.vue";
 import SearchComponent from "src/components/Search/SearchComponent";
+import RLinksList from "src/components/lib/RLinksList.vue";
 import HelloWorld from "components/HelloWorld";
 import MainHeader from "src/components/layouts/MainHeader.vue";
 import PopularComponent from "components/Search/PopularComponent";
@@ -217,7 +332,9 @@ export default {
     RLogo,
     PopularComponent,
     DirectionCard,
+    RLinksList,
     RContactForm,
+    RSubscribeForm,
   },
   data() {
     return {
@@ -237,6 +354,68 @@ export default {
         {
           title: "Для здоровья",
           image: "forhealth-card",
+        },
+      ],
+      excursions: [
+        {
+          label: "Плато",
+          link: "#",
+        },
+        {
+          label: "Ярус",
+          link: "#",
+        },
+        {
+          label: "Новые горизонты",
+          link: "#",
+        },
+      ],
+      docs: [
+        {
+          label: "Правила пользования",
+          link: "#",
+        },
+        {
+          label: "Условия Бронирования",
+          link: "#",
+        },
+        {
+          label: "Правила оплаты",
+          link: "#",
+        },
+      ],
+      travels: [
+        {
+          label: "Шерегеш",
+          link: "#",
+        },
+        {
+          label: "Краснодарский край",
+          link: "#",
+        },
+        {
+          label: "Ставропольский край",
+          link: "#",
+        },
+        {
+          label: "Казань",
+          link: "#",
+        },
+        {
+          label: "Кировск",
+          link: "#",
+        },
+        {
+          label: "Крым",
+          link: "#",
+        },
+        {
+          label: "Мурманск",
+          link: "#",
+        },
+        {
+          label: "Санкт-Петербург",
+          link: "#",
         },
       ],
     };
