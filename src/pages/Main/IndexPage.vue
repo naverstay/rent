@@ -46,13 +46,21 @@
 
     <section class="container m-auto">
       <section class="text-gray-600 body-font bg-gray-100">
-        <div class="container py-24 mx-auto">
-          <HelloWorld />
-          <SearchComponent />
-          <!--          <PopularComponent />-->
+        <div class="container pt-24 pb-12 mx-auto">
+          <TopBlockSComponent />
         </div>
       </section>
     </section>
+
+    <section class="container m-auto">
+      <h2 class="mb-3">Найти</h2>
+      <div class="container pb-12 mx-auto">
+        <p class="title-font text-base font-medium text-gray-400 ">Аппартаменты, отель, коттедж...</p>
+        <SearchComponent />
+      </div>
+    </section>
+
+
     <section class="container m-auto mt-10 mb-5 pl-2">
       <h2 class="mb-3">Популярные направления</h2>
       <div
@@ -66,6 +74,16 @@
         />
       </div>
     </section>
+
+    <section class="container mx-auto">
+      <h2 class="mb-8">Отзывы о нас</h2>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3">
+        <ReviewsComponent />
+        <ReviewsComponent />
+        <ReviewsComponent />
+      </div>
+    </section>
+
     <section class="container m-auto my-10 q-px-sm">
       <q-card
         class="w-full h-48 md:h-80 lg:h-96 help-section bg-no-repeat bg-contain bg-right-bottom rounded-2xl"
@@ -93,6 +111,22 @@
         </div>
       </q-card>
     </section>
+
+    <section class="container mx-auto mt-24 mb-12">
+      <div class="flex items-center mb-8">
+        <span class="q-icon mr-3 h-6 sm:h-9" style="font-size: 48px;" aria-hidden="true" role="presentation">
+          <img src="images/logo.svg">
+        </span>
+        <h2 class="self-center font-semibold whitespace-nowrap">Новости Rent-A-part</h2>
+      </div>
+
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3">
+        <NewsComponent />
+        <NewsComponent />
+        <NewsComponent />
+      </div>
+    </section>
+
     <section
       class="hosts-section full-width h-screen/3 md:h-screen/2 lg:h-screen*90 bg-no-repeat bg-cover bg-center"
     >
@@ -318,23 +352,25 @@ import RContactForm from "src/components/lib/RContactForm.vue";
 import RSubscribeForm from "src/components/lib/RSubscribeForm.vue";
 import SearchComponent from "src/components/Search/SearchComponent";
 import RLinksList from "src/components/lib/RLinksList.vue";
-import HelloWorld from "components/HelloWorld";
+import TopBlockSComponent from "components/TopBlockSComponent";
 import MainHeader from "src/components/layouts/MainHeader.vue";
-import PopularComponent from "components/Search/PopularComponent";
 import DirectionCard from "src/components/Search/DirectionCard.vue";
+import ReviewsComponent from "components/Search/ReviewsComponent";
+import NewsComponent from "components/Search/NewsComponent";
 
 export default {
   name: "App",
   components: {
     SearchComponent,
     MainHeader,
-    HelloWorld,
+    TopBlockSComponent,
     RLogo,
-    PopularComponent,
     DirectionCard,
     RLinksList,
     RContactForm,
     RSubscribeForm,
+    ReviewsComponent,
+    NewsComponent
   },
   data() {
     return {
