@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-gray-100">
+  <div class="bg-gray-100 overflow-x-hidden">
     <section
       class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-40 rounded-2xl"
     >
@@ -37,7 +37,7 @@
             </p>
           </q-btn>
         </div>
-        <h5 class="mt-8">
+        <h5 class="mt-5 sm:mt-8">
           Rent-a-Part- это гарантированный <br />
           комфорт и сервис в путешествиях!
         </h5>
@@ -65,7 +65,7 @@
     <section class="container m-auto mt-10 mb-5 pl-2">
       <h2 class="mb-3">Популярные направления</h2>
       <div
-        class="flex flex-row flex-nowrap overflow-x-auto gap-x-2 w-screen pr-3 py-5"
+        class="flex flex-row flex-nowrap overflow-x-auto gap-x-2 w-screen pr-3 py-5 pr-12"
       >
         <direction-card
           v-for="(item, index) in directions"
@@ -139,7 +139,7 @@
       class="hosts-section full-width h-screen/3 md:h-screen/2 lg:h-screen*90 bg-no-repeat bg-cover bg-center"
     >
       <div
-        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 sm:px-0"
+        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-0 px-2"
       >
         <div class="flex flex-col items-start">
           <r-logo
@@ -173,7 +173,7 @@
       class="load-app-section full-width h-screen/3 md:h-screen/2 bg-no-repeat bg-cover bg-center mb-5"
     >
       <div
-        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 sm:px-0"
+        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-0 px-2"
       >
         <div class="flex flex-col items-start">
           <h3 class="text-white mb-3">
@@ -210,7 +210,9 @@
         <div
           class="flex flex-row items-center justify-between full-width pt-10 pb-5 gl:pb-10"
         >
-          <div class="flex flex-col justify-between md:justify-start">
+          <div
+            class="flex flex-row md:flex-col w-full md:w-auto justify-between flex-nowrap md:flex-wrap md:justify-start"
+          >
             <r-logo
               class="mb-1"
               text_size_class="text-h5"
@@ -221,7 +223,7 @@
               class="md:hidden flex flex-row items-center justify-start cursor-pointer"
             >
               <img
-                class="object-contain"
+                class="object-contain w-12 h-8 md:hidden"
                 src="/images/icons/travel-bot-icon.png"
                 alt="Travel bot"
               />
