@@ -1,8 +1,11 @@
 <template>
   <div class="flex flex-col justify-start items-start">
-    <div class="text-t2 mt-4">{{ title }}</div>
+    <div class="text-t2 mt-4 mb-2">{{ title }}</div>
 
-    <div class="flex flex-col justify-start items-start gap-1,5">
+    <div
+      class="flex gap-x-2.5 justify-start items-start gap-1,5"
+      :class="allways_col ? 'flex-col' : 'flex-row lg:flex-col'"
+    >
       <a
         v-for="(item, index) in links"
         :key="index"
@@ -20,6 +23,7 @@ export default {
   props: {
     title: { required: true },
     links: { required: true }, // label, link
+    allways_col: { required: false, default: true },
   },
 };
 </script>
