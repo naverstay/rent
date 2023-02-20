@@ -20,7 +20,7 @@
             для ваших поездок
           </h1>
           <h5
-            class="mb-8 font-extralight leading-5 md:leading-7 whitespace-nowrap"
+            class="text-t1 mb-8 font-extralight leading-5 md:leading-7 whitespace-nowrap"
           >
             Отдых и деловые путешествия по России. <br />
             Только проверенные объекты. Без рисков
@@ -170,7 +170,7 @@
     </section>
 
     <section
-      class="load-app-section full-width h-screen/3 md:h-screen/2 lg:h-screen*90 bg-no-repeat bg-cover bg-center mb-5"
+      class="load-app-section full-width h-screen/3 md:h-screen/2 bg-no-repeat bg-cover bg-center mb-5"
     >
       <div
         class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 sm:px-0"
