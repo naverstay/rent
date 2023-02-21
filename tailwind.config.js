@@ -3,19 +3,19 @@ module.exports = {
   content: ["./public/**/*.html", "./src/**/*.{vue,js,ts,jsx,tsx}"],
   theme: {
     screens: {
-      'sm': '375px',
+      sm: "375px",
       // => @media (min-width: 640px) { ... }
 
-      'md': '768px',
+      md: "768px",
       // => @media (min-width: 768px) { ... }
 
-      'lg': '1280px',
+      lg: "1280px",
       // => @media (min-width: 1024px) { ... }
 
-      'xl': '1440px',
+      xl: "1440px",
       // => @media (min-width: 1280px) { ... }
 
-      '2xl': '1920px',
+      "2xl": "1920px",
       // => @media (min-width: 1536px) { ... }
 
       // Original
@@ -61,6 +61,14 @@ module.exports = {
         "screen/3": "calc(100vh / 3)",
         "screen/4": "calc(100vh / 4)",
         "screen/5": "calc(100vh / 5)",
+      }),
+      width: (theme) => ({
+        "screen*90": "90vw",
+        "screen*80": "80vw",
+        "screen/2": "50vw",
+        "screen/3": "calc(100vw / 3)",
+        "screen/4": "calc(100vw / 4)",
+        "screen/5": "calc(100vw / 5)",
       }),
     },
   },

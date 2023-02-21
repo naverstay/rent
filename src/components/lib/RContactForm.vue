@@ -7,7 +7,7 @@
       </p>
     </div>
     <div
-      class="flex flex-col md:flex-row items-center justify-between no-wrap gap-5 md:gap-2 mb-7"
+      class="flex flex-col md:flex-row items-center justify-between no-wrap gap-5 md:gap-2 mb-7 w-screen*90 sm:w-auto"
     >
       <q-input
         class="full-width"

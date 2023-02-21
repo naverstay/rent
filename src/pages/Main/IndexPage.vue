@@ -1,7 +1,7 @@
 <template>
   <div class="bg-gray-100 overflow-x-hidden">
     <section
-      class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-40 rounded-2xl"
+      class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-20 rounded-2xl md:pt-40"
     >
       <div
         class="container m-auto py-4 mt-4 text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5"
@@ -15,13 +15,11 @@
             text_color_class="text-white"
             :always_text="true"
           />
-          <h1 class="mb-6">
+          <h1 class="mb-6 whitespace-nowrap">
             Жильё и маршруты <br />
             для ваших поездок
           </h1>
-          <h5
-            class="text-t1 mb-8 font-extralight leading-5 md:leading-7 whitespace-nowrap"
-          >
+          <h5 class="mb-8 font-light leading-5 md:leading-7 whitespace-nowrap">
             Отдых и деловые путешествия по России. <br />
             Только проверенные объекты. Без рисков
           </h5>
@@ -136,7 +134,7 @@
     </section>
 
     <section
-      class="hosts-section full-width h-screen/3 md:h-screen/2 lg:h-screen*90 bg-no-repeat bg-cover bg-center"
+      class="hosts-section full-width h-screen/2 lg:h-screen*90 bg-no-repeat bg-cover bg-center"
     >
       <div
         class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-0 px-2"
@@ -158,10 +156,10 @@
           color="white"
           text-color="black"
           no-caps
-          class="w-2/5 py-1 md:py-2 xl:py-4"
+          class="w-3/5 md:w-2/5 py-1 md:py-2 xl:py-4"
         >
           <p
-            class="tracking-wider text-t3 md:text-h5 lg:text-h4 q-px-sm whitespace-nowrap font-semibold"
+            class="tracking-wider text-t3 md:text-h5 lg:text-h4 q-px-sm sm:whitespace-nowrap font-semibold px-0.5"
           >
             Узнать подробнее
           </p>
@@ -170,7 +168,7 @@
     </section>
 
     <section
-      class="load-app-section full-width h-screen/3 md:h-screen/2 bg-no-repeat bg-cover bg-center mb-5"
+      class="load-app-section full-width h-screen/2 bg-no-repeat bg-cover bg-center mb-5"
     >
       <div
         class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-0 px-2"
@@ -214,7 +212,6 @@
             class="flex flex-row md:flex-col w-full md:w-auto justify-between flex-nowrap md:flex-wrap md:justify-start"
           >
             <r-logo
-              class="mb-1"
               text_size_class="text-h5"
               text_color_class="text-black"
               :always_text="true"
@@ -223,11 +220,11 @@
               class="md:hidden flex flex-row items-center justify-start cursor-pointer"
             >
               <img
-                class="object-contain w-12 h-8 md:hidden"
+                class="object-contain w-10 h-8 md:hidden"
                 src="/images/icons/travel-bot-icon.png"
                 alt="Travel bot"
               />
-              <p class="text-t3 p-0 m-0 ml-3">Трэвел-бот</p>
+              <p class="text-t3 p-0 m-0 ml-1">Трэвел-бот</p>
             </div>
             <p class="r-hidden lg:block text-t5 opacity-30 p-0">
               @Rent-a-part. Все права защищены
@@ -311,20 +308,20 @@
             <div class="my-3 mb-5 lg:my-12 lg:ml-4">
               <div class="text-t4 mb-2">Загружайте наше приложение:</div>
               <div
-                class="flex flex-row justify-between flex-nowrap md:flex-wrap gap-3 lg:gap-1"
+                class="flex flex-row justify-between flex-nowrap md:flex-wrap gap-3 lg:gap-0.5"
               >
                 <img
-                  class="object-contain w-1/3 md:w-48"
+                  class="object-contain w-3/12 md:w-48"
                   src="/images/app-store-btn.png"
                   alt="App store"
                 />
                 <img
-                  class="object-contain w-1/3 md:w-48"
+                  class="object-contain w-3/12 md:w-48"
                   src="/images/google-play-btn.png"
                   alt="Google play"
                 />
                 <img
-                  class="object-contain w-1/3 md:w-48"
+                  class="object-contain w-3/12 md:w-48"
                   src="/images/nash-store-btn.png"
                   alt="Nash store"
                 />
