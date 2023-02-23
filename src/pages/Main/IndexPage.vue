@@ -51,11 +51,9 @@
     </section>
 
     <section class="container m-auto">
-      <h2 class="mb-3">Найти</h2>
+      <h2 class="mb-3 sm:text-center md:text-center lg:text-left xl:text-left">Найти</h2>
       <div class="container pb-12 mx-auto">
-        <p class="title-font text-base font-medium text-gray-400">
-          Аппартаменты, отель, коттедж...
-        </p>
+        <p class="title-font text-base font-medium text-gray-400 sm:text-center md:text-center lg:text-left xl:text-left">Аппартаменты, отель, коттедж...</p>
         <SearchComponent />
       </div>
     </section>
@@ -199,6 +197,22 @@
         </q-btn>
       </div>
     </section>
+
+
+    <section class="container mx-auto px-5 my-12">
+      <h3 class="mb-8">Акции в Rent-A-Part</h3>
+      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+        <StocksComponent />
+      </div>
+    </section>
+
+    <section class="container mx-auto px-5">
+      <h3 class="mb-8">Наши партнеры</h3>
+      <div class="grid grid-cols-4 gap-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2">
+        <PartnersComponent v-for="n in 4" :key="n"/>
+      </div>
+    </section>
+
 
     <section class="mt-12">
       <r-contact-form />
@@ -411,10 +425,14 @@ import MainHeader from "src/components/layouts/MainHeader.vue";
 import DirectionCard from "src/components/Search/DirectionCard.vue";
 import ReviewsComponent from "components/Search/ReviewsComponent";
 import NewsComponent from "components/Search/NewsComponent";
+import StocksComponent from "components/Search/StocksComponent";
+import PartnersComponent from "components/Search/PartnersComponent";
 
 export default {
   name: "App",
   components: {
+    PartnersComponent,
+    StocksComponent,
     SearchComponent,
     MainHeader,
     TopBlockSComponent,

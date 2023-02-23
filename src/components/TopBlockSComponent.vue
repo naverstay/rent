@@ -1,5 +1,4 @@
 <template>
-
   <div class="items-center max-w-screen-xl px-4 mx-auto lg:grid lg:grid-cols-4 lg:gap-6 xl:gap-6">
 
     <div class="col-span-2 space-y-8 md:grid md:grid-cols-2 md:gap-6 md:space-y-0">
@@ -60,7 +59,7 @@
 
     <div class="col-span-2 bg-white rounded-lg p-6 h-full sm:mt-6 xl:mt-0 relative">
       <h1 class="text-2xl text-slate-900 tracking-tight dark:text-slate-200 mb-1">Маршруты</h1>
-      <p class="mb-3 text-sm text-gray-400">Пришлем Вам маршруты по выбранному направлению</p>
+      <p class="mb-3 text-sm text-gray-400">Пришлем Вам маршруты по <br>выбранному направлению</p>
       <svg class="w-24 h-24 absolute right-4 bottom-1 text-orange-500" viewBox="0 0 112 113" fill="none"
            xmlns="http://www.w3.org/2000/svg">
         <path
