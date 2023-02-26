@@ -1,13 +1,13 @@
 <template>
   <div class="bg-gray-100 overflow-x-hidden">
     <section
-      class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-20 rounded-2xl md:pt-40"
+      class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-20 rounded-2xl md:pt-28"
     >
       <div
-        class="container m-auto py-4 mt-4 text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5"
+        class="container m-auto py-4 mt-4 text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 full-height pb-10"
       >
         <div
-          class="flex flex-col items-center text-center xl:text-left xl:items-start px-4 md:px-0"
+          class="flex flex-col items-center text-center xl:text-left xl:items-start px-5 md:px-0"
         >
           <r-logo
             class="xl:hidden mb-5"
@@ -32,7 +32,7 @@
             icon-right="arrow_right_alt"
             class="font-extralight py-1 md:py-2 xl:py-4"
           >
-            <p class="tracking-wider text-t1 font-extralight">
+            <p class="tracking-wider text-t1 font-medium">
               Отправиться в путешествие
             </p>
           </q-btn>
@@ -162,7 +162,7 @@
           color="white"
           text-color="black"
           no-caps
-          class="w-3/5 md:w-2/5 py-1 md:py-2 xl:py-4"
+          class="w-3/5 md:w-2/5 lg:w-1/5 py-1 md:py-2 xl:py-4"
         >
           <p
             class="tracking-wider text-t3 md:text-h5 lg:text-h4 q-px-sm sm:whitespace-nowrap font-semibold px-0.5"
@@ -174,10 +174,10 @@
     </section>
 
     <section
-      class="load-app-section full-width h-screen/3 md:h-screen/2 bg-no-repeat bg-cover bg-center mb-5"
+      class="load-app-section full-width h-screen/2 md:h-screen/2 bg-no-repeat bg-cover bg-center mb-5"
     >
       <div
-        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-2"
+        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-2 flex-nowrap"
       >
         <div class="flex flex-col items-start">
           <h3 class="text-white mb-3">
@@ -189,16 +189,57 @@
             с комфортом бронируйте жилье
           </p>
         </div>
-        <div class="flex flex-row items-center justify-between"></div>
+
+        <div
+          class="flex flex-row items-center justify-between my-2 lg:flex-nowrap"
+        >
+          <q-btn
+            rounded
+            color="white"
+            text-color="black"
+            no-caps
+            class="r-hidden lg:block w-2/5 lg:w-1/5 py-1 xl:py-4"
+          >
+            <p
+              class="tracking-wider text-t3 md:text-h5 lg:text-h4 q-px-sm whitespace-nowrap font-semibold text-center"
+            >
+              Скачать
+            </p>
+          </q-btn>
+          <div
+            class="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:ml-10 lg:flex-nowrap"
+          >
+            <div class="flex flex-row flex-nowrap gap-4 lg:gap-8">
+              <img
+                class="object-contain w-24 lg:w-32"
+                src="/images/icons/app/nash-store.png"
+                alt="App store"
+              />
+              <img
+                class="object-contain w-24 lg:w-32"
+                src="/images/icons/app/nash-store.png"
+                alt="App store"
+              />
+            </div>
+
+            <div>
+              <img
+                class="object-contain w-24 lg:w-32"
+                src="/images/icons/app/nash-store.png"
+                alt="App store"
+              />
+            </div>
+          </div>
+        </div>
         <q-btn
           rounded
           color="white"
           text-color="black"
           no-caps
-          class="w-2/5 py-1 md:py-2 xl:py-4"
+          class="lg:hidden w-2/5 lg:w-1/5 py-1 xl:py-4"
         >
           <p
-            class="tracking-wider text-t3 md:text-h5 lg:text-h4 q-px-sm whitespace-nowrap font-semibold"
+            class="tracking-wider text-t3 md:text-h5 lg:text-h4 q-px-sm whitespace-nowrap font-semibold text-center"
           >
             Скачать
           </p>

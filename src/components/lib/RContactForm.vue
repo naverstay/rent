@@ -55,7 +55,7 @@
         rounded
         class="font-extralight py-1 md:py-2 xl:py-4 w-full md:w-2/5"
       >
-        <p class="tracking-wider text-t1 font-extralight">Оставить заявку</p>
+        <p class="tracking-wider text-t1 font-medium">Оставить заявку</p>
       </q-btn>
     </div>
   </div>

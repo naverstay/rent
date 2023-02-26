@@ -28,7 +28,7 @@
               rounded
               class="font-extralight py-1"
             >
-              <p class="tracking-wider text-t3 font-extralight">Подписаться</p>
+              <p class="tracking-wider text-t3 font-medium">Подписаться</p>
             </q-btn>
           </div>
         </template>
