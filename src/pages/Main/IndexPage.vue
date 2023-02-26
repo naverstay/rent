@@ -19,7 +19,9 @@
             Жильё и маршруты <br />
             для ваших поездок
           </h1>
-          <h5 class="mb-8 font-light leading-5 md:leading-7 whitespace-nowrap">
+          <h5
+            class="mb-8 md:font-light leading-5 md:leading-7 whitespace-nowrap"
+          >
             Отдых и деловые путешествия по России. <br />
             Только проверенные объекты. Без рисков
           </h5>
@@ -35,7 +37,7 @@
             </p>
           </q-btn>
         </div>
-        <h5 class="mt-5 sm:mt-8">
+        <h5 class="mt-5 sm:mt-8 font-medium md:font-light">
           Rent-a-Part- это гарантированный <br />
           комфорт и сервис в путешествиях!
         </h5>
@@ -51,9 +53,15 @@
     </section>
 
     <section class="container m-auto">
-      <h2 class="mb-3 sm:text-center md:text-center lg:text-left xl:text-left">Найти</h2>
+      <h2 class="mb-3 sm:text-center md:text-center lg:text-left xl:text-left">
+        Найти
+      </h2>
       <div class="container pb-12 mx-auto">
-        <p class="title-font text-base font-medium text-gray-400 sm:text-center md:text-center lg:text-left xl:text-left">Аппартаменты, отель, коттедж...</p>
+        <p
+          class="title-font text-base font-medium text-gray-400 sm:text-center md:text-center lg:text-left xl:text-left"
+        >
+          Аппартаменты, отель, коттедж...
+        </p>
         <SearchComponent />
       </div>
     </section>
@@ -135,7 +143,7 @@
       class="hosts-section full-width h-screen/2 lg:h-screen*90 bg-no-repeat bg-cover bg-center"
     >
       <div
-        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-0 px-2"
+        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-2"
       >
         <div class="flex flex-col items-start">
           <r-logo
@@ -166,10 +174,10 @@
     </section>
 
     <section
-      class="load-app-section full-width h-screen/2 bg-no-repeat bg-cover bg-center mb-5"
+      class="load-app-section full-width h-screen/3 md:h-screen/2 bg-no-repeat bg-cover bg-center mb-5"
     >
       <div
-        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-0 px-2"
+        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-2"
       >
         <div class="flex flex-col items-start">
           <h3 class="text-white mb-3">
@@ -198,7 +206,6 @@
       </div>
     </section>
 
-
     <section class="container mx-auto px-5 my-12">
       <h3 class="mb-8">Акции в Rent-A-Part</h3>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
@@ -208,11 +215,12 @@
 
     <section class="container mx-auto px-5">
       <h3 class="mb-8">Наши партнеры</h3>
-      <div class="grid grid-cols-4 gap-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2">
-        <PartnersComponent v-for="n in 4" :key="n"/>
+      <div
+        class="grid grid-cols-4 gap-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2"
+      >
+        <PartnersComponent v-for="n in 4" :key="n" />
       </div>
     </section>
-
 
     <section class="mt-12">
       <r-contact-form />
@@ -385,32 +393,49 @@
 .banner-section {
   background-image: url("/images/index-page/main-banner-bg.png");
 }
-.help-section {
-  background-image: url("/images/index-page/help-bg.png");
-}
-
-.load-app-section {
-  background-image: url("/images/index-page/load-app-bg.png");
-}
 
 @media (min-width: 1440px) {
   .hosts-section {
-    background-image: url("/images/index-page/hosts-bg-xl.png");
+    background-image: url("/images/index-page/hosts-section/hosts-bg-xl.png");
+  }
+  .help-section {
+    background-image: url("/images/index-page/help-section/help-bg-xl.jpg");
+  }
+  .load-app-section {
+    background-image: url("/images/index-page/load-app-section/load-app-bg-xl.jpg");
   }
 }
 @media (min-width: 1280px) and (max-width: 1440px) {
   .hosts-section {
-    background-image: url("/images/index-page/hosts-bg-lg.png");
+    background-image: url("/images/index-page/hosts-section/hosts-bg-lg.png");
+  }
+  .help-section {
+    background-image: url("/images/index-page/help-section/help-bg-lg.jpg");
+  }
+  .load-app-section {
+    background-image: url("/images/index-page/load-app-section/load-app-bg-lg.jpg");
   }
 }
 @media (min-width: 768px) and (max-width: 1280px) {
   .hosts-section {
-    background-image: url("/images/index-page/hosts-bg-md.png");
+    background-image: url("/images/index-page/hosts-section/hosts-bg-md.png");
+  }
+  .help-section {
+    background-image: url("/images/index-page/help-section/help-bg-md.jpg");
+  }
+  .load-app-section {
+    background-image: url("/images/index-page/load-app-section/load-app-bg-md.jpg");
   }
 }
 @media (max-width: 768px) {
   .hosts-section {
-    background-image: url("/images/index-page/hosts-bg-sm.png");
+    background-image: url("/images/index-page/hosts-section/hosts-bg-sm.png");
+  }
+  .help-section {
+    background-image: url("/images/index-page/help-section/help-bg-sm.jpg");
+  }
+  .load-app-section {
+    background-image: url("/images/index-page/load-app-section/load-app-bg-sm.jpg");
   }
 }
 </style>
