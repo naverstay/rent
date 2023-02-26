@@ -1,13 +1,16 @@
 <template>
-  <div class="container px-5 m-auto flex flex-col">
-    <div class="flex flex-col">
-      <h3>Не можете выбрать жилье?</h3>
+  <div class="container px-5 m-auto flex flex-col items-start">
+    <div class="flex flex-col ml-1">
+      <h3>
+        Не можете <br class="md:hidden" />
+        выбрать жилье?
+      </h3>
       <p class="font-normal opacity-50 mt-1 mb-7">
         Оставьте заявку - мы перезвоним и поможем
       </p>
     </div>
     <div
-      class="flex flex-col md:flex-row items-center justify-between no-wrap gap-5 md:gap-2 mb-7 w-screen*90 sm:w-auto"
+      class="flex flex-col md:flex-row items-center justify-between no-wrap gap-5 md:gap-2 mb-7 w-screen*90 sm:w-auto full-width"
     >
       <q-input
         class="full-width"
@@ -36,17 +39,19 @@
       />
     </div>
     <div
-      class="flex flex-col md:flex-row no-wrap items-center justify-between gap-5 text-t2 mb-8"
+      class="flex flex-col md:flex-row no-wrap items-center justify-between gap-5 text-t2 mb-8 full-width"
     >
-      <div class="flex flex-row no-wrap">
+      <div class="flex flex-row no-wrap full-width items-center">
         <q-checkbox
           v-model="allowRules"
           checked-icon="radio_button_checked"
           unchecked-icon="radio_button_unchecked"
+          style="margin-left: -9px"
         />
-        <p class="text-t3 whitespace-nowrap">
-          Нажимая на кнопку “Отправить заявку”, я соглашаюсь <br />
-          с политикой обработки персональных данных
+        <p class="text-t3 w-4/5">
+          Нажимая на кнопку “Отправить заявку”, я соглашаюсь с политикой
+          обработки
+          <r-inline-button href="#" label="персональных данных" />
         </p>
       </div>
       <q-btn
@@ -62,8 +67,12 @@
 </template>
 
 <script>
+import RInlineButton from "./RInlineButton.vue";
 export default {
   name: "RContactForm",
+  components: {
+    RInlineButton,
+  },
   data() {
     return {
       name: "",
