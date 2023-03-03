@@ -57,3 +57,9 @@
     height: .5em;
   }
 }
+
+@media (min-width: 1440px) {
+  .header-logo {
+    height: .6em;
+  }
+}

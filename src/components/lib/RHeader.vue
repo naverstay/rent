@@ -6,20 +6,17 @@
     <nav
       class="bg-white mt-3 border-gray-200 px-4 py-5 dark:bg-gray-800 rounded-header mx-0.5
       sm:mx-0
-      md:pt-8
-      md:pb-6
-      md:px-8
-      lg:mt-[30px]
-      lg:py-5
-      lg:px-6
-      lg:rounded-[20px]"
+      md:pt-8 md:pb-6 md:px-8
+      lg:mt-[30px] lg:py-5 lg:px-6 lg:rounded-[20px]
+      xl:pl-9 xl:pr-4
+"
     >
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
       >
         <r-logo
-          text_size_class="text-[.85rem] md:text-[1rem] lg:text-[.9rem] mr-3 tracking-5"
-          logo_gap_class="header-logo md:mr-3 lg:mr-1"
+          text_size_class="text-[.85rem] md:text-[1rem] lg:text-[.9rem] mr-3 tracking-5 xl:text-[1.1rem]"
+          logo_gap_class="header-logo md:mr-3 lg:mr-1 xl:mr-2"
         >
           <template v-slot:append>
             <slot name="logo-append"></slot>

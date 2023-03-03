@@ -5,7 +5,7 @@
     >
       <div
         class="container mx-auto py-4 mt-2
-        text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 flex-grow pb-7 md:pt-14 lg:flex lg:items-start lg:px-0 lg:pb-16"
+        text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 flex-grow pb-7 md:pt-14 lg:flex lg:items-start lg:px-0 lg:pb-16 xl:pb-14"
       >
         <div
           class="flex flex-col items-center text-center xl:text-left xl:items-start px-5 md:px-0 lg:mr-auto lg:items-start"
@@ -18,12 +18,16 @@
             text_color_class="text-white"
             :always_text="true"
           />
-          <h1 class="mb-3 whitespace-nowrap leading-9 tracking-4 md:text-[48px] md:leading-120 lg:mb-2">
+          <h1
+            class="mb-3 whitespace-nowrap leading-9 tracking-4 md:text-[48px] md:leading-120 lg:mb-2 xl:text-[64px] xl:tracking-3 xl:leading-115 xl:mb-4">
             Жильё и маршруты <br/>
             для ваших поездок
           </h1>
           <h5
-            class="mb-4 font-normal leading-6 md:leading-7 whitespace-nowrap text-[16px] md:text-[20px] md:mb-6 lg:mb-7"
+            class="mb-4 font-normal leading-6 whitespace-nowrap text-[16px]
+            md:leading-7 md:text-[20px] md:mb-6
+            lg:mb-7
+            xl:text-[24px] xl:leading-125 xl:mb-11"
           >
             Отдых и деловые путешествия по России. <br/>
             Только проверенные объекты. Без рисков
@@ -33,12 +37,17 @@
             no-caps
             rounded
             icon-right="arrow_forward"
-            class="font-extralight py-1 px-4 get-trip-btn md:py-4 md:px-6 lg:py-4"
+            class="font-extralight py-1 px-4 get-trip-btn
+            md:py-4 md:px-6
+            lg:py-4
+            xl:py-3.5"
           >
-            <span class="tracking-2 text-t1 mr-1 font-medium md:mr-2 lg:mr-4">Отправиться в путешествие</span>
+            <span
+              class="tracking-2 text-t1 mr-1 font-medium md:mr-2 lg:mr-4 xl:!text-[20px]">Отправиться в путешествие</span>
           </q-btn>
         </div>
-        <h5 class="mt-5 sm:mt-8 font-medium text-[16px] leading-130 tracking-3 md:font-light md:text-[20px] lg:mt-[105px] lg:-mb-1">
+        <h5
+          class="mt-5 sm:mt-8 font-extra-bold text-[16px] leading-130 md:text-[20px] lg:-mb-1 xl:text-[24px] xl:leading-140">
           Rent-a-Part- это гарантированный <br/>
           комфорт и сервис в путешествиях!
         </h5>
@@ -436,9 +445,23 @@
   background-image: url("/images/index-page/main-banner-bg.png");
 }
 
+@media (min-width: 1920px) {
+  .banner-section {
+    min-height: 46.875vh;
+  }
+
+  .banner-section .container {
+    padding-bottom: 4rem;
+  }
+}
+
 @media (min-width: 1440px) {
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-xl.png");
+  }
+
+  .banner-section {
+    min-height: 56.5vh;
   }
 
   .help-section {
@@ -453,6 +476,10 @@
 @media (min-width: 1280px) and (max-width: 1440px) {
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-lg.png");
+  }
+
+  .banner-section {
+    min-height: 62.75vh;
   }
 
   .help-section {

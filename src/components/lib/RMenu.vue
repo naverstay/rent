@@ -4,7 +4,7 @@
       v-for="(item, index) in items"
       :key="index"
       :to="item.link"
-      class="r-hidden lg:block text-black hover:bg-gray-5 dark:hover:bg-gray-100 font-medium rounded-lg text-sm px-2 py-2 lg:py-2.5 mr-2 text-t3 lg:!text-[12px] lg:px-1"
+      class="r-hidden lg:block text-black hover:bg-gray-5 dark:hover:bg-gray-100 font-medium rounded-lg text-sm px-2 py-2 lg:py-2.5 mr-2 text-t3 lg:!text-[12px] lg:px-1 xl:ml-5 xl:tracking-2"
       >{{ item.label }}</router-link
     >
 

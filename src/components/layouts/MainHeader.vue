@@ -3,7 +3,7 @@
     <template v-slot:logo-append>
       <q-btn
         no-caps
-        class="bg-gray-100 py-0 rent-btn ml-2 px-2.5 md:px-6 md:py-2 lg:px-2.5"
+        class="bg-gray-100 py-0 rent-btn ml-2 px-2.5 md:px-6 md:py-2 lg:px-2.5 xl:px-5"
         text-color="grey"
         rounded
         unelevated
@@ -14,7 +14,7 @@
     <template v-slot:content>
       <r-menu :items="menuItems">
         <template v-slot:append>
-          <div class="row items-center justify-center q-px-sm mr-3 ml-1 md:mr-7 lg:mr-4">
+          <div class="row items-center justify-center q-px-sm mr-3 ml-1 md:mr-7 lg:mr-4 xl:mr-7 xl:pl-0 xl:ml-0">
             <notifications-bell />
             <like-counter />
           </div>
