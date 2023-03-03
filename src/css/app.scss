@@ -1,1 +1,23 @@
 // app global css in SCSS form
+
+.page-header {
+  max-width: 768px;
+}
+
+.q-focus-helper {
+  z-index: 1;
+}
+
+@media (min-width: 1280px) {
+  .container,
+  .page-header.absolute {
+    max-width: 1160px !important;
+  }
+}
+
+@media (min-width: 1440px) {
+  .container,
+  .page-header.absolute {
+    max-width: 1320px !important;
+  }
+}

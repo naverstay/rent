@@ -14,11 +14,11 @@
     <template v-slot:content>
       <r-menu :items="menuItems">
         <template v-slot:append>
-          <div class="row items-center justify-center q-px-sm mr-3 ml-1 md:mr-7 lg:mr-4 xl:mr-7 xl:pl-0 xl:ml-0">
+          <div class="row items-center justify-center q-px-sm mr-1 ml-1 md:mr-7 lg:mr-4 xl:mr-7 xl:pl-0 xl:ml-0">
             <notifications-bell />
             <like-counter />
           </div>
-          <r-complex-btn class="px-0 ml-0 md:mr-5" />
+          <r-complex-btn class="px-0 ml-0 md:mr-7" />
         </template>
       </r-menu>
     </template>

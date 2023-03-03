@@ -15,7 +15,7 @@ module.exports = {
       xl: "1440px",
       // => @media (min-width: 1280px) { ... }
 
-      "2xl": "1920px",
+      xxl: "1920px",
       // => @media (min-width: 1536px) { ... }
 
       // Original
@@ -43,9 +43,9 @@ module.exports = {
 
       // default breakpoints but with 40px removed
       screens: {
-        md: "808px",
-        lg: "1160px",
-        xl: "1320px",
+        md: "768px",
+        lg: "1280px",
+        xl: "1440px",
       },
     },
     extend: {

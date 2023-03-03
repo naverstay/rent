@@ -1,5 +1,5 @@
 <template>
-  <div class="flex items-center">
+  <div :class="[wrapper_class, 'flex items-center']">
     <q-icon name="img:images/logo.svg" :class="[logo_gap_class]" size="lg"/>
     <span
       class="self-center font-semibold whitespace-nowrap uppercase"
@@ -17,6 +17,7 @@
 export default {
   name: "RLogo",
   props: {
+    wrapper_class: {required: false, default: ""},
     text_color_class: {required: false, default: "text-black"},
     logo_gap_class: {required: false, default: "mr-4 md:mr-1 lg:mr-0"},
     text_gap_class: {required: false, default: "mr-7 lg:mr-9"},
