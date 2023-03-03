@@ -1,5 +1,12 @@
 <template>
-  <q-input input-class="search-input" class="q-pa-none" rounded standout="bg-grey" v-model="text" label="Искать жильё">
+  <q-input
+    input-class="search-input"
+    class="q-pa-none"
+    rounded
+    standout="bg-grey"
+    v-model="text"
+    label="Искать жильё"
+  >
     <template v-slot:prepend>
       <q-icon name="search" />
     </template>
@@ -13,6 +20,6 @@
 </style>
 <script>
 export default {
-  name: 'SimpleSearchInput',
-}
+  name: "SimpleSearchInput",
+};
 </script>

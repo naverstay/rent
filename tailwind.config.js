@@ -34,25 +34,74 @@ module.exports = {
       // '2xl': '1536px',
       // // => @media (min-width: 1536px) { ... }
     },
-    container: {},
-    screens: {
-      sm: "375px",
-      md: "768px",
-      lg: "1280px",
-      xl: "1440px",
-      "2xl": "1920px",
+    container: {
+      // you can configure the container to be centered
+      center: true,
+
+      // or have default horizontal padding
+      padding: "20px",
+
+      // default breakpoints but with 40px removed
+      screens: {
+        md: "808px",
+        lg: "1280px",
+        xl: "1360px",
+      },
     },
     extend: {
       colors: {
-        "rent-red": "#FF493E",
-        "rent-yellow": "#F2B348",
-        "rent-background": "#FAFCFE",
-        "rent-primary": "#F2B348",
-        "rent-blue": "#3E8BFF",
+        "rent-red": "#ff493e",
+        "rent-yellow": "#f2b348",
+        "rent-background": "#fafcfe",
+        "rent-primary": "#f2b348",
+        "rent-blue": "#3e8bff",
         "rent-black": "#black",
-        "rent-dark-grey": "#A7AAAC",
-        "rent-grey": "#DBDBDB",
-        "rent-light-grey": "#E8EFF4",
+        "rent-dark-grey": "#a7aaac",
+        "rent-grey": "#dbdbdb",
+        "rent-light-grey": "#e8eff4",
+      },
+      fontWeight: {
+        hairline: "100",
+        extralight: "200",
+        light: "300",
+        normal: "400",
+        medium: "500",
+        semibold: "600",
+        bold: "700",
+        "extra-bold": "800",
+        black: "900",
+      },
+      letterSpacing: {
+        0: "0em",
+        1: "0.01em",
+        2: "0.02em",
+        3: "0.03em",
+        4: "0.04em",
+        5: "0.05em",
+      },
+      lineHeight: {
+        100: "100%",
+        110: "110%",
+        120: "120%",
+        125: "125%",
+        130: "130%",
+        140: "140%",
+        150: "150%",
+      },
+      lineClamp: {
+        7: "7",
+        8: "8",
+        9: "9",
+        10: "10",
+      },
+      borderRadius: {
+        none: "0",
+        sm: "0.125rem",
+        DEFAULT: "0.25rem",
+        md: "0.375rem",
+        lg: "0.5rem",
+        full: "9999px",
+        header: "0 0 30px 30px",
       },
       height: (theme) => ({
         "screen*90": "90vh",
@@ -72,5 +121,5 @@ module.exports = {
       }),
     },
   },
-  plugins: [],
+  plugins: [require("@tailwindcss/line-clamp")],
 };

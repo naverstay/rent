@@ -86,6 +86,6 @@
 
 <script>
 export default {
-  name: 'TopBlockSComponent',
+  name: 'TopBlockSComponent'
 }
 </script>

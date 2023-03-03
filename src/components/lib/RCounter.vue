@@ -1,5 +1,5 @@
 <template>
-  <div class="relative-position ml-1">
+  <div class="relative-position ml-4">
     <q-icon :name="getIcon" size="sm" class="p-0" />
     <div
       class="absolute-bottom ml-1 counter-value"

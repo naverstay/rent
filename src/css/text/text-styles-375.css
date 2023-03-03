@@ -3,25 +3,31 @@
   .text-h1 {
     font-size: 32px;
   }
+
   h2,
   .text-h2 {
     font-size: 26px;
   }
+
   h3,
   .text-h3 {
     font-size: 24px;
   }
+
   h4,
   .text-h4 {
     font-size: 20px;
   }
+
   h5,
   .text-h5 {
     font-size: 16px;
   }
+
   .text-t1 {
     font-size: 16px;
   }
+
   .text-t1 .bold {
     font-size: 16px;
   }
@@ -29,6 +35,7 @@
   .text-t2 {
     font-size: 14px;
   }
+
   .text-t2 .medium {
     font-size: 14px;
   }
@@ -36,6 +43,7 @@
   .text-t3 {
     font-size: 12px;
   }
+
   .text-t3 .bold {
     font-size: 12px;
   }
@@ -43,9 +51,11 @@
   .text-t4 {
     font-size: 10px;
   }
+
   .text-t5 {
     font-size: 8px;
   }
+
   .btn-text {
     font-size: 16px;
   }

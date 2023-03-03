@@ -6,6 +6,7 @@
   font-family: "Manrope";
   src: url("src/assets/fonts/manrope/Manrope-VariableFont_wght.ttf");
 }
+
 @font-face {
   font-family: "Helvetica Neue";
   src: url("src/assets/fonts/helvetica/HelveticaNeueBoldCondensed.eot");
@@ -16,9 +17,31 @@
 }
 
 .text-manrope {
-  font-family: "Manrope" !important;
+  font-family: "Manrope", sans-serif !important;
 }
 
 .text-helvetica-neue {
-  font-family: "Helvetica Neue" !important;
+  font-family: "Helvetica Neue", sans-serif !important;
+}
+
+.header-logo {
+  height: .7em;
+}
+
+.header-logo.small-logo {
+  height: .6em;
+}
+
+.rent-btn {
+  min-height: 27px;
+}
+
+.get-trip-btn {
+  min-height: 27px;
+}
+
+@media (min-width: 1280px) {
+  .header-logo {
+    height: .6em;
+  }
 }

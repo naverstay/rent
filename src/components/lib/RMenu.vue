@@ -9,9 +9,9 @@
     >
 
     <slot name="append"> </slot>
-    <div class="space-y-1 lg:hidden cursor-pointer">
-      <div class="w-8 h-0.5 bg-gray-600"></div>
-      <div class="w-8 h-0.5 bg-gray-600"></div>
+    <div class="lg:hidden cursor-pointer mr-1 ml-2">
+      <div class="w-6 md:w-8 h-0.5 bg-gray-600 my-1"></div>
+      <div class="w-6 md:w-8 h-0.5 bg-gray-600"></div>
       <q-menu>
         <q-list style="min-width: 100px">
           <q-item

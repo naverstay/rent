@@ -1,28 +1,31 @@
 <template>
   <div class="bg-gray-100 overflow-x-hidden">
     <section
-      class="banner-section h-screen w-screen bg-no-repeat bg-cover bg-center pt-20 rounded-2xl md:pt-28"
+      class="banner-section flex flex-col min-h-screen w-screen bg-no-repeat bg-cover bg-center pt-24 rounded-2xl md:pt-28"
     >
       <div
-        class="container m-auto py-4 mt-4 text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 full-height pb-10"
+        class="container mx-auto py-4 mt-2
+        text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 flex-grow pb-7"
       >
         <div
           class="flex flex-col items-center text-center xl:text-left xl:items-start px-5 md:px-0"
         >
           <r-logo
-            class="xl:hidden mb-5"
-            text_size_class="text-h5"
+            class="xl:hidden mb-6"
+            text_size_class="text-[18px] mr-3 tracking-5"
+            text_gap_class=" "
+            logo_gap_class="mr-0 small-logo"
             text_color_class="text-white"
             :always_text="true"
           />
-          <h1 class="mb-6 whitespace-nowrap">
-            Жильё и маршруты <br />
+          <h1 class="mb-3 whitespace-nowrap leading-9 tracking-4">
+            Жильё и маршруты <br/>
             для ваших поездок
           </h1>
           <h5
-            class="mb-8 md:font-light leading-5 md:leading-7 whitespace-nowrap"
+            class="mb-4 font-normal leading-6 md:leading-7 whitespace-nowrap text-[16px]"
           >
-            Отдых и деловые путешествия по России. <br />
+            Отдых и деловые путешествия по России. <br/>
             Только проверенные объекты. Без рисков
           </h5>
           <q-btn
@@ -30,15 +33,13 @@
             no-caps
             rounded
             icon-right="arrow_right_alt"
-            class="font-extralight py-1 md:py-2 xl:py-4"
+            class="font-extralight py-1 px-4 md:py-2 xl:py-4 get-trip-btn"
           >
-            <p class="tracking-wider text-t1 font-medium">
-              Отправиться в путешествие
-            </p>
+            <span class="tracking-2 text-t1 mr-1 font-medium">Отправиться в путешествие</span>
           </q-btn>
         </div>
-        <h5 class="mt-5 sm:mt-8 font-medium md:font-light">
-          Rent-a-Part- это гарантированный <br />
+        <h5 class="mt-5 sm:mt-8 font-medium text-[16px] leading-130 tracking-3 md:font-light">
+          Rent-a-Part- это гарантированный <br/>
           комфорт и сервис в путешествиях!
         </h5>
       </div>
@@ -47,7 +48,7 @@
     <section class="container m-auto">
       <section class="text-gray-600 body-font bg-gray-100">
         <div class="container pt-24 pb-12 mx-auto">
-          <TopBlockSComponent />
+          <TopBlockSComponent/>
         </div>
       </section>
     </section>
@@ -62,7 +63,7 @@
         >
           Аппартаменты, отель, коттедж...
         </p>
-        <SearchComponent />
+        <SearchComponent/>
       </div>
     </section>
 
@@ -83,9 +84,9 @@
     <section class="container mx-auto">
       <h2 class="mb-8">Отзывы о нас</h2>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3">
-        <ReviewsComponent />
-        <ReviewsComponent />
-        <ReviewsComponent />
+        <ReviewsComponent/>
+        <ReviewsComponent/>
+        <ReviewsComponent/>
       </div>
     </section>
 
@@ -97,8 +98,8 @@
           class="flex flex-col h-full justify-between align-start p-5 md:p-7"
         >
           <h3>
-            Нужна помощь <br />
-            с подбором <br />
+            Нужна помощь <br/>
+            с подбором <br/>
             жилья?
           </h3>
           <q-btn
@@ -125,7 +126,7 @@
           aria-hidden="true"
           role="presentation"
         >
-          <img src="images/logo.svg" />
+          <img src="images/logo.svg"/>
         </span>
         <h2 class="self-center font-semibold whitespace-nowrap">
           Новости Rent-A-part
@@ -133,9 +134,9 @@
       </div>
 
       <div class="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3">
-        <NewsComponent />
-        <NewsComponent />
-        <NewsComponent />
+        <NewsComponent/>
+        <NewsComponent/>
+        <NewsComponent/>
       </div>
     </section>
 
@@ -153,7 +154,7 @@
             :always_text="true"
           />
           <h3 class="text-white">
-            Сдавайте жильё <br />
+            Сдавайте жильё <br/>
             в аренду
           </h3>
         </div>
@@ -181,11 +182,11 @@
       >
         <div class="flex flex-col items-start">
           <h3 class="text-white mb-3">
-            Скачайте бесплатное <br />
+            Скачайте бесплатное <br/>
             приложение
           </h3>
           <p class="font-light text-t3 text-white">
-            Выбирайте маршруты, путешествуйте, <br />
+            Выбирайте маршруты, путешествуйте, <br/>
             с комфортом бронируйте жилье
           </p>
         </div>
@@ -250,7 +251,7 @@
     <section class="container mx-auto px-5 my-12">
       <h3 class="mb-8">Акции в Rent-A-Part</h3>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
-        <StocksComponent />
+        <StocksComponent/>
       </div>
     </section>
 
@@ -259,12 +260,12 @@
       <div
         class="grid grid-cols-4 gap-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2"
       >
-        <PartnersComponent v-for="n in 4" :key="n" />
+        <PartnersComponent v-for="n in 4" :key="n"/>
       </div>
     </section>
 
     <section class="mt-12">
-      <r-contact-form />
+      <r-contact-form/>
     </section>
     <q-card class="rounded-2xl rounded-b-none">
       <div class="container m-auto px-5">
@@ -293,13 +294,13 @@
               @Rent-a-part. Все права защищены
             </p>
           </div>
-          <img class="r-hidden lg:block" src="/images/designed-by.png" alt="" />
+          <img class="r-hidden lg:block" src="/images/designed-by.png" alt=""/>
         </div>
 
         <div class="container m-auto lg:hidden">
-          <r-subscribe-form />
+          <r-subscribe-form/>
         </div>
-        <q-separator class="r-hidden lg:block" />
+        <q-separator class="r-hidden lg:block"/>
         <div
           class="flex flex-row justify-between full-width flex-col lg:flex-row lg:flex-nowrap lg:gap-7 pb-8"
         >
@@ -312,13 +313,13 @@
                 :links="travels"
                 title="Путешествия"
               />
-              <q-separator class="mt-4 lg:hidden" />
+              <q-separator class="mt-4 lg:hidden"/>
               <div class="flex flex-row lg:flex-col justify-start gap-x-20">
-                <r-links-list :links="excursions" title="Экскурсии" />
-                <r-links-list :links="docs" title="Документы" />
+                <r-links-list :links="excursions" title="Экскурсии"/>
+                <r-links-list :links="docs" title="Документы"/>
               </div>
             </div>
-            <q-separator />
+            <q-separator/>
             <div class="flex flex-row justify-start gap-x-20 mb-4 lg:gap-x-24">
               <r-links-list
                 :links="[
@@ -347,7 +348,7 @@
                 title="Адрес"
               />
             </div>
-            <q-separator class="r-hidden lg:block" />
+            <q-separator class="r-hidden lg:block"/>
             <div
               class="r-hidden lg:block flex flex-row justify-between full-width mb-4"
             >
@@ -367,7 +368,7 @@
           <div
             class="flex flex-col justify-between w-full md:w-7/12 full-height mt-4"
           >
-            <r-subscribe-form class="r-hidden lg:block" />
+            <r-subscribe-form class="r-hidden lg:block"/>
             <div class="my-3 mb-5 lg:my-12 lg:ml-4">
               <div class="text-t4 mb-2">Загружайте наше приложение:</div>
               <div
@@ -394,7 +395,7 @@
               class="flex flex-row no-wrap justify-between items-center lg:justify-start gap-5 lg:ml-4"
             >
               <p class="lg:hidden text-t5 opacity-30 p-0">
-                @Rent-a-part. <br />
+                @Rent-a-part. <br/>
                 Все права защищены
               </p>
               <img
@@ -439,42 +440,53 @@
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-xl.png");
   }
+
   .help-section {
     background-image: url("/images/index-page/help-section/help-bg-xl.jpg");
   }
+
   .load-app-section {
     background-image: url("/images/index-page/load-app-section/load-app-bg-xl.jpg");
   }
 }
+
 @media (min-width: 1280px) and (max-width: 1440px) {
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-lg.png");
   }
+
   .help-section {
     background-image: url("/images/index-page/help-section/help-bg-lg.jpg");
   }
+
   .load-app-section {
     background-image: url("/images/index-page/load-app-section/load-app-bg-lg.jpg");
   }
 }
+
 @media (min-width: 768px) and (max-width: 1280px) {
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-md.png");
   }
+
   .help-section {
     background-image: url("/images/index-page/help-section/help-bg-md.jpg");
   }
+
   .load-app-section {
     background-image: url("/images/index-page/load-app-section/load-app-bg-md.jpg");
   }
 }
+
 @media (max-width: 768px) {
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-sm.png");
   }
+
   .help-section {
     background-image: url("/images/index-page/help-section/help-bg-sm.jpg");
   }
+
   .load-app-section {
     background-image: url("/images/index-page/load-app-section/load-app-bg-sm.jpg");
   }
@@ -508,92 +520,92 @@ export default {
     RContactForm,
     RSubscribeForm,
     ReviewsComponent,
-    NewsComponent,
+    NewsComponent
   },
   data() {
     return {
       directions: [
         {
           title: "Горные лыжи",
-          image: "mountains-card",
+          image: "mountains-card"
         },
         {
           title: "Городской туризм",
-          image: "city-card",
+          image: "city-card"
         },
         {
           title: "Пляжный отдых",
-          image: "beach-card",
+          image: "beach-card"
         },
         {
           title: "Для здоровья",
-          image: "forhealth-card",
-        },
+          image: "forhealth-card"
+        }
       ],
       excursions: [
         {
           label: "Плато",
-          link: "#",
+          link: "#"
         },
         {
           label: "Ярус",
-          link: "#",
+          link: "#"
         },
         {
           label: "Новые горизонты",
-          link: "#",
-        },
+          link: "#"
+        }
       ],
       docs: [
         {
           label: "Правила пользования",
-          link: "#",
+          link: "#"
         },
         {
           label: "Условия Бронирования",
-          link: "#",
+          link: "#"
         },
         {
           label: "Правила оплаты",
-          link: "#",
-        },
+          link: "#"
+        }
       ],
       travels: [
         {
           label: "Шерегеш",
-          link: "#",
+          link: "#"
         },
         {
           label: "Краснодарский край",
-          link: "#",
+          link: "#"
         },
         {
           label: "Ставропольский край",
-          link: "#",
+          link: "#"
         },
         {
           label: "Казань",
-          link: "#",
+          link: "#"
         },
         {
           label: "Кировск",
-          link: "#",
+          link: "#"
         },
         {
           label: "Крым",
-          link: "#",
+          link: "#"
         },
         {
           label: "Мурманск",
-          link: "#",
+          link: "#"
         },
         {
           label: "Санкт-Петербург",
-          link: "#",
-        },
-      ],
+          link: "#"
+        }
+      ]
     };
-  },
+  }
 };
 </script>
 

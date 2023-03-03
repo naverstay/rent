@@ -4,8 +4,9 @@ h1,
 .text-h1 {
   font-weight: bolder;
   line-height: 110%;
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
 }
+
 h2,
 h3,
 h4,
@@ -16,17 +17,18 @@ h5,
 .text-h5 {
   font-weight: bold;
   line-height: 100%;
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
 }
 
 p {
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
 }
 
 .text-t1 {
   line-height: 120%;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", sans-serif;
 }
+
 .text-t1 .bold {
   font-weight: bold;
 }
@@ -34,31 +36,34 @@ p {
 .text-t2 {
   font-weight: normal;
   line-height: 140%;
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
 }
+
 .text-t2 .medium {
   font-weight: 600;
 }
 
 .text-t3 {
   line-height: 150%;
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
 }
+
 .text-t3 .bold {
   font-weight: bold;
   line-height: 100%;
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
 }
 
 .text-t4 {
   font-weight: normal;
   line-height: 140%;
-  font-family: "Manrope";
+  font-family: "Manrope", sans-serif;
 }
+
 .btn-text {
   font-weight: 600;
   line-height: 100%;
-  font-family: "Helvetica Neue";
+  font-family: "Helvetica Neue", sans-serif;
 }
 
 /* Далее задаём размеры, вынес это отдельно из предыдущих определений, чтоб не путаться */
@@ -68,18 +73,22 @@ p {
   .text-h1 {
     font-size: 64px;
   }
+
   h2,
   .text-h2 {
     font-size: 40px;
   }
+
   h3,
   .text-h3 {
     font-size: 36px;
   }
+
   h4,
   .text-h4 {
     font-size: 24px;
   }
+
   h5,
   .text-h5 {
     font-size: 24px;
@@ -88,6 +97,7 @@ p {
   .text-t1 {
     font-size: 24px;
   }
+
   .text-t1 .bold {
     font-size: 16px;
   }
@@ -95,6 +105,7 @@ p {
   .text-t2 {
     font-size: 24px;
   }
+
   .text-t2 .medium {
     font-size: 24px;
   }
@@ -102,6 +113,7 @@ p {
   .text-t3 {
     font-size: 16px;
   }
+
   .text-t3 .bold {
     font-size: 16px;
   }

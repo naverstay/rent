@@ -3,20 +3,20 @@
     <template v-slot:logo-append>
       <q-btn
         no-caps
-        class="bg-gray-100 ml-1"
+        class="bg-gray-100 py-0 rent-btn ml-2 px-2.5"
         text-color="grey"
         rounded
         unelevated
       >
-        <p class="font-normal tracking-wider text-sm">Сдать жильё</p>
+        <span class="font-normal tracking-wider text-[.75rem] md:text-sm">Сдать жильё</span>
       </q-btn>
     </template>
     <template v-slot:content>
       <r-menu :items="menuItems">
         <template v-slot:append>
-          <div class="row items-center justify-center q-px-sm mr-1 ml-1">
-            <like-counter />
+          <div class="row items-center justify-center q-px-sm mr-3 ml-1">
             <notifications-bell />
+            <like-counter />
           </div>
           <r-complex-btn class="px-0 ml-0" />
         </template>

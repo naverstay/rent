@@ -1,17 +1,25 @@
 <template>
-  <header class="m-auto py-0 md:py-4 md:container">
+  <header class="m-auto py-0
+  md:container
+  lg:py-4">
     <nav
-      class="bg-white mt-3 border-gray-200 py-4 px-4 lg:px-6 py-2.5 dark:bg-gray-800 rounded-xl py-4 mx-0.5 sm:mx-0"
+      class="bg-white mt-3 border-gray-200 px-4 py-5 dark:bg-gray-800 rounded-header mx-0.5
+      sm:mx-0
+      md:px-6
+      lg:mt-[30px]
+      lg:py-4
+      lg:px-8
+      lg:rounded-[20px]"
     >
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
       >
         <r-logo>
           <template v-slot:append>
-            <slot name="logo-append"> </slot>
+            <slot name="logo-append"></slot>
           </template>
         </r-logo>
-        <slot name="content"> </slot>
+        <slot name="content"></slot>
       </div>
     </nav>
   </header>
@@ -23,10 +31,9 @@
   justify-content: space-between;
   align-items: center;
   border-radius: 20px 20px 30px 30px;
-  padding: 27px 23px;
-  padding-top: 53px;
+  padding: 53px 23px 27px;
   background: #fafcfe;
-  box-shadow: 0px 0px 50px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.1);
   max-width: 100vw;
 }
 </style>
@@ -37,7 +44,7 @@ import RLogo from "src/components/lib/RLogo.vue";
 export default {
   name: "RHeader",
   components: {
-    RLogo,
-  },
+    RLogo
+  }
 };
 </script>

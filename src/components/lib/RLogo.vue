@@ -1,16 +1,17 @@
 <template>
   <div class="flex items-center">
-    <q-icon name="img:images/logo.svg" class="mr-3 h-6 sm:h-9" size="lg" />
+    <q-icon name="img:images/logo.svg" class="header-logo" :class="[
+        logo_gap_class,
+      ]" size="lg"/>
     <span
       class="self-center font-semibold whitespace-nowrap uppercase"
       :class="[
         text_color_class,
         text_size_class,
+        text_gap_class,
         always_text ? '' : 'r-hidden md:block',
-      ]"
-      >Rent-a-part</span
-    >
-    <slot name="append"> </slot>
+      ]">Rent-a-part</span>
+    <slot name="append"></slot>
   </div>
 </template>
 
@@ -18,9 +19,11 @@
 export default {
   name: "RLogo",
   props: {
-    text_color_class: { required: false, default: "text-black" },
-    text_size_class: { required: false, default: "text-h6" },
-    always_text: { required: false, default: false },
-  },
+    text_color_class: {required: false, default: "text-black"},
+    logo_gap_class: {required: false, default: "mr-4 md:mr-1 lg:mr-0"},
+    text_gap_class: {required: false, default: "mr-7 md:mr-6 lg:mr-11"},
+    text_size_class: {required: false, default: "text-[.85rem] lg:text-[1.2rem]"},
+    always_text: {required: false, default: false}
+  }
 };
 </script>

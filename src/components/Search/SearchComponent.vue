@@ -1,45 +1,65 @@
 <template>
   <div class="text-left">
-
     <div class="flex justify-center lg:hidden xl:hidden my-4">
-      <input type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-      <label for="default-radio-1" class="ml-2 text-sm font-medium">Рядом с текущим местоположением</label>
+      <input
+        type="radio"
+        value=""
+        name="default-radio"
+        class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+      />
+      <label for="default-radio-1" class="ml-2 text-sm font-medium"
+        >Рядом с текущим местоположением</label
+      >
     </div>
 
-
-    <div class="flex flex-col md:flex-row items-center justify-between no-wrap gap-5 md:gap-2 mb-7 mt-5">
-      <select class="border border-gray-400 text-gray-400 bg-white hover:border-gray-400 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    <div
+      class="flex flex-col md:flex-row items-center justify-between no-wrap gap-5 md:gap-2 mb-7 mt-5"
+    >
+      <select
+        class="border border-gray-400 text-gray-400 bg-white hover:border-gray-400 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      >
         <option selected>Выберите регион, город или место</option>
         <option value="US">United States</option>
       </select>
 
-      <select class="border border-gray-400 text-gray-400 bg-white hover:border-gray-400 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <select
+        class="border border-gray-400 text-gray-400 bg-white hover:border-gray-400 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      >
         <option selected>Количество гостей</option>
         <option value="US">United States</option>
       </select>
 
-      <select class="sm:w-1/2 border border-gray-400 text-gray-400 bg-white hover:border-gray-400 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <select
+        class="sm:w-1/2 border border-gray-400 text-gray-400 bg-white hover:border-gray-400 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      >
         <option selected>Дата заезда</option>
         <option value="US">United States</option>
       </select>
 
-      <select class="sm:w-1/2 border border-gray-400 text-gray-400 bg-white hover:border-gray-400 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+      <select
+        class="sm:w-1/2 border border-gray-400 text-gray-400 bg-white hover:border-gray-400 text-sm rounded-lg block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+      >
         <option selected>Дата заезда</option>
         <option value="US">United States</option>
       </select>
 
-
-<!--      <select class="sm:w-1/2 text-sm text-gray-400 border border-gray-300 rounded-full h-12 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">-->
-<!--        <option>Дата выезда</option>-->
-<!--      </select>-->
+      <!--      <select class="sm:w-1/2 text-sm text-gray-400 border border-gray-300 rounded-full h-12 pl-5 pr-10 bg-white hover:border-gray-400 focus:outline-none appearance-none">-->
+      <!--        <option>Дата выезда</option>-->
+      <!--      </select>-->
     </div>
 
-
     <div class="grid grid-cols-4 gap-4 place-items-center my-6">
-
       <div class="flex items-center lg:visible xl:visible sm:hidden md:hidden">
-        <input id="default-radio-1" type="radio" value="" name="default-radio" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
-        <label for="default-radio-1" class="ml-2 text-sm font-medium">Рядом с текущим местоположением</label>
+        <input
+          id="default-radio-1"
+          type="radio"
+          value=""
+          name="default-radio"
+          class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+        />
+        <label for="default-radio-1" class="ml-2 text-sm font-medium"
+          >Рядом с текущим местоположением</label
+        >
       </div>
 
       <div>Показать на карте</div>
@@ -69,10 +89,16 @@
     </div>
 
     <div class="flex flex-row justify-center px-5 my-6 gap-10">
-      <TypeTopComponent v-for="(type, id) in types" :src="type.src" :title="type.title" :key="type.title" :id="id"/>
+      <TypeTopComponent
+        v-for="(type, id) in types"
+        :src="type.src"
+        :title="type.title"
+        :key="type.title"
+        :id="id"
+      />
     </div>
 
-    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+    <div class="grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
       <CardMain />
       <CardMain />
       <CardMain />
@@ -82,11 +108,12 @@
     </div>
 
     <div class="mt-12 text-center">
-      <button class="text-gray-600 hover:text-rent-yellow py-2 px-24 rounded-full border border-gray-400 hover:border-rent-yellow">
+      <button
+        class="text-gray-600 hover:text-rent-yellow py-2 px-24 rounded-full border border-gray-400 hover:border-rent-yellow"
+      >
         Показать еще...
       </button>
     </div>
-
   </div>
 </template>
 
@@ -112,30 +139,30 @@ export default {
     return {
       types: [
         {
-          title: 'Гостевые дома',
-          src: 'https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg'
+          title: "Гостевые дома",
+          src: "https://a0.muscache.com/pictures/677a041d-7264-4c45-bb72-52bff21eb6e8.jpg",
         },
         {
-          title: 'Квартиры',
-          src: 'https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg'
+          title: "Квартиры",
+          src: "https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg",
         },
         {
-          title: 'Жилье особого типа',
-          src: 'https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg'
+          title: "Жилье особого типа",
+          src: "https://a0.muscache.com/pictures/732edad8-3ae0-49a8-a451-29a8010dcc0c.jpg",
         },
         {
-          title: 'Дома',
-          src: 'https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg'
+          title: "Дома",
+          src: "https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg",
         },
         {
-          title: 'У моря',
-          src: 'https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg'
+          title: "У моря",
+          src: "https://a0.muscache.com/pictures/8e507f16-4943-4be9-b707-59bd38d56309.jpg",
         },
         {
-          title: 'Oтдельные комнаты',
-          src: 'https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg'
-        }
-      ]
+          title: "Oтдельные комнаты",
+          src: "https://a0.muscache.com/pictures/c0a24c04-ce1f-490c-833f-987613930eca.jpg",
+        },
+      ],
     };
   },
 
