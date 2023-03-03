@@ -1,8 +1,8 @@
 <template>
-  <div class="relative-position ml-4 md:ml-8 md:w-9 md:h-9">
-    <q-icon :name="getIcon" class="p-0 text-[24px] md:text-[32px]"/>
+  <div class="relative-position ml-4 md:ml-8 md:w-9 md:h-9 lg:ml-4 lg:w-6 lg:h-6">
+    <q-icon :name="getIcon" class="p-0 text-[24px] md:text-[32px] lg:text-[24px]"/>
     <div
-      class="absolute counter-value w-3 md:w-[18px]"
+      class="absolute counter-value w-3 md:w-[18px] lg:w-3"
       :class="getTextColorClass"
       :style="getFontSize"
     >
@@ -42,7 +42,10 @@
 }
 
 @media (min-width: 1280px) {
-
+  .counter-value {
+    right: 0;
+    bottom: 1px;
+  }
 }
 
 </style>

@@ -1,14 +1,14 @@
 <template>
   <div class="bg-gray-100 overflow-x-hidden">
     <section
-      class="banner-section flex flex-col min-h-screen w-screen bg-no-repeat bg-cover bg-center pt-24 rounded-2xl md:pt-28"
+      class="banner-section flex flex-col min-h-screen w-screen bg-no-repeat bg-cover bg-center pt-24 rounded-2xl md:pt-28 lg:min-h-0"
     >
       <div
         class="container mx-auto py-4 mt-2
-        text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 flex-grow pb-7 md:pt-14"
+        text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 flex-grow pb-7 md:pt-14 lg:flex lg:items-start lg:px-0 lg:pb-16"
       >
         <div
-          class="flex flex-col items-center text-center xl:text-left xl:items-start px-5 md:px-0"
+          class="flex flex-col items-center text-center xl:text-left xl:items-start px-5 md:px-0 lg:mr-auto lg:items-start"
         >
           <r-logo
             class="xl:hidden mb-6"
@@ -18,12 +18,12 @@
             text_color_class="text-white"
             :always_text="true"
           />
-          <h1 class="mb-3 whitespace-nowrap leading-9 tracking-4 md:text-[48px] md:leading-120">
+          <h1 class="mb-3 whitespace-nowrap leading-9 tracking-4 md:text-[48px] md:leading-120 lg:mb-2">
             Жильё и маршруты <br/>
             для ваших поездок
           </h1>
           <h5
-            class="mb-4 font-normal leading-6 md:leading-7 whitespace-nowrap text-[16px] md:text-[20px] md:mb-6"
+            class="mb-4 font-normal leading-6 md:leading-7 whitespace-nowrap text-[16px] md:text-[20px] md:mb-6 lg:mb-7"
           >
             Отдых и деловые путешествия по России. <br/>
             Только проверенные объекты. Без рисков
@@ -33,12 +33,12 @@
             no-caps
             rounded
             icon-right="arrow_forward"
-            class="font-extralight py-1 px-4 xl:py-4 get-trip-btn md:py-4 md:px-6"
+            class="font-extralight py-1 px-4 get-trip-btn md:py-4 md:px-6 lg:py-4"
           >
-            <span class="tracking-2 text-t1 mr-1 font-medium md:mr-2">Отправиться в путешествие</span>
+            <span class="tracking-2 text-t1 mr-1 font-medium md:mr-2 lg:mr-4">Отправиться в путешествие</span>
           </q-btn>
         </div>
-        <h5 class="mt-5 sm:mt-8 font-medium text-[16px] leading-130 tracking-3 md:font-light md:text-[20px]">
+        <h5 class="mt-5 sm:mt-8 font-medium text-[16px] leading-130 tracking-3 md:font-light md:text-[20px] lg:mt-[105px] lg:-mb-1">
           Rent-a-Part- это гарантированный <br/>
           комфорт и сервис в путешествиях!
         </h5>

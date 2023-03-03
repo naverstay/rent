@@ -4,14 +4,14 @@
       v-for="(item, index) in items"
       :key="index"
       :to="item.link"
-      class="r-hidden lg:block text-black hover:bg-gray-5 dark:hover:bg-gray-100 font-medium rounded-lg text-sm px-2 lg:px-2 py-2 lg:py-2.5 mr-2 text-t3"
+      class="r-hidden lg:block text-black hover:bg-gray-5 dark:hover:bg-gray-100 font-medium rounded-lg text-sm px-2 py-2 lg:py-2.5 mr-2 text-t3 lg:!text-[12px] lg:px-1"
       >{{ item.label }}</router-link
     >
 
     <slot name="append"> </slot>
     <div class="lg:hidden cursor-pointer mr-1 ml-2">
-      <div class="w-6 md:w-8 h-[3px] bg-gray-600 my-1"></div>
-      <div class="w-6 md:w-8 h-[3px] bg-gray-600"></div>
+      <div class="rounded-[1px] w-6 md:w-8 h-[3px] bg-gray-600 my-1"></div>
+      <div class="rounded-[1px] w-6 md:w-8 h-[3px] bg-gray-600 my-1"></div>
       <q-menu>
         <q-list style="min-width: 100px">
           <q-item

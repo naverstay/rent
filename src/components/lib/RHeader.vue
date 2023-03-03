@@ -10,16 +10,16 @@
       md:pb-6
       md:px-8
       lg:mt-[30px]
-      lg:py-4
-      lg:px-8
+      lg:py-5
+      lg:px-6
       lg:rounded-[20px]"
     >
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
       >
         <r-logo
-          text_size_class="text-[.85rem] md:text-[1rem] lg:text-[1.2rem] mr-3 tracking-5"
-          logo_gap_class="header-logo md:mr-3"
+          text_size_class="text-[.85rem] md:text-[1rem] lg:text-[.9rem] mr-3 tracking-5"
+          logo_gap_class="header-logo md:mr-3 lg:mr-1"
         >
           <template v-slot:append>
             <slot name="logo-append"></slot>

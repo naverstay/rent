@@ -19,7 +19,7 @@ export default {
   props: {
     text_color_class: {required: false, default: "text-black"},
     logo_gap_class: {required: false, default: "mr-4 md:mr-1 lg:mr-0"},
-    text_gap_class: {required: false, default: "mr-7 lg:mr-11"},
+    text_gap_class: {required: false, default: "mr-7 lg:mr-9"},
     text_size_class: {required: false, default: "text-[.85rem] lg:text-[1.2rem]"},
     always_text: {required: false, default: false}
   }

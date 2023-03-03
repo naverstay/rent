@@ -1,7 +1,7 @@
 <template>
   <q-btn flat no-caps>
-    <q-icon name="img:images/icons/user-grey.svg" class="q-mr-sm header-ava w-9 h-9 rounded-full p-2.5"/>
-    <span class="font-semibold font-medium r-hidden lg:block">
+    <q-icon name="img:images/icons/user-grey.svg" class="q-mr-sm header-ava w-9 h-9 lg:w-6 lg:h-6 rounded-full p-2.5 lg:p-1.5 lg:mr-3"/>
+    <span class="font-semibold font-medium r-hidden lg:block lg:text-[12px] lg:tracking-2">
       Вход / Регистрация
     </span>
   </q-btn>
