@@ -1,11 +1,14 @@
 <template>
   <header class="m-auto py-0
   md:container
+  md:px-0
   lg:py-4">
     <nav
       class="bg-white mt-3 border-gray-200 px-4 py-5 dark:bg-gray-800 rounded-header mx-0.5
       sm:mx-0
-      md:px-6
+      md:pt-8
+      md:pb-6
+      md:px-8
       lg:mt-[30px]
       lg:py-4
       lg:px-8
@@ -14,7 +17,10 @@
       <div
         class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl"
       >
-        <r-logo>
+        <r-logo
+          text_size_class="text-[.85rem] md:text-[1rem] lg:text-[1.2rem] mr-3 tracking-5"
+          logo_gap_class="header-logo md:mr-3"
+        >
           <template v-slot:append>
             <slot name="logo-append"></slot>
           </template>

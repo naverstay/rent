@@ -1,30 +1,59 @@
 <template>
-  <div class="relative-position ml-4">
-    <q-icon :name="getIcon" size="sm" class="p-0" />
+  <div class="relative-position ml-4 md:ml-8 md:w-9 md:h-9">
+    <q-icon :name="getIcon" class="p-0 text-[24px] md:text-[32px]"/>
     <div
-      class="absolute-bottom ml-1 counter-value"
+      class="absolute counter-value w-3 md:w-[18px]"
       :class="getTextColorClass"
       :style="getFontSize"
     >
+      <span class="absolute counter-value-text">
       {{ getCounterValue }}
+      </span>
     </div>
   </div>
 </template>
 
 <style scoped>
 .counter-value {
-  left: 11.5px;
+  border-radius: 100%;
+  right: 0;
   bottom: 1px;
+  background: #fafcfe;
+  border: .25em solid #a7aaac;
 }
+
+.counter-value::before {
+  content: '';
+  display: block;
+  padding-bottom: 100%;
+}
+
+.counter-value-text {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+@media (min-width: 768px) {
+  .counter-value {
+    right: .4em;
+    bottom: .8em;
+  }
+}
+
+@media (min-width: 1280px) {
+
+}
+
 </style>
 
 <script>
 export default {
   name: "RCounter",
   props: {
-    icon: { required: true },
-    disable_icon: { required: false, default: false },
-    counter_value: { required: true },
+    icon: {required: true},
+    disable_icon: {required: false, default: false},
+    counter_value: {required: true}
   },
   computed: {
     getDisableIcon() {
@@ -57,7 +86,7 @@ export default {
     getCounterValue() {
       if (this.counter_value >= 100) return "99+";
       return this.counter_value;
-    },
-  },
+    }
+  }
 };
 </script>

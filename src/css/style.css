@@ -28,7 +28,7 @@
   height: .7em;
 }
 
-.header-logo.small-logo {
+.small-logo {
   height: .6em;
 }
 
@@ -38,6 +38,17 @@
 
 .get-trip-btn {
   min-height: 27px;
+}
+
+@media (min-width: 768px) {
+  .header-logo {
+    height: .9em;
+  }
+
+  .small-logo {
+    height: .8em;
+  }
+
 }
 
 @media (min-width: 1280px) {

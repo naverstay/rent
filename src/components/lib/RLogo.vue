@@ -1,8 +1,6 @@
 <template>
   <div class="flex items-center">
-    <q-icon name="img:images/logo.svg" class="header-logo" :class="[
-        logo_gap_class,
-      ]" size="lg"/>
+    <q-icon name="img:images/logo.svg" :class="[logo_gap_class]" size="lg"/>
     <span
       class="self-center font-semibold whitespace-nowrap uppercase"
       :class="[
@@ -21,7 +19,7 @@ export default {
   props: {
     text_color_class: {required: false, default: "text-black"},
     logo_gap_class: {required: false, default: "mr-4 md:mr-1 lg:mr-0"},
-    text_gap_class: {required: false, default: "mr-7 md:mr-6 lg:mr-11"},
+    text_gap_class: {required: false, default: "mr-7 lg:mr-11"},
     text_size_class: {required: false, default: "text-[.85rem] lg:text-[1.2rem]"},
     always_text: {required: false, default: false}
   }

@@ -5,25 +5,25 @@
     >
       <div
         class="container mx-auto py-4 mt-2
-        text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 flex-grow pb-7"
+        text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 flex-grow pb-7 md:pt-14"
       >
         <div
           class="flex flex-col items-center text-center xl:text-left xl:items-start px-5 md:px-0"
         >
           <r-logo
             class="xl:hidden mb-6"
-            text_size_class="text-[18px] mr-3 tracking-5"
+            text_size_class="text-[18px] mr-3 md:mr-0 tracking-5 md:tracking-4 md:text-[24px]"
             text_gap_class=" "
-            logo_gap_class="mr-0 small-logo"
+            logo_gap_class="mr-0 small-logo md:mr-2"
             text_color_class="text-white"
             :always_text="true"
           />
-          <h1 class="mb-3 whitespace-nowrap leading-9 tracking-4">
+          <h1 class="mb-3 whitespace-nowrap leading-9 tracking-4 md:text-[48px] md:leading-120">
             Жильё и маршруты <br/>
             для ваших поездок
           </h1>
           <h5
-            class="mb-4 font-normal leading-6 md:leading-7 whitespace-nowrap text-[16px]"
+            class="mb-4 font-normal leading-6 md:leading-7 whitespace-nowrap text-[16px] md:text-[20px] md:mb-6"
           >
             Отдых и деловые путешествия по России. <br/>
             Только проверенные объекты. Без рисков
@@ -32,13 +32,13 @@
             color="yellow"
             no-caps
             rounded
-            icon-right="arrow_right_alt"
-            class="font-extralight py-1 px-4 md:py-2 xl:py-4 get-trip-btn"
+            icon-right="arrow_forward"
+            class="font-extralight py-1 px-4 xl:py-4 get-trip-btn md:py-4 md:px-6"
           >
-            <span class="tracking-2 text-t1 mr-1 font-medium">Отправиться в путешествие</span>
+            <span class="tracking-2 text-t1 mr-1 font-medium md:mr-2">Отправиться в путешествие</span>
           </q-btn>
         </div>
-        <h5 class="mt-5 sm:mt-8 font-medium text-[16px] leading-130 tracking-3 md:font-light">
+        <h5 class="mt-5 sm:mt-8 font-medium text-[16px] leading-130 tracking-3 md:font-light md:text-[20px]">
           Rent-a-Part- это гарантированный <br/>
           комфорт и сервис в путешествиях!
         </h5>
