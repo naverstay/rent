@@ -107,6 +107,11 @@ module.exports = {
         full: "9999px",
         header: "0 0 30px 30px",
       },
+      zIndex: {
+        1: "1",
+        2: "2",
+        3: "3",
+      },
       height: (theme) => ({
         "screen*90": "90vh",
         "screen*80": "80vh",

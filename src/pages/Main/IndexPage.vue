@@ -5,7 +5,7 @@
     >
       <div
         class="container mx-auto py-4 mt-2
-        text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 flex-grow pb-7 md:pt-14 lg:flex lg:items-start lg:px-0 lg:pb-16 xl:pb-14"
+        text-white flex flex-col justify-between h-3/4 items-center text-center xl:text-left xl:items-start flex-nowrap p-5 flex-grow pb-7 md:pt-14 lg:flex lg:items-start lg:pb-16 xl:pb-14"
       >
         <div
           class="flex flex-col items-center text-center xl:text-left xl:items-start px-5 md:px-0 lg:mr-auto lg:items-start"
@@ -56,20 +56,22 @@
 
     <section class="container m-auto">
       <section class="text-gray-600 body-font bg-gray-100">
-        <div class="container pt-24 pb-12 mx-auto">
+        <div class="pt-10 pb-10 mx-auto
+        md:px-5 md:py-16
+        lg:py-20 lg:px-0
+">
           <TopBlockSComponent/>
         </div>
       </section>
     </section>
 
     <section class="container m-auto">
-      <h2 class="mb-3 sm:text-center md:text-center lg:text-left xl:text-left">
+      <h2 class="mb-1 sm:text-center md:text-center lg:text-left xl:text-left">
         Найти
       </h2>
-      <div class="container pb-12 mx-auto">
+      <div class="pb-12 mx-auto">
         <p
-          class="title-font text-base font-medium text-gray-400 sm:text-center md:text-center lg:text-left xl:text-left"
-        >
+          class="title-font text-base font-medium text-gray-400 sm:text-center md:text-center lg:text-left xl:text-left">
           Аппартаменты, отель, коттедж...
         </p>
         <SearchComponent/>
@@ -135,7 +137,7 @@
           aria-hidden="true"
           role="presentation"
         >
-          <img src="images/logo.svg"/>
+          <img src="img:images/logo.svg"/>
         </span>
         <h2 class="self-center font-semibold whitespace-nowrap">
           Новости Rent-A-part
