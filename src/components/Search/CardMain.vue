@@ -1,9 +1,11 @@
 <template>
-  <div class="flex flex-col justify-between shadow-none">
-    <img
-      src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-      class="h-56 w-full rounded-md object-cover cursor-pointer"
-    />
+  <div class="flex flex-col justify-between shadow-none ">
+    <div class="image-holder rounded-[15px] relative cursor-pointer overflow-hidden pb-[100%]">
+      <img
+        src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+        class="absolute min-w-full object-cover min-h-full"
+      />
+    </div>
 
     <div class="flex items-center flex-wrap pt-2 mt-auto w-full">
       <p
@@ -51,11 +53,11 @@
         stroke-linecap="round"
         stroke-linejoin="round"
       >
-        <circle cx="12" cy="12" r="10" />
-        <line x1="22" y1="12" x2="18" y2="12" />
-        <line x1="6" y1="12" x2="2" y2="12" />
-        <line x1="12" y1="6" x2="12" y2="2" />
-        <line x1="12" y1="22" x2="12" y2="18" />
+        <circle cx="12" cy="12" r="10"/>
+        <line x1="22" y1="12" x2="18" y2="12"/>
+        <line x1="6" y1="12" x2="2" y2="12"/>
+        <line x1="12" y1="6" x2="12" y2="2"/>
+        <line x1="12" y1="22" x2="12" y2="18"/>
       </svg>
 
       <span
@@ -70,11 +72,11 @@
           stroke-linecap="round"
           stroke-linejoin="round"
         >
-          <circle cx="18" cy="5" r="3" />
-          <circle cx="6" cy="12" r="3" />
-          <circle cx="18" cy="19" r="3" />
-          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49" />
-          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49" />
+          <circle cx="18" cy="5" r="3"/>
+          <circle cx="6" cy="12" r="3"/>
+          <circle cx="18" cy="19" r="3"/>
+          <line x1="8.59" y1="13.51" x2="15.42" y2="17.49"/>
+          <line x1="15.41" y1="6.51" x2="8.59" y2="10.49"/>
         </svg>
       </span>
 
@@ -112,11 +114,20 @@
     <p class="mt-4 text-lg text-gray-400">
       Цена от:
       <span class="title-font text-xl font-medium text-gray-900 mb-1"
-        >3 977 р</span
+      >3 977 р</span
       >
     </p>
   </div>
 </template>
+
+<style>
+.image-holder img {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+</style>
 
 <script>
 // import ...
@@ -136,11 +147,12 @@ export default {
     return {};
   },
 
-  mounted() {},
+  mounted() {
+  },
 
   computed: {},
 
-  methods: {},
+  methods: {}
 };
 </script>
 
