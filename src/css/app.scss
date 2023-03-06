@@ -12,6 +12,13 @@ body {
   z-index: 1;
 }
 
+@media (min-width: 768px) {
+  body .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
 @media (min-width: 1280px) {
   .container {
     max-width: 1200px !important;

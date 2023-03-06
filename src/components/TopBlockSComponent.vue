@@ -9,13 +9,13 @@
      md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
-        <p class="title-font text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
+        <p class="text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
         md:text-[1.55rem] md:pt-1 md:mb-2
         xl:mb-3
 ">Быстрый поиск</p>
         <p class="relative z-1 text-[12px] leading-140 font-medium mb-3 opacity-70 text-gray-400
   md:text-[14px] md:pr-20
-  lg:pr-40 xl:leading-140 lg:text-[16px]
+  lg:pr-40 xl:leading-140 xl:text-[16px]
 ">жилья и других сервисов для&nbsp;самостоятельных путешествий</p>
         <div class="absolute right-3 bottom-0 overflow-hidden w-[66px] h-[66px]
          md:w-[100px] md:h-[100px] md:right-5
@@ -42,13 +42,13 @@
      md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
-        <p class="title-font text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
+        <p class="text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
         md:text-[1.55rem] md:pt-1 md:mb-2
         xl:mb-3
 ">Акции</p>
         <p class="relative z-1 text-[12px] leading-140 font-medium mb-3 opacity-70 text-gray-400
   md:text-[14px] md:pr-20
-  lg:pr-40 xl:leading-140 lg:text-[16px]
+  lg:pr-40 xl:leading-140 xl:text-[16px]
 ">для наших клиентов при&nbsp;съеме
           жилья и&nbsp;предоставлении услуг для самостоятельных путешествий</p>
 
@@ -75,13 +75,13 @@
      md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
-        <p class="title-font text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
+        <p class="text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
         md:text-[1.55rem] md:pt-1 md:mb-2
         xl:mb-3
 ">Оплата</p>
         <p class="relative z-1 text-[12px] leading-140 font-medium mb-3 opacity-70 text-gray-400
   md:text-[14px] md:pr-20
-  lg:pr-40 xl:leading-140 lg:text-[16px]
+  lg:pr-40 xl:leading-140 xl:text-[16px]
 ">на условиях безопасной сделки, возможна оплата в рассрочку</p>
 
         <div class="absolute right-3 bottom-0 overflow-hidden w-[64px] h-[68px]
@@ -89,7 +89,6 @@
         lg:w-[108px] lg:h-[116px]
         xl:w-[126px] xl:h-[135px]
         xl:right-7
-
 ">
           <svg class="w-full h-full absolute right-0 -bottom-1 lg:-bottom-2 text-orange-500" viewBox="0 0 64 69"
                fill="none"
@@ -107,13 +106,13 @@
      md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
-        <p class="title-font text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
+        <p class="text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
         md:text-[1.55rem] md:pt-1 md:mb-2
         xl:mb-3
 ">Обмен информацией</p>
         <p class="relative z-1 text-[12px] leading-140 font-medium mb-3 opacity-70 text-gray-400
   md:text-[14px] md:pr-20
-  lg:pr-30 xl:leading-140 lg:text-[16px]
+  lg:pr-30 xl:leading-140 xl:text-[16px]
 ">и отзывами об объектах сети с другими пользователями</p>
 
         <div class="absolute right-3 bottom-0 overflow-hidden w-[76px] h-[76px]

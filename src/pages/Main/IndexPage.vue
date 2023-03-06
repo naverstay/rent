@@ -61,46 +61,49 @@
       </div>
     </section>
 
-    <section class="container m-auto">
-      <section class="text-gray-600 body-font bg-gray-100">
-        <div class="pt-10 pb-10 mx-auto
-        md:px-5 md:py-16
-        lg:py-20 lg:px-0
+    <section class="container m-auto text-gray-600 body-font bg-gray-100">
+      <div class="py-10 mx-auto
+        md:py-16
+        lg:-mx-[20px]
+        lg:pt-20 lg:pb-14 lg:px-0 lg:mb-20
 ">
-          <TopBlockSComponent/>
-        </div>
-      </section>
-    </section>
-
-    <section class="container m-auto">
-      <h2 class="mb-1 sm:text-center md:text-center lg:text-left xl:text-left">
-        Найти
-      </h2>
-      <div class="pb-12 mx-auto">
-        <p
-          class="title-font text-base font-medium text-gray-400 sm:text-center md:text-center lg:text-left xl:text-left">
-          Аппартаменты, отель, коттедж...
-        </p>
-        <SearchComponent/>
+        <TopBlockSComponent/>
       </div>
     </section>
 
-    <section class="container m-auto mt-10 mb-5 pl-2">
-      <h2 class="mb-3">Популярные направления</h2>
-      <div
-        class="flex flex-row flex-nowrap overflow-x-auto gap-x-2 w-screen pr-3 py-5 pr-12"
-      >
-        <direction-card
-          v-for="(item, index) in directions"
-          :key="index"
-          :image="item.image"
-          :title="item.title"
-        />
+    <section class="container m-auto">
+      <div class="lg:-mx-[20px]">
+        <h2 class="mb-1 sm:text-center md:text-center lg:text-left xl:text-left tracking-2
+        lg:mb-3
+">Найти</h2>
+        <div class="pb-12 mx-auto">
+          <p class="text-[16px] font-medium text-gray-400 text-center leading-140 opacity-50 tracking-1
+        md:py-1 md:text-[20px]
+        lg:text-left
+        xl:text-left">
+            Аппартаменты, отель, коттедж...
+          </p>
+          <SearchComponent/>
+        </div>
+      </div>
+    </section>
+
+    <section class="container m-auto mt-8 mb-16">
+      <div class="md:-mx-[20px] lg:mx-0">
+        <h2 class="mb-4 tracking-2">Популярные направления</h2>
+        <div class="flex flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4">
+          <direction-card
+            v-for="(item, index) in directions"
+            :key="index"
+            :image="item.image"
+            :title="item.title"
+          />
+        </div>
       </div>
     </section>
 
     <section class="container mx-auto">
-      <h2 class="mb-8">Отзывы о нас</h2>
+      <h2 class="mb-7">Отзывы о нас</h2>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3">
         <ReviewsComponent/>
         <ReviewsComponent/>
@@ -456,8 +459,7 @@
 
 @media (min-width: 1920px) {
   .banner-section {
-    //min-height: 48vw;
-    min-height: 920px;
+  //min-height: 48vw; min-height: 920px;
   }
 
   .banner-section .container {
@@ -471,8 +473,7 @@
   }
 
   .banner-section {
-    //min-height: 58vw;
-    min-height: 835px;
+  //min-height: 58vw; min-height: 835px;
   }
 
   .help-section {
@@ -490,8 +491,7 @@
   }
 
   .banner-section {
-    //min-height: 55.875vw;
-    min-height: 715px;
+  //min-height: 55.875vw; min-height: 715px;
   }
 
   .help-section {
