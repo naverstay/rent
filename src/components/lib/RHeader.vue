@@ -13,7 +13,7 @@
       <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl">
         <r-logo
           wrapper_class="flex-grow"
-          text_size_class="text-[.85rem] md:text-[1rem] lg:text-[.9rem] mr-3 tracking-5 xl:text-[1.1rem]"
+          text_size_class="text-[.85rem] md:text-[1rem] lg:text-[.9rem] mr-3 tracking-1 xl:text-[1.1rem]"
           logo_gap_class="header-logo mr-auto md:mr-3 lg:mr-1 xl:mr-2"
         >
           <template v-slot:append>

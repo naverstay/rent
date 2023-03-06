@@ -9,7 +9,7 @@
      md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
-        <p class="title-font text-[1rem] tracking-2 leading-100 font-semibold text-gray-900 mb-1
+        <p class="title-font text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
         md:text-[1.55rem] md:pt-1 md:mb-2
         xl:mb-3
 ">Быстрый поиск</p>
@@ -42,7 +42,7 @@
      md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
-        <p class="title-font text-[1rem] tracking-2 leading-100 font-semibold text-gray-900 mb-1
+        <p class="title-font text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
         md:text-[1.55rem] md:pt-1 md:mb-2
         xl:mb-3
 ">Акции</p>
@@ -75,7 +75,7 @@
      md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
-        <p class="title-font text-[1rem] tracking-2 leading-100 font-semibold text-gray-900 mb-1
+        <p class="title-font text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
         md:text-[1.55rem] md:pt-1 md:mb-2
         xl:mb-3
 ">Оплата</p>
@@ -107,7 +107,7 @@
      md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
-        <p class="title-font text-[1rem] tracking-2 leading-100 font-semibold text-gray-900 mb-1
+        <p class="title-font text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
         md:text-[1.55rem] md:pt-1 md:mb-2
         xl:mb-3
 ">Обмен информацией</p>

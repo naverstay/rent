@@ -1,6 +1,6 @@
 <template>
-  <div class="text-left pt-10 relative">
-    <div class="flex flex-col lg:flex-row items-center justify-between no-wrap gap-5 md:gap-2 mb-7 mt-4">
+  <div class="text-left pt-4 mt-6 relative">
+    <div class="flex flex-col lg:flex-row items-center justify-between no-wrap gap-4 md:gap-2 mb-6 mt-4">
       <q-select v-model="locationModel" :options="locationOptions" dense options-dense dropdown-icon="expand_more"
                 label="Выберите регион, город или место"
                 class="border custom-select border-[rgba(47, 47, 47, 0.2)] text-gray-400 bg-white hover:border-gray-400 text-sm rounded-[21px] block w-full p-0 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pl-4 pr-2">
@@ -34,14 +34,15 @@
       <!--      </select>-->
     </div>
 
-    <div class="grid grid-cols-6 lg:grid-cols-8 gap-4 place-items-center my-6">
-      <div class="flex items-center items-center absolute top-4 left-0 right-0 justify-center lg:relative col-span-2 lg:top-0 lg:mr-auto">
+    <div class="grid grid-cols-6 lg:grid-cols-8 gap-4 place-items-center mt-6 mb-7">
+      <div
+        class="flex items-center items-center absolute top-0 left-0 right-0 justify-center lg:relative col-span-2 lg:mr-auto">
         <input
           id="default-radio-1"
           type="radio"
           value=""
           name="default-radio"
-          class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+          class="w-5 h-5 text-blue-600 bg-gray-100 border-gray-300 focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
         />
         <label for="default-radio-1" class="ml-2 text-[12px] md:text-[14px] leading-150 font-semibold"
         >Рядом с текущим местоположением</label>
@@ -57,11 +58,11 @@
             fill="#2F2F2F"/>
         </svg>
 
-        <span class="pt-2 leading-150 text-[12px]">Показать на карте</span>
+        <span class="pt-1 leading-150 text-[12px] tracking-2 font-medium">Показать на карте</span>
       </div>
 
       <div class="overflow-x-auto col-span-6 lg:col-span-8 w-full lg:order-last">
-        <div class="px-5 my-6 flex-nowrap whitespace-nowrap text-center">
+        <div class="my-3 flex-nowrap whitespace-nowrap text-center">
           <TypeTopComponent
             v-for="(type, id) in types"
             :src="type.src"
@@ -72,16 +73,16 @@
         </div>
       </div>
 
-      <div class="text-gray-400 mr-auto col-span-4 md:col-span-2 lg:order-1">
+      <div class="text-gray-400 text-[12px] leading-1 font-semibold mr-auto col-span-3 md:col-span-2 lg:order-1">
         Найдено вариантов:&nbsp;
-        <span class="title-font font-medium text-gray-900">3 977</span>
+        <span class="title-font text-gray-900">5213</span>
       </div>
 
-      <div class="relative ml-auto group col-span-2 order-1">
-        <div class="min-w-[115px]">
+      <div class="relative ml-auto group col-span-3 md:col-span-2 order-1">
+        <div class="min-w-[115px] md:min-w-[132px]">
           <q-select v-model="sortModel" :options="sortOptions" dense options-dense dropdown-icon="expand_more"
                     label="Сортировка"
-                    class="border custom-select border-[rgba(47, 47, 47, 0.2)] text-gray-400 bg-white hover:border-gray-400 text-sm rounded-[21px] block w-full p-0 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pl-2 pr-2">
+                    class="border custom-select custom-select-34 border-[rgba(47, 47, 47, 0.2)] text-gray-400 bg-white hover:border-gray-400 text-sm rounded-[21px] block w-full p-0 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500 pl-1 md:pl-2 pr-2">
             <template v-slot:prepend></template>
           </q-select>
         </div>
@@ -112,13 +113,49 @@
   border-bottom: 0 !important;
 }
 
+.custom-select .q-field__control:after {
+  display: none !important;
+}
+
 .custom-select .q-field__label,
 .custom-select .q-field__native {
   font-size: 12px;
+  letter-spacing: .025rem;
+  font-weight: 500;
 }
 
 .custom-select .q-field__marginal {
   padding-left: 0;
+}
+
+@media (max-width: 768px) {
+  .custom-select.custom-select-34 {
+    min-height: 34px;
+  }
+
+  .custom-select.custom-select-34.q-field--dense .q-field__control {
+    min-height: 34px;
+  }
+
+  .custom-select.custom-select-34.q-field--dense .q-field__marginal {
+    height: 40px;
+  }
+
+  .custom-select.custom-select-34.q-field--dense.q-field--labeled .q-field__native {
+    min-height: 20px;
+  }
+
+  .custom-select.custom-select-34.q-field--dense.q-field--labeled .q-field__label {
+    top: 7px;
+  }
+
+  .custom-select.custom-select-34.q-field--auto-height.q-field--dense.q-field--labeled .q-field__control-container {
+    padding-top: 10px;
+  }
+
+  .custom-select.custom-select-34.q-field--dense .q-field__marginal {
+    height: 34px;
+  }
 }
 
 </style>
@@ -173,12 +210,12 @@ export default {
           src: "images/index-page/search-section/flat.svg"
         },
         {
-          title: "Жилье особого типа",
-          src: "images/index-page/search-section/spec.svg"
-        },
-        {
           title: "Дома",
           src: "images/index-page/search-section/home.svg"
+        },
+        {
+          title: "Жилье особого типа",
+          src: "images/index-page/search-section/spec.svg"
         },
         {
           title: "У моря",
