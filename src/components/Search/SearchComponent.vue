@@ -130,7 +130,7 @@
       <CardMain title="Комната у моря"/>
     </div>
 
-    <div class="mt-10 text-center md:mt-4 lg:mt-12 xl:mt-10">
+    <div class="mt-10 text-center md:mt-4 lg:mt-11">
       <button
         class="text-[16px] font-medium text-gray-600 hover:text-rent-yellow py-1.5 px-24 rounded-full border border-gray-400 hover:border-rent-yellow w-full
          md:text-[20px] md:p-2

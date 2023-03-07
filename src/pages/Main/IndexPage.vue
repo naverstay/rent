@@ -7,7 +7,7 @@
         class="container mx-auto py-4 mt-2 text-white flex flex-col justify-between h-3/4 items-center flex-nowrap p-5 flex-grow pb-7 text-center
          md:pt-14 md:pb-16
          lg:flex lg:items-start lg:pb-16
-         xl:!px-6 xl:text-left xl:items-start xl:pb-14
+         lg:!px-6 xl:text-left xl:items-start xl:pb-14
          xxl:!px-2"
       >
         <div
@@ -93,10 +93,17 @@
       </div>
     </section>
 
-    <section class="container m-auto mt-8 mb-14 md:mb-14 lg:mb-20 lg:mt-14 ">
+    <section class="container m-auto mt-8 mb-14
+    md:mb-14
+    lg:mb-24 lg:mt-20
+    xl:mt-14
+    xxl:mb-20
+">
       <div class="md:-mx-[20px] xl:pt-4">
         <h2 class="mb-5 tracking-2
-        md:mb-4 lg:mb-5">Популярные направления</h2>
+        md:mb-4
+        xl:mb-5
+">Популярные направления</h2>
         <div class="flex custom-scroll flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
           <direction-card
             v-for="(item, index) in directions"
@@ -109,7 +116,7 @@
     </section>
 
     <section class="container mx-auto">
-      <div class="lg:-mx-[20px] xl:pt-4 xxl:pt-6">
+      <div class="lg:-mx-[20px] xxl:pt-6">
         <h2 class="mb-3 md:mb-4">Отзывы о нас</h2>
 
         <div class="flex custom-scroll flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
@@ -120,7 +127,13 @@
       </div>
     </section>
 
-    <section class="container m-auto my-12 q-px-sm md:mt-14 lg:mt-20">
+    <section class="container m-auto my-12 q-px-sm
+    md:mt-14
+    lg:mt-24
+    xl:mt-28
+    xxl:mt-20
+    xxl:pt-2
+">
       <div class="lg:-mx-[20px] xl:pt-4">
         <q-card
           class="w-full h-[226px] help-section bg-no-repeat bg-contain bg-right-bottom rounded-[20px]
@@ -135,18 +148,20 @@
     lg:text-[64px]
     lg:mx-5
 ">Нужна помощь с&nbsp;<span class="lg:hidden"><br/></span>подбором жилья?</h3>
-            <div class="md:pb-1 lg:ml-5">
+            <div class="md:pb-1 xl:ml-5">
               <q-btn
                 rounded
                 color="black"
                 text-color="white"
-                class="order-btn flex items-center flex-col px-3 py-0 leading-100
-              md:py-2 md:px-4
+                class="order-btn flex items-center flex-col px-3 py-1 leading-100
+              md:py-3 md:px-4
+              lg:py-1.5
               xl:py-2"
               >
             <span class="tracking-wider whitespace-nowrap text-[8px] q-pa-none font-bold
             md:text-[16px] md:-tracking-2
             lg:text-[20px] lg:py-2.5 lg:px-2
+            xl:py-2
 ">Оставить заявку</span>
               </q-btn>
             </div>
@@ -156,8 +171,9 @@
     </section>
 
     <section class="container mx-auto mt-16 mb-10 pt-2
-    md:pt-4
-    lg:mt-20
+    md:pt-4 md:mb-9
+    lg:mt-24
+    xl:mt-20
 ">
       <div class="lg:-mx-[20px] xl:pt-4">
         <div class="flex items-center mb-5 lg:pt-2">
@@ -187,19 +203,29 @@
     </section>
 
     <section
-      class="hosts-section full-width h-screen/2 lg:h-screen*90 bg-no-repeat bg-cover bg-center"
+      class="hosts-section full-width h-[343px] bg-no-repeat bg-cover bg-center
+    md:h-[867px]
+    lg:h-[700px]
+    xl:h-[800px]
+    xxl:container xxl:!mx-auto xxl:rounded-[20px] xxl:mt-24 xxl:mb-16
+"
     >
       <div
-        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-2"
+        class="container m-auto flex flex-col justify-between items-start full-height pt-7 pb-8 px-5
+         md:px-2 md:pt-14 md:pb-14
+         lg:!px-5 lg:pt-14 lg:pb-14
+"
       >
-        <div class="flex flex-col items-start">
+        <div class="flex flex-col items-start md:mt-1">
           <r-logo
-            class="mb-3"
-            text_size_class="text-h5"
+            class="mb-3 md:mb-6 lg:mb-8"
+            text_size_class="text-[10px] tracking-1 md:text-[22px] lg:text-[30px] xl:text-[32px]"
             text_color_class="text-white"
+            logo_gap_class="mr-1 !text-[16px] md:mr-2 md:!text-[32px] md:!text-[42px] lg:mr-4"
             :always_text="true"
+            :logo_white="true"
           />
-          <h3 class="text-white">
+          <h3 class="text-white leading-120 text-[24px] md:text-[48px] lg:text-[64px] lg:leading-110">
             Сдавайте жильё <br/>
             в аренду
           </h3>
@@ -209,13 +235,19 @@
           color="white"
           text-color="black"
           no-caps
-          class="w-3/5 md:w-2/5 lg:w-1/5 py-1 md:py-2 xl:py-4"
+          class="order-btn flex items-center flex-col px-4 py-2 leading-100
+              md:py-3 md:px-4 md:mb-1
+              lg:py-1.5
+              xl:mb-0
+"
         >
-          <p
-            class="tracking-wider text-t3 md:text-h5 lg:text-h4 q-px-sm sm:whitespace-nowrap font-semibold px-0.5"
-          >
-            Узнать подробнее
-          </p>
+          <span
+            class="tracking-wider uppercase whitespace-nowrap text-[7px] q-pa-none font-bold
+            md:text-[16px] md:-tracking-2
+            lg:text-[20px] lg:py-2.5 lg:px-2
+
+"
+          >Узнать подробнее</span>
         </q-btn>
       </div>
     </section>
@@ -498,6 +530,22 @@
   }
 }
 
+@media (min-width: 768px) and (max-width: 1280px) {
+  .hosts-section {
+    background-image: url("/images/index-page/hosts-section/hosts-bg-md.png");
+  }
+
+  .help-section {
+    background-image: url("/images/index-page/help-section/help-bg-md.png");
+    background-position: right bottom;
+    background-size: 52%;
+  }
+
+  .load-app-section {
+    background-image: url("/images/index-page/load-app-section/load-app-bg-md.jpg");
+  }
+}
+
 @media (min-width: 1280px) and (max-width: 1440px) {
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-lg.png");
@@ -516,22 +564,6 @@
 
   .load-app-section {
     background-image: url("/images/index-page/load-app-section/load-app-bg-lg.jpg");
-  }
-}
-
-@media (min-width: 768px) and (max-width: 1280px) {
-  .hosts-section {
-    background-image: url("/images/index-page/hosts-section/hosts-bg-md.png");
-  }
-
-  .help-section {
-    background-image: url("/images/index-page/help-section/help-bg-md.png");
-    background-position: right bottom;
-    background-size: 52%;
-  }
-
-  .load-app-section {
-    background-image: url("/images/index-page/load-app-section/load-app-bg-md.jpg");
   }
 }
 

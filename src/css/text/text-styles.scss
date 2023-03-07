@@ -67,8 +67,14 @@ p {
 }
 
 .order-btn {
-  display: inline-block;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   min-height: 19px;
+
+  span {
+    line-height: 1;
+  }
 }
 
 .title-font {
