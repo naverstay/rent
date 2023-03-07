@@ -9,7 +9,7 @@
 
     <div class="flex items-center flex-wrap pt-5 w-full lg:pb-3">
       <span
-        class="rounded-full bg-gray-200 px-3 py-2.5 text-[12px] leading-150 font-semibold text-gray-400 inline-flex items-center
+        class="rounded-full bg-gray-200 px-3 py-2 text-[12px] leading-150 font-semibold text-gray-400 inline-flex items-center
         md:text-[14px]
         lg:text-[16px] lg:py-1.5
 

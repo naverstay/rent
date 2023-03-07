@@ -5,8 +5,8 @@
     <div class="col-span-2 grid grid-cols-2 gap-3 auto-rows-fr
     md:grid md:grid-cols-2 md:gap-5
     lg:gap-6 lg:col-span-4">
-      <div class="pt-4 pb-9 px-4 md:p-6 bg-white rounded-lg relative
-     md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
+      <div class="pt-4 pb-9 px-4 md:p-6 bg-white rounded-[20px] relative
+     md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
         <p class="text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
@@ -38,8 +38,8 @@
         </div>
       </div>
 
-      <div class="pt-4 pb-9 px-4 md:p-6 bg-white rounded-lg relative
-     md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
+      <div class="pt-4 pb-9 px-4 md:p-6 bg-white rounded-[20px] relative
+     md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
         <p class="text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
@@ -71,8 +71,8 @@
         </div>
       </div>
 
-      <div class="pt-4 pb-9 px-4 md:p-6 bg-white rounded-lg relative
-     md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
+      <div class="pt-4 pb-9 px-4 md:p-6 bg-white rounded-[20px] relative
+     md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
         <p class="text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
@@ -102,8 +102,8 @@
           </svg>
         </div>
       </div>
-      <div class="pt-4 pb-9 px-4 md:p-6 bg-white rounded-lg relative
-     md:rounded-[1rem] md:px-5 md:py-3 md:pb-11
+      <div class="pt-4 pb-9 px-4 md:p-6 bg-white rounded-[20px] relative
+     md:px-5 md:py-3 md:pb-11
      lg:pt-4 lg:pb-6
      xl:pt-6 xl:px-7 xl:pb-4">
         <p class="text-[1rem] -tracking-1 leading-100 font-semibold text-gray-900 mb-1
@@ -132,8 +132,8 @@
       </div>
     </div>
 
-    <div class="relative col-span-2 min-h-[186px] bg-white rounded-lg p-5 md:py-5 md:px-8
-     md:rounded-[1rem] md:flex flex-center justify-between
+    <div class="relative col-span-2 min-h-[186px] bg-white rounded-[20px] p-5 md:py-5 md:px-8
+     md:flex flex-center justify-between
      lg:min-h-full lg:block lg:pb-44 lg:pt-8 lg:px-7
 ">
       <div>

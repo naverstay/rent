@@ -1,6 +1,6 @@
 <template>
   <q-card
-    class="direction-card rounded-2xl flex-shrink-0 w-[309px] h-[351px] mr-2 py-5 px-5 flex flex-col justify-between items-start bg-cover
+    class="direction-card rounded-[20px] flex-shrink-0 w-[309px] h-[351px] mr-2 py-5 px-5 flex flex-col justify-between items-start bg-cover
      lg:w-[426px] lg:h-[434px] lg:p-8 lg:mr-4"
     :style="getBackgroud"
   >
@@ -25,7 +25,7 @@
 
 <style>
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .selection-btn {
     min-height: 32px;
   }

@@ -119,8 +119,9 @@
     </div>
 
     <div class="grid card-holder grid-cols-1 gap-10
-    md:grid-cols-2 md:gap-6 md:gap-y-9
-    lg:grid-cols-3 lg:gap-y-10">
+    md:grid-cols-2 md:gap-6 md:gap-y-10
+    lg:grid-cols-3
+">
       <CardMain title="Студия с дизайнерским ремонтом 3"/>
       <CardMain title="Дом в горах"/>
       <CardMain title="Комната у моря"/>

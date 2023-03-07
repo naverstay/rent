@@ -1,5 +1,9 @@
 // app global css in SCSS form
 
+html:root {
+  --app-scroll-size: 4px;
+}
+
 body {
   font-family: "Manrope", sans-serif;
 }
@@ -10,6 +14,27 @@ body {
 
 .q-focus-helper {
   z-index: 1;
+}
+
+.custom-scroll {
+  scrollbar-color: $dark $dark-grey;
+  scrollbar-width: thin;
+
+  &::-webkit-scrollbar {
+    height: var(--app-scroll-size);
+    width: var(--app-scroll-size);
+  }
+
+  &::-webkit-scrollbar-track {
+    height: var(--app-scroll-size);
+    width: var(--app-scroll-size);
+    background-color: $dark
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: $dark-grey;
+    border-radius: calc(var(--app-scroll-size) / 2);
+  }
 }
 
 @media (min-width: 768px) {

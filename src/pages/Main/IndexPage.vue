@@ -93,10 +93,11 @@
       </div>
     </section>
 
-    <section class="container m-auto mt-8 mb-16 lg:mt-14">
+    <section class="container m-auto mt-8 mb-14 md:mb-14 lg:mb-20 lg:mt-14 ">
       <div class="md:-mx-[20px] xl:pt-4">
-        <h2 class="mb-4 tracking-2 lg:mb-5">Популярные направления</h2>
-        <div class="flex flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
+        <h2 class="mb-5 tracking-2
+        md:mb-4 lg:mb-5">Популярные направления</h2>
+        <div class="flex custom-scroll flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
           <direction-card
             v-for="(item, index) in directions"
             :key="index"
@@ -108,61 +109,80 @@
     </section>
 
     <section class="container mx-auto">
-      <h2 class="mb-7">Отзывы о нас</h2>
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3">
-        <ReviewsComponent/>
-        <ReviewsComponent/>
-        <ReviewsComponent/>
+      <div class="lg:-mx-[20px] xl:pt-4 xxl:pt-6">
+        <h2 class="mb-3 md:mb-4">Отзывы о нас</h2>
+
+        <div class="flex custom-scroll flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
+          <ReviewsComponent/>
+          <ReviewsComponent/>
+          <ReviewsComponent/>
+        </div>
       </div>
     </section>
 
-    <section class="container m-auto my-10 q-px-sm">
-      <q-card
-        class="w-full h-48 md:h-80 lg:h-96 help-section bg-no-repeat bg-contain bg-right-bottom rounded-2xl"
-      >
-        <div
-          class="flex flex-col h-full justify-between align-start p-5 md:p-7"
-        >
-          <h3>
-            Нужна помощь <br/>
-            с подбором <br/>
-            жилья?
-          </h3>
-          <q-btn
-            rounded
-            color="black"
-            text-color="white"
-            class="w-1/3 py-1 md:py-2 xl:py-4"
-          >
-            <p
-              class="tracking-wider text-t4 md:text-h5 lg:text-h4 q-pa-none font-semibold"
-            >
-              Оставить заявку
-            </p>
-          </q-btn>
-        </div>
-      </q-card>
+    <section class="container m-auto my-12 q-px-sm md:mt-14 lg:mt-20">
+      <div class="lg:-mx-[20px] xl:pt-4">
+        <q-card
+          class="w-full h-[226px] help-section bg-no-repeat bg-contain bg-right-bottom rounded-[20px]
+        md:h-[270px]
+        lg:h-[612px]
+">
+          <div class="flex flex-col h-full justify-between align-start p-5
+        md:p-7
+        lg:pt-16 lg:px-9 lg:pb-14
+">
+            <h3 class="lg:max-w-[490px]
+    lg:text-[64px]
+    lg:mx-5
+">Нужна помощь с&nbsp;<span class="lg:hidden"><br/></span>подбором жилья?</h3>
+            <div class="md:pb-1 lg:ml-5">
+              <q-btn
+                rounded
+                color="black"
+                text-color="white"
+                class="order-btn flex items-center flex-col px-3 py-0 leading-100
+              md:py-2 md:px-4
+              xl:py-2"
+              >
+            <span class="tracking-wider whitespace-nowrap text-[8px] q-pa-none font-bold
+            md:text-[16px] md:-tracking-2
+            lg:text-[20px] lg:py-2.5 lg:px-2
+">Оставить заявку</span>
+              </q-btn>
+            </div>
+          </div>
+        </q-card>
+      </div>
     </section>
 
-    <section class="container mx-auto mt-24 mb-12">
-      <div class="flex items-center mb-8">
+    <section class="container mx-auto mt-16 mb-10 pt-2
+    md:pt-4
+    lg:mt-20
+">
+      <div class="lg:-mx-[20px] xl:pt-4">
+        <div class="flex items-center mb-5 lg:pt-2">
         <span
-          class="q-icon mr-3 h-6 sm:h-9"
-          style="font-size: 48px"
+          class="q-icon mr-3 text-[48px]
+          md:text-[66px] md:mr-6
+          lg:text-[74px]
+
+"
           aria-hidden="true"
           role="presentation"
         >
-          <img src="img:images/logo.svg"/>
+          <q-icon class="" name="img:images/logo.svg"/>
         </span>
-        <h2 class="self-center font-semibold whitespace-nowrap">
-          Новости Rent-A-part
-        </h2>
-      </div>
+          <h2 class="self-center font-bold tracking-3 whitespace-nowrap">
+            Новости<br/>
+            Rent-a-Part
+          </h2>
+        </div>
 
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-3 xl:grid-cols-3">
-        <NewsComponent/>
-        <NewsComponent/>
-        <NewsComponent/>
+        <div class="flex custom-scroll flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
+          <NewsComponent/>
+          <NewsComponent/>
+          <NewsComponent/>
+        </div>
       </div>
     </section>
 
@@ -462,14 +482,15 @@
   background-image: url("/images/index-page/main-banner-bg.png");
 }
 
-
 @media (max-width: 768px) {
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-sm.png");
   }
 
   .help-section {
-    background-image: url("/images/index-page/help-section/help-bg-sm.jpg");
+    background-image: url("/images/index-page/help-section/help-bg-sm.png");
+    background-position: right bottom;
+    background-size: 60%;
   }
 
   .load-app-section {
@@ -477,7 +498,7 @@
   }
 }
 
-@media (min-width: 1280px) and (max-width: 1439px) {
+@media (min-width: 1280px) and (max-width: 1440px) {
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-lg.png");
   }
@@ -488,7 +509,9 @@
   }
 
   .help-section {
-    background-image: url("/images/index-page/help-section/help-bg-lg.jpg");
+    background-image: url("/images/index-page/help-section/help-bg-lg.png");
+    background-position: right bottom;
+    background-size: 66%;
   }
 
   .load-app-section {
@@ -502,7 +525,9 @@
   }
 
   .help-section {
-    background-image: url("/images/index-page/help-section/help-bg-md.jpg");
+    background-image: url("/images/index-page/help-section/help-bg-md.png");
+    background-position: right bottom;
+    background-size: 52%;
   }
 
   .load-app-section {
@@ -521,7 +546,9 @@
   }
 
   .help-section {
-    background-image: url("/images/index-page/help-section/help-bg-xl.jpg");
+    background-image: url("/images/index-page/help-section/help-bg-xl.png");
+    background-position: right bottom;
+    background-size: 63%;
   }
 
   .load-app-section {
