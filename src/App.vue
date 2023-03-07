@@ -8,6 +8,7 @@ import "src/css/style.scss";
 import "src/css/colors.scss";
 import "src/css/quasar-ovveride.scss";
 import "src/css/text/text-styles.scss";
+import "src/css/text/text-styles-1440.scss";
 import "src/css/text/text-styles-1280.scss";
 import "src/css/text/text-styles-768.scss";
 import "src/css/text/text-styles-375.scss";

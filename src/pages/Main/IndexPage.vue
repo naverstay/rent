@@ -6,7 +6,9 @@
       <div
         class="container mx-auto py-4 mt-2 text-white flex flex-col justify-between h-3/4 items-center flex-nowrap p-5 flex-grow pb-7 text-center
          md:pt-14 md:pb-16
-         lg:flex lg:items-start lg:pb-16 xl:text-left xl:items-start xl:pb-14"
+         lg:flex lg:items-start lg:pb-16
+         xl:!px-6 xl:text-left xl:items-start xl:pb-14
+         xxl:!px-2"
       >
         <div
           class="flex flex-col items-center text-center xl:text-left xl:items-start px-5 md:px-0 lg:mr-auto lg:items-start"
@@ -73,14 +75,17 @@
 
     <section class="container m-auto">
       <div class="lg:-mx-[20px]">
-        <h2 class="mb-1 sm:text-center md:text-center lg:text-left xl:text-left tracking-2
-        lg:mb-3
+        <h2 class="mb-1 tracking-2 text-center
+        md:text-center
+        lg:text-left lg:mb-3
 ">Найти</h2>
         <div class="pb-12 mx-auto">
           <p class="text-[16px] font-medium text-gray-400 text-center leading-140 opacity-50 tracking-1
         md:py-1 md:text-[20px]
-        lg:text-left
-        xl:text-left">
+        lg:text-left lg:text-[24px] xl:pb-3
+
+
+">
             Аппартаменты, отель, коттедж...
           </p>
           <SearchComponent/>
@@ -88,10 +93,10 @@
       </div>
     </section>
 
-    <section class="container m-auto mt-8 mb-16">
-      <div class="md:-mx-[20px] lg:mx-0">
-        <h2 class="mb-4 tracking-2">Популярные направления</h2>
-        <div class="flex flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4">
+    <section class="container m-auto mt-8 mb-16 lg:mt-14">
+      <div class="md:-mx-[20px] xl:pt-4">
+        <h2 class="mb-4 tracking-2 lg:mb-5">Популярные направления</h2>
+        <div class="flex flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
           <direction-card
             v-for="(item, index) in directions"
             :key="index"
@@ -457,31 +462,18 @@
   background-image: url("/images/index-page/main-banner-bg.png");
 }
 
-@media (min-width: 1920px) {
-  .banner-section {
-  //min-height: 48vw; min-height: 920px;
-  }
 
-  .banner-section .container {
-    padding-bottom: 3.5rem;
-  }
-}
-
-@media (min-width: 1440px) {
+@media (max-width: 768px) {
   .hosts-section {
-    background-image: url("/images/index-page/hosts-section/hosts-bg-xl.png");
-  }
-
-  .banner-section {
-  //min-height: 58vw; min-height: 835px;
+    background-image: url("/images/index-page/hosts-section/hosts-bg-sm.png");
   }
 
   .help-section {
-    background-image: url("/images/index-page/help-section/help-bg-xl.jpg");
+    background-image: url("/images/index-page/help-section/help-bg-sm.jpg");
   }
 
   .load-app-section {
-    background-image: url("/images/index-page/load-app-section/load-app-bg-xl.jpg");
+    background-image: url("/images/index-page/load-app-section/load-app-bg-sm.jpg");
   }
 }
 
@@ -491,7 +483,8 @@
   }
 
   .banner-section {
-  //min-height: 55.875vw; min-height: 715px;
+    /* min-height: 55.875vw; */
+    min-height: 715px;
   }
 
   .help-section {
@@ -517,19 +510,37 @@
   }
 }
 
-@media (max-width: 768px) {
+@media (min-width: 1440px) {
   .hosts-section {
-    background-image: url("/images/index-page/hosts-section/hosts-bg-sm.png");
+    background-image: url("/images/index-page/hosts-section/hosts-bg-xl.png");
+  }
+
+  .banner-section {
+    /*  min-height: 58vw;*/
+    min-height: 835px;
   }
 
   .help-section {
-    background-image: url("/images/index-page/help-section/help-bg-sm.jpg");
+    background-image: url("/images/index-page/help-section/help-bg-xl.jpg");
   }
 
   .load-app-section {
-    background-image: url("/images/index-page/load-app-section/load-app-bg-sm.jpg");
+    background-image: url("/images/index-page/load-app-section/load-app-bg-xl.jpg");
   }
 }
+
+@media (min-width: 1920px) {
+  .banner-section {
+    /*min-height: 48vw; */
+
+    min-height: 915px;
+  }
+
+  .banner-section .container {
+    padding-bottom: 3.5rem;
+  }
+}
+
 </style>
 <script>
 import RLogo from "src/components/lib/RLogo.vue";

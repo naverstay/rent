@@ -7,9 +7,13 @@
       />
     </div>
 
-    <div class="flex items-center flex-wrap pt-5 w-full">
+    <div class="flex items-center flex-wrap pt-5 w-full lg:pb-3">
       <span
-        class="rounded-full bg-gray-200 px-3 py-2.5 text-[12px] leading-150 font-semibold text-gray-400 inline-flex items-center md:text-[14px]"
+        class="rounded-full bg-gray-200 px-3 py-2.5 text-[12px] leading-150 font-semibold text-gray-400 inline-flex items-center
+        md:text-[14px]
+        lg:text-[16px] lg:py-1.5
+
+"
       >Комната</span>
 
       <svg
@@ -102,18 +106,25 @@
     </div>
 
     <div class="my-2">
-      <span class="title-font text-xl font-semibold text-gray-900 cursor-pointer hover:text-rent-yellow "
+      <span class="title-font text-xl font-semibold text-gray-900 cursor-pointer hover:text-rent-yellow
+
+"
       >{{ title }}</span>
     </div>
 
     <div class="flex">
       <p class="font-medium text-gray-400">
         <q-icon name="img:images/icons/pin.png" class="p-0 mr-2 text-[20px]"/>
-        <span class="leading-140 tracking-2 text-[12px]">Краснодарский край, г. Сочи, ул Крымская</span>
+        <span class="leading-140 tracking-2 text-[12px] text-rent-dark-grey
+     md:text-[14px]
+     xl:text-[16px]
+">Краснодарский край, г. Сочи, ул Крымская</span>
       </p>
     </div>
 
-    <p class="mt-5 text-[16px] leading-140 text-gray-400 mb-auto md:text-[20px] ">
+    <p class="mt-5 text-[16px] leading-140 text-gray-400 mb-auto
+    md:text-[20px]
+    xl:text-[24px] xl:mt-8 ">
       <span>Цена от:</span><span class="font-extra-bold text-gray-900 mb-1 pl-[2px]">3977₽</span>
     </p>
   </div>
