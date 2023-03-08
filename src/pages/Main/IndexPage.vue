@@ -100,29 +100,87 @@
     xxl:mb-20
 ">
       <div class="md:-mx-[20px] xl:pt-4">
-        <h2 class="mb-5 tracking-2
+        <div class="flex">
+          <h2 class="mb-5 tracking-2
         md:mb-4
         xl:mb-5
 ">Популярные направления</h2>
-        <div class="flex custom-scroll flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
-          <direction-card
-            v-for="(item, index) in directions"
-            :key="index"
-            :image="item.image"
-            :title="item.title"
-          />
+          <div class="ml-auto hidden lg:!flex -mr-3">
+            <div class="cursor-pointer flex relative swiper-button swiper-button-prev w-10 h-10 items-center dirPrev">
+              <q-icon name="chevron_left" class="absolute text-[2.5rem]"/>
+            </div>
+            <div class="cursor-pointer flex relative swiper-button swiper-button-next w-10 h-10 items-center dirNext">
+              <q-icon name="chevron_right" class="absolute text-[2.5rem]"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="py-5 pr-4 lg:pr-12">
+          <swiper
+            class="!overflow-visible"
+            :slidesPerView="'auto'"
+            :slidesPerChange="1"
+            :spaceBetween="0"
+            freeMode
+            :navigation="{ nextEl: '.dirPrev', prevEl: '.dirNext'}"
+            :modules="swiperModules"
+            @init="onInit"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide v-for="(item, index) in directions"
+                          :key="index"
+                          class="!w-auto">
+              <direction-card
+                :image="item.image"
+                :title="item.title"
+              />
+            </swiper-slide>
+          </swiper>
         </div>
       </div>
     </section>
 
     <section class="container mx-auto">
       <div class="lg:-mx-[20px] xxl:pt-6">
-        <h2 class="mb-3 md:mb-4">Отзывы о нас</h2>
+        <div class="flex">
+          <h2 class="mb-3 md:mb-4">Отзывы о нас</h2>
+          <div class="ml-auto hidden lg:!flex -mr-3">
+            <div class="cursor-pointer flex relative swiper-button swiper-button-prev w-10 h-10 items-center revPrev">
+              <q-icon name="chevron_left" class="absolute text-[2.5rem]"/>
+            </div>
+            <div class="cursor-pointer flex relative swiper-button swiper-button-next w-10 h-10 items-center revNext">
+              <q-icon name="chevron_right" class="absolute text-[2.5rem]"/>
+            </div>
+          </div>
+        </div>
 
-        <div class="flex custom-scroll flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
-          <ReviewsComponent/>
-          <ReviewsComponent/>
-          <ReviewsComponent/>
+        <div class="py-5">
+          <swiper
+            class="!overflow-visible"
+            :slidesPerView="'auto'"
+            :slidesPerChange="1"
+            :spaceBetween="0"
+            freeMode
+            :navigation="{ nextEl: '.revPrev', prevEl: '.revNext'}"
+            :modules="swiperModules"
+            @init="onInit"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide class="!w-auto">
+              <ReviewsComponent/>
+            </swiper-slide>
+            <swiper-slide class="!w-auto">
+              <ReviewsComponent/>
+            </swiper-slide>
+            <swiper-slide class="!w-auto">
+              <ReviewsComponent/>
+            </swiper-slide>
+            <swiper-slide class="!w-auto">
+              <ReviewsComponent/>
+            </swiper-slide>
+          </swiper>
         </div>
       </div>
     </section>
@@ -177,27 +235,58 @@
 ">
       <div class="lg:-mx-[20px] xl:pt-4">
         <div class="flex items-center mb-5 lg:pt-2">
-        <span
-          class="q-icon mr-3 text-[48px]
+          <div class="flex items-center">
+                    <span
+                      class="q-icon mr-3 text-[48px]
           md:text-[66px] md:mr-6
           lg:text-[74px]
-
 "
-          aria-hidden="true"
-          role="presentation"
-        >
+                      aria-hidden="true"
+                      role="presentation"
+                    >
           <q-icon class="" name="img:images/logo.svg"/>
         </span>
-          <h2 class="self-center font-bold tracking-3 whitespace-nowrap">
-            Новости<br/>
-            Rent-a-Part
-          </h2>
+            <h2 class="self-center font-bold tracking-3 whitespace-nowrap">
+              Новости<br/>
+              Rent-a-Part
+            </h2>
+          </div>
+          <div class="ml-auto hidden lg:!flex -mr-3">
+            <div class="cursor-pointer flex relative swiper-button swiper-button-prev w-10 h-10 items-center newsPrev">
+              <q-icon name="chevron_left" class="absolute text-[2.5rem]"/>
+            </div>
+            <div class="cursor-pointer flex relative swiper-button swiper-button-next w-10 h-10 items-center newsNext">
+              <q-icon name="chevron_right" class="absolute text-[2.5rem]"/>
+            </div>
+          </div>
         </div>
 
-        <div class="flex custom-scroll flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
-          <NewsComponent/>
-          <NewsComponent/>
-          <NewsComponent/>
+        <div class="py-5 pr-4 lg:pr-12">
+          <swiper
+            class="!overflow-visible"
+            :slidesPerView="'auto'"
+            :slidesPerChange="1"
+            :spaceBetween="0"
+            freeMode
+            :navigation="{ nextEl: '.newsPrev', prevEl: '.newsNext'}"
+            :modules="swiperModules"
+            @init="onInit"
+            @swiper="onSwiper"
+            @slideChange="onSlideChange"
+          >
+            <swiper-slide class="!w-auto">
+               <NewsComponent/>
+            </swiper-slide>
+            <swiper-slide class="!w-auto">
+               <NewsComponent/>
+            </swiper-slide>
+            <swiper-slide class="!w-auto">
+               <NewsComponent/>
+            </swiper-slide>
+            <swiper-slide class="!w-auto">
+               <NewsComponent/>
+            </swiper-slide>
+          </swiper>
         </div>
       </div>
     </section>
@@ -514,6 +603,11 @@
   background-image: url("/images/index-page/main-banner-bg.png");
 }
 
+.swiper-button.swiper-button-disabled {
+  color: #dbdbdb;
+  pointer-events: none;
+}
+
 @media (max-width: 768px) {
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-sm.png");
@@ -614,10 +708,16 @@ import ReviewsComponent from "components/Search/ReviewsComponent";
 import NewsComponent from "components/Search/NewsComponent";
 import StocksComponent from "components/Search/StocksComponent";
 import PartnersComponent from "components/Search/PartnersComponent";
+import {Swiper, SwiperSlide} from 'swiper/vue';
+import {FreeMode, Grid, Manipulation, Navigation} from 'swiper'
+// Import Swiper styles
+import 'swiper/css';
 
 export default {
   name: "App",
   components: {
+    Swiper,
+    SwiperSlide,
     PartnersComponent,
     StocksComponent,
     SearchComponent,
@@ -630,6 +730,23 @@ export default {
     RSubscribeForm,
     ReviewsComponent,
     NewsComponent
+  },
+  setup() {
+    const onSwiper = (swiper) => {
+
+    };
+    const onInit = (swiper) => {
+
+    };
+    const onSlideChange = (swp) => {
+
+    };
+    return {
+      swiperModules: [FreeMode, Navigation, Manipulation, Grid],
+      onInit,
+      onSwiper,
+      onSlideChange
+    };
   },
   data() {
     return {

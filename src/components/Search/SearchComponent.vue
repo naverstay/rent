@@ -307,44 +307,44 @@
 }
 
 @media (min-width: 1280px) {
-  .custom-select.custom-select-34 ,
+  .custom-select.custom-select-34,
   .custom-select.custom-select-50 {
     min-height: 50px;
   }
 
-  .custom-select.custom-select-34.q-field--dense .q-field__control ,
+  .custom-select.custom-select-34.q-field--dense .q-field__control,
   .custom-select.custom-select-50.q-field--dense .q-field__control {
     min-height: 50px;
   }
 
-  .custom-select.custom-select-34.q-field--dense .q-field__marginal ,
+  .custom-select.custom-select-34.q-field--dense .q-field__marginal,
   .custom-select.custom-select-50.q-field--dense .q-field__marginal {
     height: 50px;
   }
 
-  .custom-select.custom-select-34.q-field--dense.q-field--labeled .q-field__native ,
+  .custom-select.custom-select-34.q-field--dense.q-field--labeled .q-field__native,
   .custom-select.custom-select-50.q-field--dense.q-field--labeled .q-field__native {
     min-height: 20px;
     font-size: 14px;
   }
 
-  .custom-select.custom-select-34.q-field--dense.q-field--labeled .q-field__label ,
+  .custom-select.custom-select-34.q-field--dense.q-field--labeled .q-field__label,
   .custom-select.custom-select-50.q-field--dense.q-field--labeled .q-field__label {
     top: 16px;
     font-size: 16px;
   }
 
-  .custom-select.custom-select-34.q-field--auto-height.q-field--dense.q-field--labeled .q-field__control-container ,
+  .custom-select.custom-select-34.q-field--auto-height.q-field--dense.q-field--labeled .q-field__control-container,
   .custom-select.custom-select-50.q-field--auto-height.q-field--dense.q-field--labeled .q-field__control-container {
     padding-top: 12px;
   }
 
-  .custom-select.custom-select-34.q-field--dense.q-field--float .q-field__label ,
+  .custom-select.custom-select-34.q-field--dense.q-field--float .q-field__label,
   .custom-select.custom-select-50.q-field--dense.q-field--float .q-field__label {
     transform: translateY(-50%) scale(0.75);
   }
 
-  .custom-select.custom-select-34.q-field--dense .q-field__marginal ,
+  .custom-select.custom-select-34.q-field--dense .q-field__marginal,
   .custom-select.custom-select-50.q-field--dense .q-field__marginal {
     height: 50px;
   }
