@@ -155,7 +155,6 @@
             </div>
           </div>
         </div>
-        <h2 class="mb-3 md:mb-4">Отзывы о нас</h2>
         <p class="cursor-pointer" @click="test = true">Показать модальное окно</p>
 
         <div class="py-5">
