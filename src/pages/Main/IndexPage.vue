@@ -1,4 +1,5 @@
 <template>
+  <ModalComponent :open="test" />
   <div class="bg-gray-100 overflow-x-hidden">
     <section
       class="banner-section flex flex-col min-h-screen w-screen bg-no-repeat bg-cover bg-center pt-24 rounded-2xl md:pt-28 lg:min-h-0"
@@ -118,6 +119,7 @@
     <section class="container mx-auto">
       <div class="lg:-mx-[20px] xxl:pt-6">
         <h2 class="mb-3 md:mb-4">Отзывы о нас</h2>
+        <p class="cursor-pointer" @click="test = true">Показать модальное окно</p>
 
         <div class="flex custom-scroll flex-row flex-nowrap overflow-x-auto w-screen py-5 pr-4 lg:pr-12">
           <ReviewsComponent/>
@@ -614,10 +616,12 @@ import ReviewsComponent from "components/Search/ReviewsComponent";
 import NewsComponent from "components/Search/NewsComponent";
 import StocksComponent from "components/Search/StocksComponent";
 import PartnersComponent from "components/Search/PartnersComponent";
+import ModalComponent from "components/Reviews/ModalComponent";
 
 export default {
   name: "App",
   components: {
+    ModalComponent,
     PartnersComponent,
     StocksComponent,
     SearchComponent,
@@ -633,6 +637,7 @@ export default {
   },
   data() {
     return {
+      test: false,
       directions: [
         {
           title: "Горные лыжи",
