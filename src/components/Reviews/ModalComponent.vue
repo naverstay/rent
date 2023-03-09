@@ -2,7 +2,7 @@
   <div id="overlay" class="fixed z-40 w-screen h-screen inset-0 bg-gray-900 bg-opacity-60" v-if="open"></div>
 
   <div v-if="open" data-te-modal-init=""
-       class="fixed lg:top-20 md:top-2 sm:top-8 sm:px-4 left-0 z-[1055] h-full w-full overflow-y-hidden overflow-x-hidden outline-none"
+       class="fixed lg:top-20 md:top-2 sm:top-8 sm:px-4 left-0 z-[1055] h-full w-full overflow-y overflow-x-hidden outline-none"
        id="exampleModalXl" tabindex="-1" aria-labelledby="exampleModalXlLabel" style="display: block;" aria-modal="true"
        role="dialog" data-te-open="true">
     <div data-te-modal-dialog-ref=""
