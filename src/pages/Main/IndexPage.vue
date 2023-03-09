@@ -229,7 +229,7 @@
     </section>
 
     <section class="container mx-auto mt-16 mb-10 pt-2
-    md:pt-4 md:mb-9
+    md:pt-4 md:mb-10
     lg:mt-24
     xl:mt-20
 ">
@@ -275,16 +275,16 @@
             @slideChange="onSlideChange"
           >
             <swiper-slide class="!w-auto">
-               <NewsComponent/>
+              <NewsComponent/>
             </swiper-slide>
             <swiper-slide class="!w-auto">
-               <NewsComponent/>
+              <NewsComponent/>
             </swiper-slide>
             <swiper-slide class="!w-auto">
-               <NewsComponent/>
+              <NewsComponent/>
             </swiper-slide>
             <swiper-slide class="!w-auto">
-               <NewsComponent/>
+              <NewsComponent/>
             </swiper-slide>
           </swiper>
         </div>
@@ -308,9 +308,9 @@
         <div class="flex flex-col items-start md:mt-1">
           <r-logo
             class="mb-3 md:mb-6 lg:mb-8"
-            text_size_class="text-[10px] tracking-1 md:text-[22px] lg:text-[30px] xl:text-[32px]"
+            text_size_class="text-[9px] tracking-5 md:tracking-1 md:text-[22px] lg:text-[30px] xl:text-[32px]"
             text_color_class="text-white"
-            logo_gap_class="mr-1 !text-[16px] md:mr-2 md:!text-[32px] md:!text-[42px] lg:mr-4"
+            logo_gap_class="mr-1 !text-[14px] md:mr-2 md:!text-[32px] lg:!text-[42px] lg:mr-4"
             :always_text="true"
             :logo_white="true"
           />
@@ -342,92 +342,115 @@
     </section>
 
     <section
-      class="load-app-section full-width h-screen/2 md:h-screen/2 bg-no-repeat bg-cover bg-center mb-5"
+      class="load-app-section full-width h-[348px] bg-no-repeat bg-cover bg-center mb-5
+         md:h-[404px]
+         lg:h-[408px]
+         xxl:container xxl:!mx-auto xxl:rounded-[20px] xxl:mt-16 xxl:mb-16
+"
     >
       <div
-        class="container m-auto flex flex-col justify-between items-start full-height py-7 px-5 md:px-2 flex-nowrap"
+        class="container m-auto flex flex-nowrap flex-col justify-between items-start full-height py-7 px-8
+        md:px-2 md:py-10
+        lg:!px-5
+"
       >
-        <div class="flex flex-col items-start">
-          <h3 class="text-white mb-3">
+        <div class="flex flex-col items-start lg:mt-6">
+          <h3 class="text-white mb-2 leading-115
+          md:text-[28px] md:leading-125 md:mb-3
+          lg:text-[48px] lg:leading-100 lg:mb-5
+          xxl:mb-3
+">
             Скачайте бесплатное <br/>
             приложение
           </h3>
-          <p class="font-light text-t3 text-white">
+          <p class="font-light text-white text-[12px] leading-150
+            md:text-[14px] md:leading-125
+            lg:text-[20px]
+">
             Выбирайте маршруты, путешествуйте, <br/>
             с комфортом бронируйте жилье
           </p>
         </div>
 
-        <div
-          class="flex flex-row items-center justify-between my-2 lg:flex-nowrap"
-        >
+        <div class="flex flex-col justify-between pt-5 pb-1 flex-grow items-start
+         md:pt-8 md:pb-0
+         lg:flex-nowrap lg:flex-row lg:items-center lg:mt-auto lg:pt-14
+">
+          <div class="flex flex-row gap-4
+            md:gap-12 md:-ml-1
+            lg:mx-12 lg:flex-nowrap lg:gap-14
+">
+            <a href="#" class="w-[59px] md:w-[118px] lg:w-[145px]">
+              <img
+                class="object-contain w-full"
+                src="/images/icons/app/as.svg"
+                alt="App store"
+              />
+            </a>
+            <a href="#" class="w-[63px] md:w-[129px] lg:w-[155px]">
+              <img
+                class="object-contain w-full"
+                src="/images/icons/app/gp.svg"
+                alt="Google Play"
+              />
+            </a>
+          </div>
+
+          <a href="#" class="w-[74px] mt-5
+           md:w-[148px] md:mt-6
+           lg:w-[181px] lg:mt-0 lg:ml-2
+">
+            <img
+              class="object-contain w-full"
+              src="/images/icons/app/ns.svg"
+              alt="Nash Store"
+            />
+          </a>
+
           <q-btn
             rounded
             color="white"
             text-color="black"
             no-caps
-            class="r-hidden lg:block w-2/5 lg:w-1/5 py-1 xl:py-4"
+            size="xs md:l"
+            class="py-1 px-8 mt-auto
+             mt-auto md:py-1 md:px-6
+             lg:-order-1 lg:mt-0 lg:py-3 lg:px-4
+"
           >
-            <p
-              class="tracking-wider text-t3 md:text-h5 lg:text-h4 q-px-sm whitespace-nowrap font-semibold text-center"
-            >
-              Скачать
-            </p>
+            <span
+              class="tracking-wider text-[8px] q-px-sm whitespace-nowrap font-semibold text-center uppercase
+              md:text-[16px]
+              lg:text-h4 lg:normal-case lg:text-[20px]
+">Скачать</span>
           </q-btn>
-          <div
-            class="flex flex-col lg:flex-row gap-4 lg:gap-8 lg:ml-10 lg:flex-nowrap"
-          >
-            <div class="flex flex-row flex-nowrap gap-4 lg:gap-8">
-              <img
-                class="object-contain w-24 lg:w-32"
-                src="/images/icons/app/nash-store.png"
-                alt="App store"
-              />
-              <img
-                class="object-contain w-24 lg:w-32"
-                src="/images/icons/app/nash-store.png"
-                alt="App store"
-              />
-            </div>
-
-            <div>
-              <img
-                class="object-contain w-24 lg:w-32"
-                src="/images/icons/app/nash-store.png"
-                alt="App store"
-              />
-            </div>
-          </div>
         </div>
-        <q-btn
-          rounded
-          color="white"
-          text-color="black"
-          no-caps
-          class="lg:hidden w-2/5 lg:w-1/5 py-1 xl:py-4"
-        >
-          <p
-            class="tracking-wider text-t3 md:text-h5 lg:text-h4 q-px-sm whitespace-nowrap font-semibold text-center"
-          >
-            Скачать
-          </p>
-        </q-btn>
       </div>
     </section>
 
-    <section class="container mx-auto px-5 my-12">
-      <h3 class="mb-8">Акции в Rent-A-Part</h3>
-      <div class="grid grid-cols-1 gap-4 md:grid-cols-2 xl:grid-cols-3">
+    <section class="container mx-auto !px-5 mt-10 mb-20 md:mt-16 md:mb-30">
+      <h3 class="mb-5 text-center tracking-1
+      md:text-left md:mb-9
+      lg:tracking-2
+">Акции в Rent-A-Part</h3>
+      <div class="">
         <StocksComponent/>
       </div>
     </section>
 
-    <section class="container mx-auto px-5">
-      <h3 class="mb-8">Наши партнеры</h3>
-      <div
-        class="grid grid-cols-4 gap-4 lg:grid-cols-4 md:grid-cols-4 sm:grid-cols-2"
-      >
-        <PartnersComponent v-for="n in 4" :key="n"/>
+    <section class="container mx-auto !px-5 md:pt-10 xxl:pt-12">
+      <h3 class="mb-7 text-center tracking-1
+      md:text-left md:mb-10
+      lg:mb-14
+">Наши партнеры</h3>
+
+      <div class="overflow-x-auto">
+        <div class="grid grid-cols-2 gap-5 partners-holder
+        md:grid-cols-4
+        lg:gap-9
+">
+          <PartnersComponent v-for="n in 4" :index="n" :key="n"/>
+        </div>
       </div>
     </section>
 
@@ -658,6 +681,18 @@
 
   .load-app-section {
     background-image: url("/images/index-page/load-app-section/load-app-bg-lg.jpg");
+  }
+}
+
+@media (min-width: 768px) {
+  .partners-holder {
+    grid-template-columns: repeat(4, 334px);
+  }
+}
+
+@media (min-width: 1280px) {
+  .partners-holder {
+    grid-template-columns: repeat(4, 302px);
   }
 }
 

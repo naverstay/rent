@@ -1,6 +1,12 @@
 <template>
-  <div class="p-6 bg-rent-red rounded-lg text-white">
-    <!--    <div class="space-y-1 text-2xl font-bold mb-2">ХАЛВА</div>-->
+  <div class="bg-rent-background rounded-[20px] flex justify-center h-[51px] p-2.5
+  md:rounded-[50px] md:h-[98px] md:p-5
+">
+    <img
+      class="object-contain h-full"
+      :src="`/images/index-page/logos/partner_${index}.png`"
+      :alt="`partner_${index}`"
+    />
   </div>
 </template>
 
@@ -10,7 +16,9 @@
 export default {
   name: "PartnersComponent",
 
-  props: {},
+  props: {
+    index: String
+  },
 
   components: {},
 
@@ -22,11 +30,12 @@ export default {
     return {};
   },
 
-  mounted() {},
+  mounted() {
+  },
 
   computed: {},
 
-  methods: {},
+  methods: {}
 };
 </script>
 
