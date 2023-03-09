@@ -1,18 +1,21 @@
 <template>
-  <div class="container lg:px-5 m-auto flex flex-col">
+  <div class="lg:px-5 m-auto flex flex-col">
     <div class="flex flex-col">
-      <h4>
+      <h4 class="leading-125 tracking-1">
         Хотите узнать <br />
         больше о Rent-a-Part?
       </h4>
-      <p class="font-normal opacity-50 mt-1 mb-3 lg:mb-7">
+      <p class="font-medium opacity-50 text-[12px] leading-150 mt-1 mb-1 lg:mb-7
+        md:text-[14px]
+        lg:text-[16px]
+">
         Подписывайтесь на email рассылку - получайте информацию о новых
         направлениях, полезный контент и доступ к акциям.
       </p>
     </div>
     <div class="mt-4">
       <q-input
-        class="full-width"
+        class="full-width subscribe--dense"
         label-color="grey-6"
         rounded
         outlined
@@ -20,7 +23,7 @@
         label="Email"
       >
         <template v-slot:append>
-          <div class="py-6">
+          <div class="-mt-1">
             <q-btn
               :disable="!email"
               color="yellow"
@@ -28,7 +31,7 @@
               rounded
               class="font-extralight py-1"
             >
-              <p class="tracking-wider text-t3 font-medium">Подписаться</p>
+              <span class="tracking-wider text-t3 font-medium">Подписаться</span>
             </q-btn>
           </div>
         </template>

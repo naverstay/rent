@@ -554,164 +554,147 @@
       <r-contact-form/>
     </section>
     <q-card class="rounded-2xl rounded-b-none">
-      <div class="container m-auto px-5">
-        <div
-          class="flex flex-row items-center justify-between full-width pt-10 pb-5 gl:pb-10"
-        >
+      <div class="container m-auto px-5 flex footer-grid lg:grid">
+        <div class="footer-logo flex -order-2 flex-row items-center justify-between full-width pt-6 pb-5 gl:pb-10">
           <div
-            class="flex flex-row md:flex-col w-full md:w-auto justify-between flex-nowrap md:flex-wrap md:justify-start"
-          >
+            class="flex flex-row md:flex-col w-full md:w-auto justify-between flex-nowrap md:flex-wrap md:justify-start">
             <r-logo
-              text_size_class="text-h5"
+              logo_gap_class="mr-2 !text-[20px] md:mr-2 md:!text-[32px] lg:!text-[42px] lg:mr-4"
+              text_size_class="text-[14px]"
               text_color_class="text-black"
               :always_text="true"
             />
-            <div
-              class="md:hidden flex flex-row items-center justify-start cursor-pointer"
-            >
-              <img
-                class="object-contain w-10 h-8 md:hidden"
-                src="/images/icons/travel-bot-icon.png"
-                alt="Travel bot"
-              />
-              <p class="text-t3 p-0 m-0 ml-1">Трэвел-бот</p>
-            </div>
-            <p class="r-hidden lg:block text-t5 opacity-30 p-0">
-              @Rent-a-part. Все права защищены
-            </p>
           </div>
-          <img class="r-hidden lg:block" src="/images/designed-by.png" alt=""/>
         </div>
 
-        <div class="container m-auto lg:hidden">
-          <r-subscribe-form/>
-        </div>
         <q-separator class="r-hidden lg:block"/>
-        <div
-          class="flex flex-row justify-between full-width flex-col lg:flex-row lg:flex-nowrap lg:gap-7 pb-8"
-        >
-          <div class="flex flex-col justify-between w-full md:w-5/12">
-            <div
-              class="flex flex-col lg:flex-row flex-row justify-start gap-x-20 mb-4"
-            >
-              <r-links-list
-                :allways_col="false"
-                :links="travels"
-                title="Путешествия"
-              />
-              <q-separator class="mt-4 lg:hidden"/>
-              <div class="flex flex-row lg:flex-col justify-start gap-x-20">
-                <r-links-list :links="excursions" title="Экскурсии"/>
-                <r-links-list :links="docs" title="Документы"/>
-              </div>
+
+        <!--        <div class="flex flex-row justify-between full-width flex-col lg:flex-row lg:flex-nowrap lg:gap-7 pb-8 pt-4">-->
+        <div class="footer-menu flex flex-col justify-between w-full md:w-5/12">
+          <div class="flex flex-col lg:flex-row flex-row justify-start gap-x-20 mb-4">
+            <r-links-list
+              :allways_col="false"
+              :links="travels"
+              title="Путешествия"
+            />
+            <q-separator class="mt-4 lg:hidden"/>
+            <div class="flex flex-col sm:flex-row lg:flex-col justify-start gap-x-20">
+              <r-links-list :links="excursions" title="Экскурсии"/>
+              <r-links-list :links="docs" title="Документы"/>
             </div>
-            <q-separator/>
-            <div class="flex flex-row justify-start gap-x-20 mb-4 lg:gap-x-24">
-              <r-links-list
-                :links="[
+          </div>
+          <q-separator/>
+          <div class="flex flex-row justify-start gap-x-20 mb-4 lg:gap-x-24">
+            <r-links-list
+              :links="[
                   { label: '+8 (945) 105-43-21', link: 'tel:+79451054321' },
                 ]"
-                title="Телефон"
-              />
-              <r-links-list
-                :links="[
+              title="Телефон"
+            />
+            <r-links-list
+              :links="[
                   {
                     label: 'info@rent-a-part.ru',
                     link: 'mailto:info@rent-a-part.ru',
                   },
                 ]"
-                title="Email"
-              />
-              <r-links-list
-                class="lg:hidden"
-                :links="[
+              title="Email"
+            />
+            <r-links-list
+              class="lg:hidden"
+              :links="[
                   {
                     label:
                       '119333 Москва г, Москва г,  Ленинский пр-кт, д. 57, А/Я 346',
                     link: '',
                   },
                 ]"
-                title="Адрес"
-              />
-            </div>
-            <q-separator class="r-hidden lg:block"/>
-            <div
-              class="r-hidden lg:block flex flex-row justify-between full-width mb-4"
-            >
-              <r-links-list
-                :links="[
-                  {
-                    label:
-                      '119333 Москва г, Москва г,  Ленинский пр-кт, д. 57, А/Я 346',
-                    link: '',
-                  },
-                ]"
-                title="Адрес"
-              />
-            </div>
+              title="Адрес"
+            />
           </div>
 
-          <div
-            class="flex flex-col justify-between w-full md:w-7/12 full-height mt-4"
-          >
-            <r-subscribe-form class="r-hidden lg:block"/>
-            <div class="my-3 mb-5 lg:my-12 lg:ml-4">
-              <div class="text-t4 mb-2">Загружайте наше приложение:</div>
-              <div
-                class="flex flex-row justify-between flex-nowrap md:flex-wrap gap-3 lg:gap-0.5"
-              >
+          <q-separator class="r-hidden lg:block"/>
+
+        </div>
+
+        <div class="footer-form -order-1 lg:order-0 mb-4">
+          <r-subscribe-form/>
+        </div>
+
+        <div class="footer-contacts flex flex-col justify-between w-full md:w-7/12 full-height mt-4">
+          <div class="my-3 mb-5 lg:my-12 lg:ml-4">
+            <div class="text-[12px] mb-2 leading-140 font-medium
+    md:text-[14px]
+">Загружайте <br class="md:hidden"/> наше приложение:
+            </div>
+            <div
+              class="flex flex-row items-center justify-between flex-nowrap md:flex-wrap gap-3 lg:gap-0.5"
+            >
+              <div class="w-[92px] md:w-[140px]">
                 <img
-                  class="object-contain w-3/12 md:w-48"
+                  class="object-contain"
                   src="/images/app-store-btn.png"
                   alt="App store"
                 />
+              </div>
+              <div class="w-[96px] md:w-[146px]">
                 <img
-                  class="object-contain w-3/12 md:w-48"
+                  class="object-contain"
                   src="/images/google-play-btn.png"
                   alt="Google play"
                 />
+              </div>
+
+              <div class="w-[113px] md:w-[172px]">
                 <img
-                  class="object-contain w-3/12 md:w-48"
+                  class="object-contain"
                   src="/images/nash-store-btn.png"
                   alt="Nash store"
                 />
               </div>
             </div>
-            <div
-              class="flex flex-row no-wrap justify-between items-center lg:justify-start gap-5 lg:ml-4"
-            >
-              <p class="lg:hidden text-t5 opacity-30 p-0">
-                @Rent-a-part. <br/>
-                Все права защищены
-              </p>
+          </div>
+          <div class="flex flex-row no-wrap justify-between items-center lg:justify-start gap-1 lg:ml-4 pt-2 pb-4">
+            <p class="text-[8px] lg:text-[10px] lg:opacity-30 p-0 mr-auto">
+              @Rent-a-part. Все права защищены
+            </p>
+            <a href="#" class="w-6 h-6 md:w-8 md:h-8 lg:w-auto lg:h-auto">
               <img
-                class="object-contain w-8 h-8 lg:w-auto lg:h-auto"
+                class="object-contain"
                 src="/images/icons/vk-icon.png"
                 alt="VK"
               />
+            </a>
+
+            <a href="#" class="w-6 h-6 md:w-8 md:h-8 lg:w-auto lg:h-auto">
               <img
-                class="object-contain w-8 h-8 lg:w-auto lg:h-auto"
+                class="object-contain"
                 src="/images/icons/telegram-icon.png"
                 alt="Telegram"
               />
-              <div
-                class="r-hidden md:flex flex flex-row items-center justify-start cursor-pointer"
-              >
-                <img
-                  class="object-contan w-8 h-8 lg:w-auto lg:h-auto"
-                  src="/images/icons/travel-bot-icon.png"
-                  alt="Travel bot"
-                />
-                <p class="text-t3 p-0 m-0 ml-3">Трэвел-бот</p>
-              </div>
+            </a>
+
+            <div class="flex flex-row items-center justify-start cursor-pointer absolute top-6 right-5
+              md:relative lg:top-0 lg:right-0">
               <img
-                class="w-24 h-8 lg:hidden"
+                class="object-contain w-6 h-6
+                  md:w-8 md:h-8
+                  lg:w-auto lg:h-auto"
+                src="/images/icons/travel-bot-icon.png"
+                alt="Travel bot"
+              />
+              <span class="text-[12px] font-semibold leading-150 p-0 m-0 ml-2">Трэвел-бот</span>
+            </div>
+
+            <div class="w-[71px] md:w-[115px] ml-9">
+              <img
                 src="/images/designed-by.png"
                 alt=""
               />
             </div>
           </div>
         </div>
+        <!--        </div>-->
       </div>
     </q-card>
   </div>
@@ -745,6 +728,16 @@
   .load-app-section {
     background-image: url("/images/index-page/load-app-section/load-app-bg-sm.jpg");
   }
+}
+
+@media (min-width: 1280px) {
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: "logo logo"
+                         "menu form"
+                         "menu contacts";
+  }
+
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {

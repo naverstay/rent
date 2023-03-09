@@ -71,6 +71,16 @@
 
 }
 
+.subscribe--dense {
+  .q-field__label {
+    font-size: 12px;
+  }
+
+  .q-field__control {
+    padding: 0 16px;
+  }
+}
+
 @media (min-width: 768px) {
   .header-logo {
     height: .9em;
@@ -90,11 +100,23 @@
     }
   }
 
+  .subscribe--dense {
+    .q-field__label {
+      font-size: 14px;
+    }
+  }
+
 }
 
 @media (min-width: 1280px) {
   .header-logo {
     height: .5em;
+  }
+
+  .subscribe--dense {
+    .q-field__label {
+      font-size: 16px;
+    }
   }
 }
 
