@@ -1,5 +1,5 @@
 <template>
-  <ModalComponent :open="test" />
+  <ModalComponent :open="test"/>
   <div class="bg-gray-100 overflow-x-hidden">
     <section
       class="banner-section flex flex-col min-h-screen w-screen bg-no-repeat bg-cover bg-center pt-24 rounded-2xl md:pt-28 lg:min-h-0"
@@ -213,13 +213,14 @@
                 rounded
                 color="black"
                 text-color="white"
-                class="order-btn flex items-center flex-col px-3 py-1 leading-100
+                size="xs md:l"
+                class="flex items-center flex-col px-3 py-1.5 order-btn
               md:py-3 md:px-4
               lg:py-1.5
               xl:py-2"
               >
             <span class="tracking-wider whitespace-nowrap text-[8px] q-pa-none font-bold
-            md:text-[16px] md:-tracking-2
+            md:text-[16px] md:-tracking-2 leading-100
             lg:text-[20px] lg:py-2.5 lg:px-2
             xl:py-2
 ">Оставить заявку</span>
@@ -326,14 +327,15 @@
           color="white"
           text-color="black"
           no-caps
-          class="order-btn flex items-center flex-col px-4 py-2 leading-100
+          size="xs md:l"
+          class="flex items-center flex-col px-4 py-2 leading-100 order-btn
               md:py-3 md:px-4 md:mb-1
               lg:py-1.5
               xl:mb-0
 "
         >
           <span
-            class="tracking-wider uppercase whitespace-nowrap text-[7px] q-pa-none font-bold
+            class="tracking-wider uppercase leading-100 whitespace-nowrap text-[7px] q-pa-none font-bold
             md:text-[16px] md:-tracking-2
             lg:text-[20px] lg:py-2.5 lg:px-2
 
@@ -415,13 +417,13 @@
             text-color="black"
             no-caps
             size="xs md:l"
-            class="py-1 px-8 mt-auto
-             mt-auto md:py-1 md:px-6
+            class="py-2 px-8 mt-auto order-btn
+             md:py-3 md:px-6
              lg:-order-1 lg:mt-0 lg:py-3 lg:px-4
 "
           >
             <span
-              class="tracking-wider text-[8px] q-px-sm whitespace-nowrap font-semibold text-center uppercase
+              class="tracking-wider text-[8px] leading-100 q-px-sm whitespace-nowrap font-semibold text-center uppercase
               md:text-[16px]
               lg:text-h4 lg:normal-case lg:text-[20px]
 ">Скачать</span>
@@ -430,7 +432,10 @@
       </div>
     </section>
 
-    <section class="container mx-auto !px-5 mt-10 mb-20 md:mt-16 md:mb-30">
+    <section class="container mx-auto mt-10 mb-20
+      md:mt-16 md:mb-30
+      lg:!px-5
+">
       <h3 class="mb-5 text-center tracking-1
       md:text-left md:mb-9
       lg:tracking-2
@@ -440,23 +445,112 @@
       </div>
     </section>
 
-    <section class="container mx-auto !px-5 md:pt-10 xxl:pt-12">
-      <h3 class="mb-7 text-center tracking-1
+    <section class="container mx-auto pb-10 mb-7
+    md:pt-10
+    lg:!px-5 xxl:pt-12 lg:mb-16 ">
+      <div class="md:flex">
+        <h3 class="mb-7 text-center tracking-1
       md:text-left md:mb-10
       lg:mb-14
 ">Наши партнеры</h3>
+        <div class="ml-auto hidden lg:!flex -mr-3">
+          <div class="cursor-pointer flex relative swiper-button swiper-button-prev w-10 h-10 items-center partPrev">
+            <q-icon name="chevron_left" class="absolute text-[2.5rem]"/>
+          </div>
+          <div class="cursor-pointer flex relative swiper-button swiper-button-next w-10 h-10 items-center partNext">
+            <q-icon name="chevron_right" class="absolute text-[2.5rem]"/>
+          </div>
+        </div>
+      </div>
 
-      <div class="overflow-x-auto">
-        <div class="grid grid-cols-2 gap-5 partners-holder
-        md:grid-cols-4
-        lg:gap-9
+      <div class="partners-holder">
+        <swiper
+          class="!overflow-visible"
+          :slidesPerView="'auto'"
+          :slidesPerChange="1"
+          :spaceBetween="0"
+          :breakpoints="{ 768: 'destroy' }"
+          freeMode
+          :navigation="{ nextEl: '.partPrev', prevEl: '.partNext'}"
+          :modules="swiperModules"
+          @init="onInit"
+          @swiper="onSwiper"
+          @slideChange="onSlideChange"
+        >
+          <swiper-slide v-for="n in 4"
+                        :key="n"
+                        class="!w-auto">
+            <PartnersComponent :index="n"/>
+          </swiper-slide>
+        </swiper>
+      </div>
+    </section>
+
+    <section class="container mx-auto !px-5 text-white
+     md:pt-8
+     lg:pb-16
+     xxl:pt-5">
+      <div class="rounded-[20px] relative region-image p-5
+        h-[708px]
+        md:h-[984px] md:mx-5 md:p-7
+        lg:h-[615px] lg:mx-0 lg:p-16 lg:pb-14
 ">
-          <PartnersComponent v-for="n in 4" :index="n" :key="n"/>
+        <div class="h-full flex flex-col items-start lg:-mt-1 lg:-mx-1">
+          <div class="rounded-[50px] mb-8 border border-2 border-white py-2 px-3 text-[8px] font-semibold leading-100
+      md:text-[16px] md:py-3 md:px-4 md:mb-7
+      lg:px-6 lg:mb-8
+">Регион месяца
+          </div>
+
+          <h3 class="mb-5 text-[40px] text-yauzatygra leading-115
+      md:text-[64px] md:mb-4
+      lg:mb-5 lg:text-[88px]
+">Крым</h3>
+          <div class="text-[12px] text-helvetica-neue font-medium leading-125
+      md:text-[16px]
+      lg:text-[14px] lg:font-normal lg:w-3/5
+">
+            Горнолыжный курорт Роза Хутор находится в Краснодарском крае в 50 км от Чёрного моря, у подножия Главного
+            Кавказского хребта. Горнолыжная инфраструктура расположена на склоне хребта Аибга. На курорте кататься можно
+            не
+            только на лыжах, но и на санях и «ватрушках» (на специальной трассе), собачьих упряжках и на коньках. А еще
+            есть
+            родельбан с тремя кольцами-виражами. Другие популярные развлечения — вылетающие за край обрыва горные качели
+            на
+            Пике, парапланы в тандеме с инструктором, термальные комплексы, бассейны и многое другое.
+          </div>
+          <q-btn
+            rounded
+            color="white"
+            text-color="black"
+            no-caps
+            size="xs md:l"
+            class="py-2 px-8 mt-auto order-btn
+             md:px-6 md:py-3
+             lg:py-3 lg:px-4
+"
+          >
+            <!--
+
+                      class="order-btn flex items-center flex-col px-4 py-2 leading-100 mt-auto
+                          md:py-3 md:px-4 md:mb-1
+                          lg:py-1.5
+                          xl:mb-0
+            "
+
+            -->
+            <span
+              class="tracking-wider uppercase leading-100 whitespace-nowrap text-[7px] q-pa-none font-bold
+            md:text-[16px] md:-tracking-2
+            lg:text-[20px] lg:py-1.5 lg:px-2
+"
+            >Читать далее</span>
+          </q-btn>
         </div>
       </div>
     </section>
 
-    <section class="mt-12">
+    <section class="mt-10 md:mt-16">
       <r-contact-form/>
     </section>
     <q-card class="rounded-2xl rounded-b-none">
@@ -623,7 +717,7 @@
   </div>
 </template>
 
-<style scoped>
+<style>
 .banner-section {
   background-image: url("/images/index-page/main-banner-bg.png");
 }
@@ -634,6 +728,10 @@
 }
 
 @media (max-width: 768px) {
+  .region-image {
+    background-image: url("/images/index-page/region-section/region_sm.png");
+  }
+
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-sm.png");
   }
@@ -650,6 +748,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 1280px) {
+  .region-image {
+    background-image: url("/images/index-page/region-section/region_md.png");
+  }
+
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-md.png");
   }
@@ -666,6 +768,10 @@
 }
 
 @media (min-width: 1280px) and (max-width: 1440px) {
+  .region-image {
+    background-image: url("/images/index-page/region-section/region_lg.png");
+  }
+
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-lg.png");
   }
@@ -686,19 +792,23 @@
   }
 }
 
-@media (min-width: 768px) {
-  .partners-holder {
-    grid-template-columns: repeat(4, 334px);
+@media (max-width: 767px) {
+  .partners-holder .swiper-wrapper {
+    transform: none !important;
+    display: grid;
+    gap: 1.25rem;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
-}
 
-@media (min-width: 1280px) {
   .partners-holder {
-    grid-template-columns: repeat(4, 302px);
   }
 }
 
 @media (min-width: 1440px) {
+  .region-image {
+    background-image: url("/images/index-page/region-section/region_xl.png");
+  }
+
   .hosts-section {
     background-image: url("/images/index-page/hosts-section/hosts-bg-xl.png");
   }
@@ -729,6 +839,11 @@
   .banner-section .container {
     padding-bottom: 3.5rem;
   }
+}
+
+.region-image {
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 </style>

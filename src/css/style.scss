@@ -8,6 +8,11 @@
 }
 
 @font-face {
+  font-family: "Yauzatygra";
+  src: url("src/assets/fonts/yauza/Yauza.ttf");
+}
+
+@font-face {
   font-family: "Helvetica Neue";
   src: url("src/assets/fonts/helvetica/HelveticaNeueBoldCondensed.eot");
 }
@@ -18,6 +23,10 @@
 
 .text-manrope {
   font-family: "Manrope", sans-serif !important;
+}
+
+.text-yauzatygra {
+  font-family: "Yauzatygra" !important;
 }
 
 .text-helvetica-neue {
@@ -41,6 +50,27 @@
   min-height: 27px;
 }
 
+@media (max-width: 767px) {
+  .mobile--dense {
+    &.q-field--labeled .q-field__native,
+    &.q-field--labeled .q-field__prefix,
+    &.q-field--labeled .q-field__suffix {
+      padding-top: 14px;
+      padding-bottom: 2px;
+    }
+
+    .q-field__control {
+      height: 40px;
+    }
+
+    .q-field__label {
+      font-size: 12px;
+      top: 10px;
+    }
+  }
+
+}
+
 @media (min-width: 768px) {
   .header-logo {
     height: .9em;
@@ -48,6 +78,16 @@
 
   .small-logo {
     height: .8em;
+  }
+
+  .mobile--dense {
+    .q-field__label {
+      font-size: 14px;
+    }
+
+    .q-field__control {
+      padding: 0 24px;
+    }
   }
 
 }
