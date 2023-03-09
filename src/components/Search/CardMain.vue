@@ -1,10 +1,35 @@
 <template>
   <div class="flex flex-col justify-between shadow-none card-item">
+
     <div class="image-holder rounded-[15px] relative cursor-pointer overflow-hidden pb-[100%]">
-      <img
-        src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
-        class="absolute min-w-full object-cover min-h-full"
-      />
+      <q-carousel
+        animated
+        v-model="slide"
+        navigation
+        infinite
+        class="absolute top-[0] left-[0] w-full h-full bg-none"
+      >
+        <q-carousel-slide class="relative bg-none" :name="1">
+          <img alt="" class="absolute min-w-full object-cover min-h-full"
+               src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80"
+          />
+        </q-carousel-slide>
+        <q-carousel-slide class="relative bg-none" :name="2">
+          <img alt="" class="absolute min-w-full object-cover min-h-full"
+               src="https://cdn.quasar.dev/img/quasar.jpg"
+          />
+        </q-carousel-slide>
+        <q-carousel-slide class="relative bg-none" :name="2">
+          <img alt="" class="absolute min-w-full object-cover min-h-full"
+               src="https://cdn.quasar.dev/img/mountains.jpg"
+          />
+        </q-carousel-slide>
+        <q-carousel-slide class="relative bg-none" :name="3">
+          <img alt="" class="absolute min-w-full object-cover min-h-full"
+               src="https://cdn.quasar.dev/img/parallax2.jpg"
+          />
+        </q-carousel-slide>
+      </q-carousel>
     </div>
 
     <div class="flex items-center flex-wrap pt-5 w-full lg:pb-3">
@@ -12,7 +37,6 @@
         class="rounded-full bg-gray-200 px-3 py-2 text-[12px] leading-150 font-semibold text-gray-400 inline-flex items-center
         md:text-[14px]
         lg:text-[16px] lg:py-1.5
-
 "
       >Комната</span>
 
@@ -141,6 +165,7 @@
 
 <script>
 // import ...
+import { ref } from "vue";
 
 export default {
   name: "CardMain",
@@ -155,7 +180,9 @@ export default {
   components: {},
 
   setup() {
-    return {};
+    return {
+      slide: ref(1),
+    };
   },
 
   data() {
