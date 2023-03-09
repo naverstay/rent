@@ -55,10 +55,11 @@ module.exports = {
         "rent-background": "#fafcfe",
         "rent-primary": "#f2b348",
         "rent-blue": "#3e8bff",
-        "rent-black": "#black",
+        "rent-black": "#2F2F2F",
         "rent-dark-grey": "#a7aaac",
         "rent-grey": "#dbdbdb",
         "rent-light-grey": "#e8eff4",
+        "rent-light-h": "#333333",
       },
       fontWeight: {
         hairline: "100",

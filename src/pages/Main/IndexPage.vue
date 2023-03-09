@@ -1,4 +1,5 @@
 <template>
+  <ModalComponent :open="test" />
   <div class="bg-gray-100 overflow-x-hidden">
     <section
       class="banner-section flex flex-col min-h-screen w-screen bg-no-repeat bg-cover bg-center pt-24 rounded-2xl md:pt-28 lg:min-h-0"
@@ -154,6 +155,7 @@
             </div>
           </div>
         </div>
+        <p class="cursor-pointer" @click="test = true">Показать модальное окно</p>
 
         <div class="py-5">
           <swiper
@@ -747,12 +749,14 @@ import {Swiper, SwiperSlide} from 'swiper/vue';
 import {FreeMode, Grid, Manipulation, Navigation} from 'swiper'
 // Import Swiper styles
 import 'swiper/css';
+import ModalComponent from "components/Reviews/ModalComponent";
 
 export default {
   name: "App",
   components: {
     Swiper,
     SwiperSlide,
+    ModalComponent,
     PartnersComponent,
     StocksComponent,
     SearchComponent,
@@ -785,6 +789,7 @@ export default {
   },
   data() {
     return {
+      test: false,
       directions: [
         {
           title: "Горные лыжи",
