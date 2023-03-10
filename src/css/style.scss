@@ -103,9 +103,22 @@
   .subscribe--dense {
     .q-field__label {
       font-size: 14px;
+      top: 25px;
+    }
+
+    .q-field__marginal {
+      height: 70px;
+    }
+
+    .q-field__control {
+      height: 70px;
+      padding: 0 24px;
+    }
+
+    &.q-field--outlined.q-field--rounded .q-field__control {
+      border-radius: 35px;
     }
   }
-
 }
 
 @media (min-width: 1280px) {

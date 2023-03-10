@@ -1,6 +1,6 @@
 <template>
   <ModalComponent :open="test"/>
-  <div class="bg-gray-100 overflow-x-hidden">
+  <div class="bg-gray-100">
     <section
       class="banner-section flex flex-col min-h-screen w-screen bg-no-repeat bg-cover bg-center pt-24 rounded-2xl md:pt-28 lg:min-h-0"
     >
@@ -530,15 +530,6 @@
              lg:py-3 lg:px-4
 "
           >
-            <!--
-
-                      class="order-btn flex items-center flex-col px-4 py-2 leading-100 mt-auto
-                          md:py-3 md:px-4 md:mb-1
-                          lg:py-1.5
-                          xl:mb-0
-            "
-
-            -->
             <span
               class="tracking-wider uppercase leading-100 whitespace-nowrap text-[7px] q-pa-none font-bold
             md:text-[16px] md:-tracking-2
@@ -553,14 +544,17 @@
     <section class="mt-10 md:mt-16">
       <r-contact-form/>
     </section>
-    <q-card class="rounded-2xl rounded-b-none">
+
+    <q-card class="rounded-[20px] rounded-b-none shadow-none footer-holder">
       <div class="container m-auto px-5 flex footer-grid lg:grid">
-        <div class="footer-logo flex -order-2 flex-row items-center justify-between full-width pt-6 pb-5 gl:pb-10">
+        <div class="footer-logo flex -order-2 flex-row items-center justify-between full-width pt-6 pb-5
+        md:pt-10 md:pb-7
+        xl:pb-10">
           <div
             class="flex flex-row md:flex-col w-full md:w-auto justify-between flex-nowrap md:flex-wrap md:justify-start">
             <r-logo
-              logo_gap_class="mr-2 !text-[20px] md:mr-2 md:!text-[32px] lg:!text-[42px] lg:mr-4"
-              text_size_class="text-[14px]"
+              logo_gap_class="mr-2 !text-[20px] md:mr-3 lg:!text-[42px] lg:mr-4"
+              text_size_class="text-[14px] md:text-[18px] "
               text_color_class="text-black"
               :always_text="true"
             />
@@ -570,25 +564,35 @@
         <q-separator class="r-hidden lg:block"/>
 
         <!--        <div class="flex flex-row justify-between full-width flex-col lg:flex-row lg:flex-nowrap lg:gap-7 pb-8 pt-4">-->
-        <div class="footer-menu flex flex-col justify-between w-full md:w-5/12">
+        <div class="footer-menu flex flex-col justify-between w-full
+        lg:w-5/12
+">
           <div class="flex flex-col lg:flex-row flex-row justify-start gap-x-20 mb-4">
             <r-links-list
               :allways_col="false"
               :links="travels"
               title="Путешествия"
             />
-            <q-separator class="mt-4 lg:hidden"/>
-            <div class="flex flex-col sm:flex-row lg:flex-col justify-start gap-x-20">
+
+            <q-separator class="mt-4 md:mb-2 lg:hidden"/>
+
+            <div class="flex flex-col sm:flex-row lg:flex-col justify-start gap-x-20
+            md:gap-x-10">
               <r-links-list :links="excursions" title="Экскурсии"/>
               <r-links-list :links="docs" title="Документы"/>
             </div>
           </div>
-          <q-separator/>
-          <div class="flex flex-row justify-start gap-x-20 mb-4 lg:gap-x-24">
+
+          <q-separator class="md:mb-2"/>
+
+          <div class="flex flex-row justify-start gap-x-20 mb-4
+          md:gap-x-10 md:mb-0
+          lg:gap-x-24">
             <r-links-list
               :links="[
                   { label: '+8 (945) 105-43-21', link: 'tel:+79451054321' },
                 ]"
+              label_cls="mt-5 mb-2"
               title="Телефон"
             />
             <r-links-list
@@ -598,10 +602,11 @@
                     link: 'mailto:info@rent-a-part.ru',
                   },
                 ]"
+              label_cls="mt-5 mb-2"
               title="Email"
             />
             <r-links-list
-              class="lg:hidden"
+              class="md:max-w-[250px]"
               :links="[
                   {
                     label:
@@ -609,6 +614,7 @@
                     link: '',
                   },
                 ]"
+              label_cls="mt-7 mb-2 md:mt-5"
               title="Адрес"
             />
           </div>
@@ -617,18 +623,27 @@
 
         </div>
 
-        <div class="footer-form -order-1 lg:order-0 mb-4">
+        <div class="footer-form -order-1 mb-4
+        md:mb-1
+        lg:order-0
+">
           <r-subscribe-form/>
         </div>
 
-        <div class="footer-contacts flex flex-col justify-between w-full md:w-7/12 full-height mt-4">
-          <div class="my-3 mb-5 lg:my-12 lg:ml-4">
+        <div class="footer-contacts flex flex-col justify-between w-full full-height mt-4
+      lg:w-7/12
+">
+          <div class="my-3 mb-5
+           md:mt-2
+           lg:my-12 lg:ml-4">
             <div class="text-[12px] mb-2 leading-140 font-medium
-    md:text-[14px]
+    md:text-[15px]
 ">Загружайте <br class="md:hidden"/> наше приложение:
             </div>
             <div
-              class="flex flex-row items-center justify-between flex-nowrap md:flex-wrap gap-3 lg:gap-0.5"
+              class="flex flex-row items-center justify-between flex-nowrap gap-3
+              md:gap-7 md:justify-start
+              lg:gap-0.5"
             >
               <div class="w-[92px] md:w-[140px]">
                 <img
@@ -637,7 +652,7 @@
                   alt="App store"
                 />
               </div>
-              <div class="w-[96px] md:w-[146px]">
+              <div class="w-[96px] md:w-[144px]">
                 <img
                   class="object-contain"
                   src="/images/google-play-btn.png"
@@ -654,11 +669,16 @@
               </div>
             </div>
           </div>
-          <div class="flex flex-row no-wrap justify-between items-center lg:justify-start gap-1 lg:ml-4 pt-2 pb-4">
-            <p class="text-[8px] lg:text-[10px] lg:opacity-30 p-0 mr-auto">
+          <div class="flex flex-row no-wrap justify-between items-center pt-2 pb-4 gap-1
+          md:pt-6 md:gap-3
+          lg:justify-start lg:ml-4
+">
+            <p class="text-[8px] p-0 mr-auto
+             md:text-[9.5px] lg:opacity-30
+">
               @Rent-a-part. Все права защищены
             </p>
-            <a href="#" class="w-6 h-6 md:w-8 md:h-8 lg:w-auto lg:h-auto">
+            <a href="#" class="w-6 h-6 md:w-12 md:h-12 lg:w-auto lg:h-auto">
               <img
                 class="object-contain"
                 src="/images/icons/vk-icon.png"
@@ -666,7 +686,7 @@
               />
             </a>
 
-            <a href="#" class="w-6 h-6 md:w-8 md:h-8 lg:w-auto lg:h-auto">
+            <a href="#" class="w-6 h-6 md:w-12 md:h-12 lg:w-auto lg:h-auto">
               <img
                 class="object-contain"
                 src="/images/icons/telegram-icon.png"
@@ -675,18 +695,22 @@
             </a>
 
             <div class="flex flex-row items-center justify-start cursor-pointer absolute top-6 right-5
-              md:relative lg:top-0 lg:right-0">
+              md:relative md:top-0 md:right-0">
               <img
                 class="object-contain w-6 h-6
-                  md:w-8 md:h-8
+                  md:w-12 md:h-12
                   lg:w-auto lg:h-auto"
                 src="/images/icons/travel-bot-icon.png"
                 alt="Travel bot"
               />
-              <span class="text-[12px] font-semibold leading-150 p-0 m-0 ml-2">Трэвел-бот</span>
+              <span class="text-[12px] font-semibold leading-150 p-0 ml-2
+              md:text-[14px] md:ml-3 md:mr-1
+">Трэвел-бот</span>
             </div>
 
-            <div class="w-[71px] md:w-[115px] ml-9">
+            <div class="w-[71px] ml-9
+            md:w-[115px] md:ml-16
+">
               <img
                 src="/images/designed-by.png"
                 alt=""
@@ -701,6 +725,11 @@
 </template>
 
 <style>
+
+.footer-holder {
+  filter: drop-shadow(0 0 50px rgba(0, 0, 0, 0.1));
+}
+
 .banner-section {
   background-image: url("/images/index-page/main-banner-bg.png");
 }

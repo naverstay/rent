@@ -2,7 +2,7 @@
   <q-layout view="lHh Lpr lFf">
     <!-- <r-header /> -->
     <main-header class="absolute z-10 inset-x-0" />
-    <q-page-container class="relative position">
+    <q-page-container class="relative">
       <router-view></router-view>
     </q-page-container>
     <q-footer></q-footer>
