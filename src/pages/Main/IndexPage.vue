@@ -562,7 +562,6 @@
           </div>
         </div>
 
-        <!--        <div class="flex flex-row justify-between full-width flex-col lg:flex-row lg:flex-nowrap lg:gap-7 pb-8 pt-4">-->
         <div class="footer-menu flex flex-col justify-between w-full
 
 ">
@@ -726,7 +725,6 @@
             </div>
           </div>
         </div>
-        <!--        </div>-->
       </div>
     </q-card>
   </div>
