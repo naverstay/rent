@@ -10,6 +10,7 @@
       <p class="font-medium opacity-50 text-[12px] leading-150 mt-1 mb-1
         md:text-[14px] md:mb-4
         lg:text-[16px] lg:mb-3
+        xl:mb-4
 ">
         Подписывайтесь на email рассылку - получайте информацию о новых
         направлениях, полезный контент и доступ к акциям.

@@ -545,17 +545,17 @@
       <r-contact-form/>
     </section>
 
-    <q-card class="rounded-[20px] rounded-b-none shadow-none footer-holder">
-      <div class="container m-auto px-5 lg:!px-5 flex footer-grid lg:grid lg:gap-x-8">
+    <q-card class="rounded-[20px] rounded-b-none shadow-none footer-holder lg:pb-10">
+      <div class="relative container m-auto px-5 lg:!px-5 flex footer-grid lg:grid lg:gap-x-8">
         <div class="footer-logo flex -order-2 flex-row items-center justify-between full-width pt-6 pb-5
         md:pt-10 md:pb-7
         lg:pt-16 lg:pb-[3rem] lg:mb-2 lg:gap-4
-        xl:pb-10">
+        xl:-mt-2 ">
           <div
             class="flex flex-row md:flex-col w-full md:w-auto justify-between flex-nowrap md:flex-wrap md:justify-start">
             <r-logo
               logo_gap_class="mr-2 !text-[20px] md:mr-3 lg:!text-[32px] lg:mr-4"
-              text_size_class="text-[14px] md:text-[18px] lg:text-[22px] "
+              text_size_class="text-[14px] md:text-[18px] lg:text-[22px] xl:text-[23px] "
               text_color_class="text-black"
               :always_text="true"
             />
@@ -567,7 +567,8 @@
 
 ">
           <div class="flex flex-col lg:flex-row flex-row justify-start gap-x-20 mb-4
-          lg:mb-3 lg:gap-x-10">
+           lg:mb-3 lg:gap-x-10
+           lg:gap-x-14">
             <r-links-list
               :allways_col="false"
               :links="travels"
@@ -588,6 +589,7 @@
           <div class="flex flex-row justify-start gap-x-20 mb-4
           md:gap-x-10 md:mb-0
           lg:pt-2
+          xl:pt-0
           ">
             <r-links-list
               :links="[
@@ -619,9 +621,6 @@
               title="Адрес"
             />
           </div>
-
-          <q-separator class="r-hidden lg:block footer-separator"/>
-
         </div>
 
         <div class="footer-form -order-1 mb-4
@@ -633,27 +632,31 @@
 
         <div class="footer-contacts flex flex-col justify-between w-full full-height mt-4
         lg:mt-10 lg:block
+        xl:mt-9
 ">
           <div class="my-3 mb-5
            md:mt-2
            lg:mt-4 lg:mb-10 ">
             <div class="text-[12px] mb-2 leading-140 font-medium
-    md:text-[15px] lg:text-[14.5px]
+     md:text-[15px]
+     lg:text-[14.5px]
+     xl:text-[16.5px] xl:mb-4
 ">Загружайте <br class="md:hidden"/> наше приложение:
             </div>
             <div
               class="flex flex-row items-center justify-between flex-nowrap gap-3
               md:gap-7 md:justify-start
-              lg:gap-3 lg:justify-between"
+              lg:gap-3 lg:justify-between
+"
             >
-              <div class="w-[92px] md:w-[140px] lg:w-[158px]">
+              <div class="w-[92px] md:w-[140px] lg:w-[158px] xl:w-[209px]">
                 <img
                   class="object-contain"
                   src="/images/app-store-btn.png"
                   alt="App store"
                 />
               </div>
-              <div class="w-[96px] md:w-[144px] lg:w-[162px]">
+              <div class="w-[96px] md:w-[144px] lg:w-[162px] xl:w-[213px]">
                 <img
                   class="object-contain"
                   src="/images/google-play-btn.png"
@@ -661,7 +664,7 @@
                 />
               </div>
 
-              <div class="w-[113px] md:w-[172px] lg:w-[192px]">
+              <div class="w-[113px] md:w-[172px] lg:w-[192px] xl:w-[257px]">
                 <img
                   class="object-contain"
                   src="/images/nash-store-btn.png"
@@ -673,10 +676,11 @@
           <div class="flex flex-row no-wrap justify-between items-center pt-2 pb-4 gap-1
           md:pt-6 md:gap-3
           lg:justify-start
+          xl:pt-4
 ">
             <p class="text-[8px] p-0 mr-auto
              md:text-[9.5px] lg:opacity-30
-             lg:absolute lg:top-[6rem] lg:left-[3.75rem] lg:text-[12.5px]
+             lg:absolute lg:top-[6rem] lg:left-5 lg:text-[12.5px]
 ">
               @Rent-a-part. Все права защищены
             </p>
@@ -707,12 +711,13 @@
               />
               <span class="text-[12px] font-semibold leading-150 p-0 ml-2
               md:text-[14px] md:ml-3 md:mr-1
+              xl:text-[16px]
 ">Трэвел-бот</span>
             </div>
 
             <div class="w-[71px] ml-9
             md:w-[115px] md:ml-16
-            lg:absolute lg:top-[4.25rem] lg:right-[3.75rem] md:w-[141px]
+            lg:absolute lg:top-[4.25rem] lg:right-5 md:w-[141px]
 ">
               <img
                 src="/images/designed-by.png"
@@ -851,6 +856,10 @@
 }
 
 @media (min-width: 1440px) {
+  .footer-grid {
+    grid-template-columns: 1.1fr 1.6fr;
+  }
+
   .region-image {
     background-image: url("/images/index-page/region-section/region_xl.png");
   }

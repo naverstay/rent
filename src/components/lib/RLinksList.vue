@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col justify-start items-start
 
-" :class="allways_col ? 'md:min-w-[137px] lg:min-w-[205px]' : ''">
+" :class="allways_col ? 'md:min-w-[137px] lg:min-w-[205px] xl:min-w-[225px]' : ''">
     <div class="text-[14px] leading-140 font-medium tracking-3
       md:text-[20px]
-
+      xl:text-[24px]
 " :class="label_cls">{{ title }}
     </div>
 
